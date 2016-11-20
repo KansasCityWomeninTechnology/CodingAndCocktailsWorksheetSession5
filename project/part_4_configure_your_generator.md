@@ -4,7 +4,7 @@ There are custom options available for the fountain-webapp generator. Let’s ma
 
 1.  Select the ‘Fountain Webapp’ option after running the `yo` command.
 
-![](../images/12.png)
+    ![](../images/12.png)
 
 1.  Make the selections in the following screenshot.![](/images/image09.png)
 
