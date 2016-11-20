@@ -1,7 +1,6 @@
 # Summary
 
 * [Intro to Front-End Architecture](README.md)
-* [Overview](overview.md)
 * [Project](project/README.md)
    * [Part 0: Verify NodeJS is installed](project/part_0_verify_nodejs_is_installed.md)
    * [Part I: Manual Practice](project/part_imanual_practice.md)
