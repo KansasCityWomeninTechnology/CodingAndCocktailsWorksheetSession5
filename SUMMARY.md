@@ -10,7 +10,6 @@
    * [Part 3:  Install a generator](project/part_3_installa_generator.md)
    * [Part 4: Configure your generator](project/part_4_configure_your_generator.md)
    * [Part 5:  Preview your app](project/part_5_preview_your_app.md)
-   * [](project/.10.md)
 * [Homework](homework/README.md)
    * [Part 1: Another Yeoman tutorial](homework/part_1_another_yeoman_tutorial.md)
    * [Part 2: Git](homework/part_2_git.md)
