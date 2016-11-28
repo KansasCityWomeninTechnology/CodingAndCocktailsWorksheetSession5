@@ -4,6 +4,6 @@ You can go further with Yeoman by configuring testing for your app, getting your
 
 [Step 6: Test with Karma and Jasmine](http://yeoman.io/codelab/run-unit-tests.html)
 
-[Step 7: Make TODOs Persistent with Local Storage](https://www.google.com/url?q=http://yeoman.io/codelab/local-storage.html&sa=D&ust=1479671279420000&usg=AFQjCNEODR1vrNoXHdJQ30zdoRneM1IO5g)
+[Step 7: Make TODOs Persistent with Local Storage](http://yeoman.io/codelab/local-storage.html)
 
 [Step 8: Get Ready for Production](https://www.google.com/url?q=http://yeoman.io/codelab/prepare-production.html&sa=D&ust=1479671279421000&usg=AFQjCNGbmbYhg3sXERO0NFwMCpRCQmuC_Q)
