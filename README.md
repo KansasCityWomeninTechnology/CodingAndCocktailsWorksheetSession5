@@ -1,8 +1,9 @@
-# Intro to Front-End Architecture {#intro-to-front-end-architecture}
-
+# Coding & Cocktails Session 8:
+## Intro to Front-End Architecture {#intro-to-front-end-architecture}
+<hr>
 ![codingcocktailsbadge-200.png](/images/image08.png)
-# Overview {#overview}
+### Overview {#overview}
 
 Basics of how to structure your websites and applications for more efficient and sustainable management.
 <br>
-[![](images/1.png)](http://bit.ly/CnCgloss)   [![](images/2.png)](http://bit.ly/CnCTools)
+[![](images/glossary.png)](http://bit.ly/CnCgloss)   [![](images/tools.png)](http://bit.ly/CnCTools)
