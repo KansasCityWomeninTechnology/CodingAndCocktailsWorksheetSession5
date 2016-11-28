@@ -2,7 +2,7 @@
 
 First, let’s take a look at how to manually organize your project files.
 
-1.  Download the assets at [http://bit.ly/2bVHBAi](https://www.google.com/url?q=http://bit.ly/2bVHBAi&sa=D&ust=1479671279353000&usg=AFQjCNE1u2xbmL3MiMSXrBqwS8SBp5YDtQ) and unzip the file. 
+1.  Download the assets at [http://bit.ly/2bVHBAi](http://bit.ly/2bVHBAi) and unzip the file. 
 2.  Create a root directory named app in your CodingAndCocktails folder.
 
   [![](../images/5.png)](http://templated.co)
