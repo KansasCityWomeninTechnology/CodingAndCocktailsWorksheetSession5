@@ -2,7 +2,7 @@
 
 You can go further with Yeoman by configuring testing for your app, getting your app ready for production, or making your todos persistent with  [TodoMVC](http://todomvc.com/) . If you’d like to learn more, follow the tutorials at:
 
-[Step 6: Test with Karma and Jasmine](https://www.google.com/url?q=http://yeoman.io/codelab/run-unit-tests.html&sa=D&ust=1479671279419000&usg=AFQjCNEzlxCKy3qx2-O3AbZ3uZxvTUCSlA)
+[Step 6: Test with Karma and Jasmine](http://yeoman.io/codelab/run-unit-tests.html)
 
 [Step 7: Make TODOs Persistent with Local Storage](https://www.google.com/url?q=http://yeoman.io/codelab/local-storage.html&sa=D&ust=1479671279420000&usg=AFQjCNEODR1vrNoXHdJQ30zdoRneM1IO5g)
 
