@@ -6,4 +6,4 @@ You can go further with Yeoman by configuring testing for your app, getting your
 
 [Step 7: Make TODOs Persistent with Local Storage](http://yeoman.io/codelab/local-storage.html)
 
-[Step 8: Get Ready for Production](https://www.google.com/url?q=http://yeoman.io/codelab/prepare-production.html&sa=D&ust=1479671279421000&usg=AFQjCNGbmbYhg3sXERO0NFwMCpRCQmuC_Q)
+[Step 8: Get Ready for Production](http://yeoman.io/codelab/prepare-production.html)
