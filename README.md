@@ -1,4 +1,4 @@
-# Coding & Cocktails Session 8:
+# Coding & Cocktails Session 5:
 ## Intro to Front-End Architecture {#intro-to-front-end-architecture}
 <hr>
 ![codingcocktailsbadge-200.png](/images/image08.png)
