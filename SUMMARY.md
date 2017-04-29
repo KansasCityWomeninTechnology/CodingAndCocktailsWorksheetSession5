@@ -1,8 +1,8 @@
 # Summary
 
 * [Overview](README.md)
+* [Prep Work](prep_work.md)
 * [Project](project/README.md)
-   * [Part 0: Verify NodeJS is installed](project/part_0_verify_nodejs_is_installed.md)
    * [Part I: Manual Practice](project/part_i_manual_practice.md)
    * [Part II: Scaffolding with Yeoman](project/part_ii_scaffolding_with_yeoman.md)
    * [Part 1: Create a project folder](project/part_1_create_a_project_folder.md)
@@ -10,8 +10,4 @@
    * [Part 3:  Install a generator](project/part_3_installa_generator.md)
    * [Part 4: Configure your generator](project/part_4_configure_your_generator.md)
    * [Part 5:  Preview your app](project/part_5_preview_your_app.md)
-* [Homework](homework/README.md)
-   * [Part 1: Another Yeoman tutorial](homework/part_1_another_yeoman_tutorial.md)
-   * [Part 2: Git](homework/part_2_git.md)
-   * [Part 3: Advanced Topic: Creating your own generators](homework/part_3_advanced_topic_creating_your_own_generators.md)
-   * [Part 4: Advanced Topic: More Yeoman](homework/part_4_advanced_topic_more_yeoman.md)
+* [Homework](homework.md)

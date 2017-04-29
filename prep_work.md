@@ -1,4 +1,6 @@
-### Part 0: Verify NodeJS is installed {#part-0-verify-nodejs-is-installed}
+# Prep Work
+
+### Verify NodeJS is installed {#part-0-verify-nodejs-is-installed}
 
 In order to use NPM later in this lesson, you have to install NodeJS. (We won’t be writing a NodeJS application, but the two are essentially installed together.)
 
