@@ -26,12 +26,12 @@ In the second part of this session, we use a tool called Yeoman, which we instal
     3. When that finishes, confirm ``node --version`` returns a version > 6.
     <!--endsec-->
     c. No version number, you need to install Node.
-    <!--sec data-title="Mac" data-id="section-install-mac" data-show=true data-collapse=true ces-->
+    <!--sec data-title="Mac" data-id="sectionInstallMac" data-show=true data-collapse=true ces-->
     1. In iTerm2, type the following: ``brew update``
     2. When that finishes, type: ``brew install node``
     3. Confirm ``node --version`` returns a version > 6.
     <!--endsec-->
-    <!--sec data-title="Windows" data-id="section-install-windows" data-show=true data-collapse=true ces-->
+    <!--sec data-title="Windows" data-id="sectionInstallWindows" data-show=true data-collapse=true ces-->
     1. [Download](https://nodejs.org/en/) the _Current_ installer for Windows [v.7.9.0].
     2. Double-click on the downloaded file & follow the installation prompts.
     3. When that finishes, confirm ``node --version`` returns a version > 6.
