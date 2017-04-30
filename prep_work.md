@@ -20,6 +20,7 @@ In the second part of this session, we use a tool called Yeoman, which we instal
       2. When that finishes, type: ``brew upgrade node``
       3. Confirm ``node --version`` returns a version > 6.
       <!--endsec-->
+
       <!--sec data-title="Windows" data-id="sectionUpdateWindows" data-show=true data-collapse=true ces-->
       1. [Download](https://nodejs.org/en/) the _Current_ installer for Windows [v.7.9.0].
       2. Double-click on the downloaded file & follow the installation prompts.
@@ -31,6 +32,7 @@ In the second part of this session, we use a tool called Yeoman, which we instal
       2. When that finishes, type: ``brew install node``
       3. Confirm ``node --version`` returns a version > 6.
       <!--endsec-->
+      
       <!--sec data-title="Windows" data-id="sectionInstallWindows" data-show=true data-collapse=true ces-->
       1. [Download](https://nodejs.org/en/) the _Current_ installer for Windows [v.7.9.0].
       2. Double-click on the downloaded file & follow the installation prompts.
