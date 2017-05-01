@@ -15,7 +15,7 @@ First, let’s take a look at how to manually organize your project files.
 
        ![](../assets/images/image06.png)
 
-  {% hint style='tip' %}
+  {% hint style='info' %}
 
   The directory name **js** is interchangeable with the directory name **scripts**.
 
@@ -39,4 +39,5 @@ First, let’s take a look at how to manually organize your project files.
 Your site should now be working! We’ve organized all of your files AND _index.html_ knows where they are located.
 
 ![](../assets/images/image10.png)
+
 ![](../assets/images/7.png)

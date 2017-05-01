@@ -2,12 +2,12 @@
 
 There are custom options available for the fountain-webapp generator. Let’s make our configuration selections now.
 
-1.  Select the **Fountain Webapp** option after running the `yo` command.
+1.  Select the **Fountain Webapp** option after running the ``yo`` command.
 
     {% hint style='tip' %}
 
     - Make sure you are in the folder you want to scaffold into before continuing.
-    - You can use *pwd* to see your current directory and **cd** if you need to change directories.
+    - You can use ``pwd`` to see your current directory and **cd** if you need to change directories.
 
     {% endhint %}
 

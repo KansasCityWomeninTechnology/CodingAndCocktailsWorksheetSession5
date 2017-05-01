@@ -10,15 +10,15 @@ Get some more practice! Follow along with the tutorial at [http://bit.ly/2ciNXfC
 
 ### Part 2: Git {#part-2-git}
 
-Yeoman initializes a git repository for you in your source folder. Check git by running git status. You can also stage and commit your files to your own Github repository if you’d like more practice.
+Yeoman initializes a git repository for you in your source folder. Check git by running git status. You can also stage and commit your files to your own Github repository if you’d like more practice. Push your project at this point up to Github & come tell us about it in <a href="slack://channel?team=T06BZHS4U&id=C0BGBKGG6">Slack</a>!
 
 [![](../assets/images/15.png)](http://bit.ly/CnCvers)
 
-### Part 3: Advanced Topic: Creating your own generators {#part-3-advanced-topic-creating-your-own-generators}
+### Optional Extra Credit #1: Advanced Topic: Creating your own generators {#extra-credit-1-advanced-topic-creating-your-own-generators}
 
 You can also create your own Yeoman generators for any custom projects you’re working on. Just follow along with the tutorial at [http://yeoman.io/authoring/](http://yeoman.io/authoring/).
 
-### Part 4: Advanced Topic: More Yeoman {#part-4-advanced-topic-more-yeoman}
+### Optional Extra Credit #2: Advanced Topic: More Yeoman {#extra-credit-2-advanced-topic-more-yeoman}
 
 You can go further with Yeoman by configuring testing for your app, getting your app ready for production, or making your todos persistent with  [TodoMVC](http://todomvc.com/) . If you’d like to learn more, follow the tutorials at:
 
