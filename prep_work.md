@@ -68,7 +68,7 @@ In the second part of this session, we use a tool called Yeoman, which we instal
 
    2. If your version is less than **3**, update to the latest by typing: ``npm install npm -g``
 
-### 3. Create ``Architecture`` Folder
+### 3. Create _Architecture_ Folder
 
 Create a folder named _Architecture_ in your _CodingAndCocktails_ folder.
 

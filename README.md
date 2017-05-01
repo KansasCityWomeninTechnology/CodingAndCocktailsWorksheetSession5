@@ -31,4 +31,4 @@ In this session, we will become familiar with best practices for front-end archi
 While following along with the worksheet, type out the commands instead of doing a copy & paste (_unless instructed to copy & paste_) to avoid inadvertently using any incorrect characters.
 {% endhint %}
 
-[![](images/glossary.png)](http://bit.ly/CnCgloss)   [![](images/tools.png)](http://bit.ly/CnCTools)
+[![](../assets/images/glossary.png)](http://bit.ly/CnCgloss)   [![](../assets/images/tools.png)](http://bit.ly/CnCTools)
