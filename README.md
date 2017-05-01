@@ -4,7 +4,13 @@
 ![codingcocktailsbadge-200.png](/images/image08.png)
 ### Overview {#overview}
 
-Basics of how to structure your websites and applications for more efficient and sustainable management.
+Basics of how to structure your websites and applications for more efficient and sustainable management
+
+### Project
+
+Front-end architecture is the organization of code and project files. Though there can be customizations specific to a team, the goal of good front-end architecture is to provide an efficient workflow that is maintainable throughout the project’s life.
+
+In this session, we will become familiar with best practices for front-end architecture by organizing a pack of assets in a way that will make it easy to maintain the website in a sustainable way.
 
 ### Helpful Keyboard Shortcuts
 |Command|Mac Key Combination|Windows Key Combination|
@@ -21,8 +27,8 @@ Basics of how to structure your websites and applications for more efficient and
 |Switch between programs on the taskbar| N/A | `windows key` + `tab`|
 |Switch between Chrome windows. |`shift` + `cmd` + `~`| N/A |
 
-[![](images/glossary.png)](http://bit.ly/CnCgloss)   [![](images/tools.png)](http://bit.ly/CnCTools)
-
 {% hint style='danger' %}
 While following along with the worksheet, type out the commands instead of doing a copy & paste (_unless instructed to copy & paste_) to avoid inadvertently using any incorrect characters.
 {% endhint %}
+
+[![](images/glossary.png)](http://bit.ly/CnCgloss)   [![](images/tools.png)](http://bit.ly/CnCTools)

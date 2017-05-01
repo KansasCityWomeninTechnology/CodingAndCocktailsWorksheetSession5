@@ -1,10 +1,10 @@
 ### Part 1: Create a project folder {#part-1-create-a-project-folder}
 
-When you’re starting from scratch, an empty project is simply an empty folder. You could do that visually (using your file explorer) but let’s do it in Git Bash (windows) or iTerm2 (macs).
+When you’re starting from scratch, an empty project is simply an empty folder. You could do that visually (using your file explorer) but let’s do it in CLI.
 
 [![](../images/8.png)](http://bit.ly/cmdln)
 
-1.  Navigate to your CodingAndCocktails folder: ``cd <your home directory>/CodingAndCocktails``
+1.  Navigate to your _CodingAndCocktails/Architecture_ folder: ``cd <your home directory>/CodingAndCocktails/Architecture``
 
 ![](../images/9.png)
 
