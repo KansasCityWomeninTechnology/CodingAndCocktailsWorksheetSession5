@@ -7,7 +7,7 @@ There are custom options available for the fountain-webapp generator. Let's make
 {% hint style='tip' %}
 
 - Make sure you are in the folder you want to scaffold into before continuing.
-- You can use ``pwd`` to see your current directory and **cd** if you need to change directories.
+- You can use ``pwd`` to see your current directory and ``cd`` if you need to change directories.
 
 {% endhint %}
 
