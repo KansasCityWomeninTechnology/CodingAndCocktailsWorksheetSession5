@@ -1,6 +1,6 @@
 # Prep Work
 
-### Open Slack
+### <a href="slack://channel?team={kcwit}&id={codingandcocktails}">Open Slack</a>
 
 If you have a tip that helped you with a step on the worksheet, you can easily share it with the group in Slack. Or if there are any issues with the worksheet [we make typos or there's an update to a tool that we didn't catch before the session], we may post updates in Slack. Plus, after class is over, Slack becomes a tool for you to gain access to mentors as you go through the homework, or any other questions that arise.
 
@@ -13,33 +13,9 @@ In the second part of this session, we use a tool called Yeoman, which we instal
 
 2.  In your CLI, type: ``node --version``
 
-    Do you get a version number?
+    Do you get a version number [_Version *6 or greater* required._]?
 
-    1. If your version number is greater than 6, proceed to step 3.
-
-    2. If your version number is less than 6, you'll need to update your version of Node.
-
-      <!--sec data-title="Mac" data-id="sectionUpdateMac" data-show=true data-collapse=true ces-->
-
-      1. In iTerm2, type the following: ``brew update``
-
-      2. When that finishes, type: ``brew upgrade node``
-
-      3. Confirm ``node --version`` returns a version > 6.
-
-      <!--endsec-->
-
-      <!--sec data-title="Windows" data-id="sectionUpdateWindows" data-show=true data-collapse=true ces-->
-
-      1. [Download](https://nodejs.org/en/) the _Current_ installer for Windows [v.7.9.0].
-
-      2. Double-click on the downloaded file & follow the installation prompts.
-
-      3. When that finishes, confirm ``node --version`` returns a version > 6.
-
-      <!--endsec-->
-
-    3. No version number, you need to install Node.
+    1. No version number [something like `node: command not found`]. You need to install Node.
 
       <!--sec data-title="Mac" data-id="sectionInstallMac" data-show=true data-collapse=true ces-->
 
@@ -47,7 +23,7 @@ In the second part of this session, we use a tool called Yeoman, which we instal
 
       2. When that finishes, type: ``brew install node``
 
-      3. Confirm ``node --version`` returns a version > 6.
+      3. Confirm ``node --version`` returns a version *6 or greater*.
 
       <!--endsec-->
 
@@ -57,16 +33,40 @@ In the second part of this session, we use a tool called Yeoman, which we instal
 
       2. Double-click on the downloaded file & follow the installation prompts.
 
-      3. When that finishes, confirm ``node --version`` returns a version > 6.
+      3. When that finishes, confirm ``node --version`` returns a version *6 or greater*.
+
+      <!--endsec-->
+
+    2. If your version number is *6 or greater*, proceed to step 3.
+
+    2. If your version number is less than *6*, you'll need to update Node.
+
+      <!--sec data-title="Mac" data-id="sectionUpdateMac" data-show=true data-collapse=true ces-->
+
+      1. In iTerm2, type the following: ``brew update``
+
+      2. When that finishes, type: ``brew upgrade node``
+
+      3. Confirm ``node --version`` returns a version *6 or greater*.
+
+      <!--endsec-->
+
+      <!--sec data-title="Windows" data-id="sectionUpdateWindows" data-show=true data-collapse=true ces-->
+
+      1. [Download](https://nodejs.org/en/) the *Current* installer for Windows [v.7.9.0].
+
+      2. Double-click on the downloaded file & follow the installation prompts.
+
+      3. When that finishes, confirm ``node --version`` returns a version *6 or greater*.
 
       <!--endsec-->  
 
-3. Let's check your version of npm [which was installed with Node].  
+3. Let's check your version of npm [which was installed with Node]. [_Version *3 or greater* required._]  
    In your CLI, type: ``npm --version``  
 
-   1. If your version number is greater than 3 proceed to step 4.
+   1. If your version is *3 or greater*, proceed to step 4.
 
-   2. If your version number is less than 3, update to the latest by typing: ``npm install npm -g``
+   2. If your version is less than *3*, update to the latest by typing: ``npm install npm -g``
 
 4. If you're using a Mac, you're ready for Part I! Windows users, you have one more set-up check.
 
