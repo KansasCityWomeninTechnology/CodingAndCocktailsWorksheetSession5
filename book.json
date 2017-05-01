@@ -2,10 +2,9 @@
 "plugins": [
 "custom-favicon",
 "hints",
-"sectionx",
-"local-video"
+"sectionx"
 ],
 "pluginsConfig": {
-"favicon": "assets/favicon.ico"
+"favicon": "assets/images/favicon.ico"
 }
 }

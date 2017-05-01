@@ -9,7 +9,7 @@ If you have a tip that helped you with a step on the worksheet, you can easily s
 In the second part of this session, we use a tool called Yeoman, which we install using npm [a package manager, which we'll cover in detail in the August session]. npm requires we install Node.js [which we'll cover in the September session], all you need to know about them for this session is how to install or update these tools.
 
 1.  Open your CLI (Command Line Interface) [Git Bash (windows) or iTerm2 (macs)]
-![](../images/3.png)
+![](../assets/images/3.png)
 
 2.  In your CLI, type: ``node --version``
 
@@ -85,7 +85,7 @@ Yeoman & Git Bash don't play nicely out of the box, so we'll need to run Bash in
 2. Type the following into the Command Prompt: ``"C:\Program Files\Git\bin\bash.exe" --login -i``
 
 3. If your CLI looks like the following, you are ready for Part I [use this in Part II for CLI].
-![](../images/windows-cmd-bash.png)
+![](../assets/images/windows-cmd-bash.png)
 
 {% hint style='danger' %}
 If your CLI doesn't look similar to the above screenshot, grab a mentor. You may need to adjust the path to bash [``C:\Program Files\Git\bin\bash.exe`` this part of the command you typed]. And if that doesn't work, install the full version of [cmder](http://cmder.net/) [another Console emulator for Windows].

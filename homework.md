@@ -2,7 +2,7 @@
 
 The more you practice, the better you’ll get. Reinforce what you’ve learned tonight with the following tutorial.
 
-[![](../images/slack.png)](http://kcwit.slack.com)
+[![](../assets/images/slack.png)](http://kcwit.slack.com)
 
 ### Part 1: Another Yeoman tutorial {#part-1-another-yeoman-tutorial}
 
@@ -12,7 +12,7 @@ Get some more practice! Follow along with the tutorial at [http://bit.ly/2ciNXfC
 
 Yeoman initializes a git repository for you in your source folder. Check git by running git status. You can also stage and commit your files to your own Github repository if you’d like more practice.
 
-[![](../images/15.png)](http://bit.ly/CnCvers)
+[![](../assets/images/15.png)](http://bit.ly/CnCvers)
 
 ### Part 3: Advanced Topic: Creating your own generators {#part-3-advanced-topic-creating-your-own-generators}
 
