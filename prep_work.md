@@ -13,60 +13,60 @@ In the second part of this session, we use a tool called Yeoman, which we instal
 
 2.  In your CLI, type: ``node --version``
 
-    Do you get a version number [_Version *6 or greater* required._]?
+    Do you get a version number [_Version **6 or greater** required._]?
 
     1. No version number [something like `node: command not found`]. You need to install Node.
 
-      <!--sec data-title="Mac" data-id="sectionInstallMac" data-show=true data-collapse=true ces-->
+      <!--sec data-title="Mac - Install Node" data-id="sectionInstallMac" data-show=true data-collapse=true ces-->
 
       1. In iTerm2, type: ``brew update``
 
       2. When that finishes, type: ``brew install node``
 
-      3. Confirm ``node --version`` returns a version *6 or greater*.
+      3. Confirm ``node --version`` returns a version **6 or greater**.
 
       <!--endsec-->
 
-      <!--sec data-title="Windows" data-id="sectionInstallWindows" data-show=true data-collapse=true ces-->
+      <!--sec data-title="Windows - Install Node" data-id="sectionInstallWindows" data-show=true data-collapse=true ces-->
 
       1. [Download](https://nodejs.org/en/) the _Current_ installer for Windows [v.7.9.0].
 
       2. Double-click on the downloaded file & follow the installation prompts.
 
-      3. When that finishes, confirm ``node --version`` returns a version *6 or greater*.
+      3. When that finishes, confirm ``node --version`` returns a version **6 or greater**.
 
       <!--endsec-->
 
-    2. If your version number is *6 or greater*, proceed to step 3.
+    2. If your version number is **6 or greater**, proceed to step 3.
 
-    2. If your version number is less than *6*, you'll need to update Node.
+    2. If your version number is less than **6**, you'll need to update Node.
 
-      <!--sec data-title="Mac" data-id="sectionUpdateMac" data-show=true data-collapse=true ces-->
+      <!--sec data-title="Mac - Update Node" data-id="sectionUpdateMac" data-show=true data-collapse=true ces-->
 
       1. In iTerm2, type the following: ``brew update``
 
       2. When that finishes, type: ``brew upgrade node``
 
-      3. Confirm ``node --version`` returns a version *6 or greater*.
+      3. Confirm ``node --version`` returns a version **6 or greater**.
 
       <!--endsec-->
 
-      <!--sec data-title="Windows" data-id="sectionUpdateWindows" data-show=true data-collapse=true ces-->
+      <!--sec data-title="Windows - Update Node" data-id="sectionUpdateWindows" data-show=true data-collapse=true ces-->
 
-      1. [Download](https://nodejs.org/en/) the *Current* installer for Windows [v.7.9.0].
+      1. [Download](https://nodejs.org/en/) the **Current** installer for Windows [v.7.9.0].
 
       2. Double-click on the downloaded file & follow the installation prompts.
 
-      3. When that finishes, confirm ``node --version`` returns a version *6 or greater*.
+      3. When that finishes, confirm ``node --version`` returns a version **6 or greater**.
 
       <!--endsec-->  
 
-3. Let's check your version of npm [which was installed with Node]. [_Version *3 or greater* required._]  
+3. Let's check your version of npm [which was installed with Node]. [_Version **3 or greater** required._]  
    In your CLI, type: ``npm --version``  
 
-   1. If your version is *3 or greater*, proceed to the Final Step.
+   1. If your version is **3 or greater**, proceed to the Final Step.
 
-   2. If your version is less than *3*, update to the latest by typing: ``npm install npm -g``
+   2. If your version is less than **3**, update to the latest by typing: ``npm install npm -g``
 
 ### 3. Final Step
 
@@ -76,15 +76,15 @@ If you're using a Mac, you're ready for Part I! Windows users, you have one more
 
 Yeoman & Git Bash don't play nicely out of the box, so we'll need to run Bash in the Window's native cmd.exe [Command Prompt].
 
-1. Find & open the *Command Prompt* program on your computer.
+1. Find & open the **Command Prompt** program on your computer.
 
 2. Type the following into the Command Prompt: ``"C:\Program Files\Git\bin\bash.exe" --login -i``
 
-3. If your CLI looks like the following, you are ready for Part I.
+3. If your CLI looks like the following, you are ready for Part I [use this in Part II for CLI].
 ![](../images/windows-cmd-bash.png)
 
 {% hint style='danger' %}
-If your CLI doesn't look similar to the error, grab a mentor. You may need to adjust the path to bash [``C:\Program Files\Git\bin\bash.exe`` this part of the command you typed]. And if that doesn't work, install the full version of [cmder](http://cmder.net/) [another Console emulator for Windows].
+If your CLI doesn't look similar to the above screenshot, grab a mentor. You may need to adjust the path to bash [``C:\Program Files\Git\bin\bash.exe`` this part of the command you typed]. And if that doesn't work, install the full version of [cmder](http://cmder.net/) [another Console emulator for Windows].
 {% endhint %}
 
 <!--endsec-->
