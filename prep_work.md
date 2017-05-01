@@ -8,8 +8,15 @@ If you have a tip that helped you with a step on the worksheet, you can easily s
 
 In the second part of this session, we use a tool called Yeoman, which we install using npm [a package manager, which we'll cover in detail in the August session]. npm requires we install Node.js [which we'll cover in the September session], all you need to know about them for this session is how to install or update these tools.
 
-1.  Open your CLI (Command Line Interface) [Git Bash (windows) or iTerm2 (macs)]
-![](../assets/images/3.png)
+1.  Open your CLI
+
+{% hint style='info' %}
+
+The "terminal" and "command line" (aka CLI, command line interface) are the same thing.
+- On Windows, we use **Git Bash**
+- On Mac, we use **iTerm2**
+
+{% endhint %}
 
 2.  In your CLI, type: ``node --version``
 

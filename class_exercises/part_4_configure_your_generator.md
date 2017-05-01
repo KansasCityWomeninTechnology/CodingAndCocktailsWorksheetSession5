@@ -4,7 +4,12 @@ There are custom options available for the fountain-webapp generator. Let’s ma
 
 1.  Select the **Fountain Webapp** option after running the `yo` command.
 
-    ![](../assets/images/12.png)
+    {% hint style='tip' %}
+
+    - Make sure you are in the folder you want to scaffold into before continuing.
+    - You can use *pwd* to see your current directory and **cd** if you need to change directories.
+
+    {% endhint %}
 
 1.  Make the selections in the following screenshot. ![](../assets/images/image09.png)
 
