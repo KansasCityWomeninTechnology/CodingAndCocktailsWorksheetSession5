@@ -14,11 +14,11 @@ Yeoman initializes a git repository for you in your source folder. Check git by 
 
 [![](../assets/images/15.png)](http://bit.ly/CnCvers)
 
-### Optional Extra Credit #1: Advanced Topic: Creating your own generators {#extra-credit-1-advanced-topic-creating-your-own-generators}
+### Extra Credit #1: Advanced Topic: Creating your own generators {#extra-credit-1-advanced-topic-creating-your-own-generators}
 
 You can also create your own Yeoman generators for any custom projects you’re working on. Just follow along with the tutorial at [http://yeoman.io/authoring/](http://yeoman.io/authoring/).
 
-### Optional Extra Credit #2: Advanced Topic: More Yeoman {#extra-credit-2-advanced-topic-more-yeoman}
+### Extra Credit #2: Advanced Topic: More Yeoman {#extra-credit-2-advanced-topic-more-yeoman}
 
 You can go further with Yeoman by configuring testing for your app, getting your app ready for production, or making your todos persistent with  [TodoMVC](http://todomvc.com/) . If you’d like to learn more, follow the tutorials at:
 
