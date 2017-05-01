@@ -64,11 +64,15 @@ In the second part of this session, we use a tool called Yeoman, which we instal
 3. Let's check your version of npm [which was installed with Node]. [_Version **3 or greater** required._]  
    In your CLI, type: ``npm --version``  
 
-   1. If your version is **3 or greater**, proceed to the Final Step.
+   1. If your version is **3 or greater**, proceed to the Step 3.
 
    2. If your version is less than **3**, update to the latest by typing: ``npm install npm -g``
 
-### 3. Final Step
+### 3. Create ``Architecture`` Folder
+
+Create a folder named _Architecture_ in your _CodingAndCocktails_ folder.
+
+### 4. Final Step
 
 If you're using a Mac, you're ready for Part I! Windows users, you have one more set-up check.
 
