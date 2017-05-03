@@ -4,6 +4,12 @@
 
 If you have a tip that helped you with a step on the worksheet, you can easily share it with the group in Slack. Or if there are any issues with the worksheet [we make typos or there's an update to a tool that we didn't catch before the session], we may post updates in Slack. Plus, after class is over, Slack becomes a tool for you to gain access to mentors as you go through the homework, or any other questions that arise.
 
+{% hint style='danger' %}
+
+If you're using a Chromebook, skip down to the Cloud9 instructions at the bottom.
+
+{% endhint %}
+
 ### 2. Install/Update Node.js & npm {#install-nodejs}
 
 In the second part of this session, we use a tool called Yeoman, which we install using npm [a package manager, which we'll cover in detail in the August session]. npm requires we install Node.js [which we'll cover in the September session], all you need to know about them for this session is how to install or update these tools.
@@ -97,5 +103,57 @@ Yeoman & Git Bash don't play nicely out of the box, so we'll need to run Bash in
 {% hint style='danger' %}
 If your CLI doesn't look similar to the above screenshot, grab a mentor. You may need to adjust the path to bash [``C:\Program Files\Git\bin\bash.exe`` this part of the command you typed]. And if that doesn't work, install the full version of [cmder](http://cmder.net/) [another Console emulator for Windows].
 {% endhint %}
+
+<!--endsec-->
+
+<!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="section0" data-show=true data-collapse=true ces-->
+
+1. Sign up for an account at [c9.io](https://c9.io)
+
+   Note: It will ask you for credit card information but you will not get charged for anything since we do not use features of Cloud9 that cost money. Ask a mentor for the Coding & Cocktails card for Cloud9.
+
+2. Confirm your account from your email and log in to Cloud9.
+
+3. Select `Workspaces` from the left side panel if you are not already there.
+
+4. Choose `Create a new workspace`.
+
+5. Pick a name for your workspace and enter it - it can be anything you'd like.  You do not need a description but feel free to add one if you'd like.
+
+6. Let's clone a repo from Github so the files we need for Part I will be in our workspace for us.
+
+  1. Visit the [Front End Architecture repo in Github](https://github.com/KansasCityWomeninTechnology/front-end-architecture-ws).
+
+  2. Click the green **Clone or download** button & then click the clipboard icon to copy the path.
+
+  3. Go back to Cloud9 & paste this path into the *Clone from Git or Mercurial URL* field. `git@github.com:KansasCityWomeninTechnology/front-end-architecture-ws.git`
+
+7. Leave your workspace as a "Public workspace".
+
+8. In the template section choose `Node.js`
+
+9. Click on the `Create Workspace` button.
+
+   Cloud9 will take a minute and create your workspace here
+
+10. In ther terminal section of your workspace, type `mkdir CodingAndCocktails` to create your folder/directory that you'll be working in tonight. You'll notice a new folder show up on the left side of your screen where the
+
+{% hint style='tip' %}
+
+To make the terminal section bigger, hover over the top line of the terminal section with your mouse - it will change to an up-down arrow icon and then you can drag up which will also make the file editing area smaller.
+
+![](../assets/images/c9_terminal.png)
+
+{% endhint %}
+
+11. Create a folder within _CodingAndCocktails_ named _Architecture_.
+
+{% hint style='danger' %}
+
+Any time the worksheet mentions to change directory to your home directory or type `cd ~` you will want to type `cd ~/workspace` instead.
+
+{% endhint %}
+
+12. All the files that were cloned from the Github repo are in your workspace. That means you're ready to start with Part I, Step 2 & skip downloading the files in Step 1.
 
 <!--endsec-->

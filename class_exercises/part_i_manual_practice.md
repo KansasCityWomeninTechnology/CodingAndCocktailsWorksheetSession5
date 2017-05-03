@@ -3,6 +3,7 @@
 First, let’s take a look at how to manually organize your project files.
 
 1.  Download the assets at [http://bit.ly/2bVHBAi](http://bit.ly/2bVHBAi) and unzip the file.
+
 2.  Create a root directory named _app_ in your _CodingAndCocktails/Architecture_ folder.
 
   {% hint style='info' %}
@@ -25,7 +26,16 @@ First, let’s take a look at how to manually organize your project files.
 
        ![](../assets/images/image14.png)
 
-1.  Open index.html in SublimeText and search for all the lines starting with ``< -- REPLACE DIR PATH``  to remove that block of code. Also remove the closing comment mark, ``-->`` at the end of the same lines.
+<!--sec data-title="Cloud9: Preview" data-id="cloud9Preview" data-show=true data-collapse=true ces-->
+
+- To preview your file in Cloud9, right click on the _index.html_ file & select **Preview**.
+
+- Instead of Atom, you'll be using the built-in text editor in your workspace. Double-click on the _index.html_ file to open it in the editor.
+
+<!--endsec-->
+
+1.  Open _index.html_ in Atom and search for all the lines starting with ``< -- REPLACE DIR PATH``  to remove that block of code. Also remove the closing comment mark, ``-->`` at the end of the same lines.
+
 2.  In those same lines, you’ll see  ``DIR`` where the path of the files referenced should be. Replace ``DIR`` with the applicable file path. In the example below, that would be ``assets/css/main.css``.
 
     1. Before:<br>
