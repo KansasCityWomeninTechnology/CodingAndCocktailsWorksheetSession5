@@ -10,7 +10,7 @@ Get some more practice! Follow along with the tutorial at [http://bit.ly/2ciNXfC
 
 ### Part 2: Git {#part-2-git}
 
-Yeoman initializes a git repository for you in your source folder. Check git by running git status. You can also stage and commit your files to your own Github repository if you’d like more practice. Push your project at this point up to Github & come tell us about it in <a href="slack://channel?team=T06BZHS4U&id=C0BGBKGG6">Slack</a>!
+Yeoman initializes a git repository for you in your source folder. Check git by running `git status`. You can also stage and commit your files to your own Github repository if you’d like more practice. Push your project at this point up to Github & come tell us about it in <a href="slack://channel?team=T06BZHS4U&id=C0BGBKGG6">Slack</a>!
 
 [![](../assets/images/15.png)](http://bit.ly/CnCvers)
 
