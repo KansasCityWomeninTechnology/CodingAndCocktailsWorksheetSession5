@@ -98,7 +98,7 @@ Yeoman & Git Bash don't play nicely out of the box, so we'll need to run Bash in
 2. Type the following into the Command Prompt: ``"C:\Program Files\Git\bin\bash.exe" --login -i``
 
 3. If your CLI looks like the following, you are ready for Part I [use this in Part II for CLI].
-![](../assets/images/windows-cmd-bash.png)
+![](assets/images/windows-cmd-bash.png)
 
 {% hint style='danger' %}
 If your CLI doesn't look similar to the above screenshot, grab a mentor. You may need to adjust the path to bash [``C:\Program Files\Git\bin\bash.exe`` this part of the command you typed]. And if that doesn't work, install the full version of [cmder](http://cmder.net/) [another Console emulator for Windows].
@@ -142,7 +142,7 @@ If your CLI doesn't look similar to the above screenshot, grab a mentor. You may
 
 To make the terminal section bigger, hover over the top line of the terminal section with your mouse - it will change to an up-down arrow icon and then you can drag up which will also make the file editing area smaller.
 
-![](../assets/images/c9_terminal.png)
+![](assets/images/c9_terminal.png)
 
 {% endhint %}
 

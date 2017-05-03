@@ -1,7 +1,7 @@
 # Coding & Cocktails Session 5:
 ## Intro to Front-End Architecture {#intro-to-front-end-architecture}
 <hr>
-![codingcocktailsbadge-200.png](../assets/images/image08.png)
+![codingcocktailsbadge-200.png](assets/images/image08.png)
 ### Overview {#overview}
 
 Basics of how to structure your websites and applications for more efficient and sustainable management
@@ -31,4 +31,4 @@ In this session, we will become familiar with best practices for front-end archi
 While following along with the worksheet, type out the commands instead of doing a copy & paste (_unless instructed to copy & paste_) to avoid inadvertently using any incorrect characters.
 {% endhint %}
 
-[![](../assets/images/glossary.png)](http://bit.ly/CnCgloss)   [![](../assets/images/tools.png)](http://bit.ly/CnCTools)
+[![](assets/images/glossary.png)](http://bit.ly/CnCgloss)   [![](assets/images/tools.png)](http://bit.ly/CnCTools)
