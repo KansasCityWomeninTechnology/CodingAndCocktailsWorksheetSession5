@@ -126,7 +126,7 @@ If your CLI doesn't look similar to the above screenshot, grab a mentor. You may
 
   2. Click the green **Clone or download** button & then click the clipboard icon to copy the path.
 
-  3. Go back to Cloud9 & paste this path into the *Clone from Git or Mercurial URL* field. `git@github.com:KansasCityWomeninTechnology/front-end-architecture-ws.git`
+  3. Go back to Cloud9 & paste this path into the *Clone from Git or Mercurial URL* field.
 
 7. Leave your workspace as a "Public workspace".
 
@@ -134,9 +134,9 @@ If your CLI doesn't look similar to the above screenshot, grab a mentor. You may
 
 9. Click on the `Create Workspace` button.
 
-   Cloud9 will take a minute and create your workspace here
+   Cloud9 will take a minute and create your workspace here.
 
-10. In ther terminal section of your workspace, type `mkdir CodingAndCocktails` to create your folder/directory that you'll be working in tonight. You'll notice a new folder show up on the left side of your screen where the
+10. In the terminal section of your workspace, type `mkdir CodingAndCocktails` to create your folder/directory that you'll be working in tonight. You'll notice a new folder show up on the left side of your screen.
 
 {% hint style='tip' %}
 
