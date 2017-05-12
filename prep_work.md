@@ -16,13 +16,13 @@ In the second part of this session, we use a tool called Yeoman, which we instal
 
 1.  Open your CLI
 
-{% hint style='info' %}
+  {% hint style='info' %}
 
-The "terminal" and "command line" (aka CLI, command line interface) are the same thing.
-- On Windows, we use **Git Bash**
-- On Mac, we use **iTerm2**
+  The "terminal" and "command line" (aka CLI, command line interface) are the same thing.
+  - On Windows, we use **Git Bash**
+  - On Mac, we use **iTerm2**
 
-{% endhint %}
+  {% endhint %}
 
 2.  In your CLI, type: ``node --version``
 
@@ -50,9 +50,9 @@ The "terminal" and "command line" (aka CLI, command line interface) are the same
 
       <!--endsec-->
 
-    2. If your version number is **6 or greater**, proceed to step 3.
+    2. If your version number is **6 or greater**, proceed to Step 3.
 
-    2. If your version number is less than **6**, you'll need to update Node.
+    3. If your version number is less than **6**, you'll need to update Node.
 
       <!--sec data-title="Mac - Update Node" data-id="sectionUpdateMac" data-show=true data-collapse=true ces-->
 
@@ -77,7 +77,7 @@ The "terminal" and "command line" (aka CLI, command line interface) are the same
 3. Let's check your version of npm [which was installed with Node]. [_Version **3 or greater** required._]  
    In your CLI, type: ``npm --version``  
 
-   1. If your version is **3 or greater**, proceed to the Step 3.
+   1. If your version is **3 or greater**, proceed to Step 3.
 
    2. If your version is less than **3**, update to the latest by typing: ``npm install npm -g``
 
