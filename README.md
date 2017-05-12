@@ -4,7 +4,7 @@
 ![codingcocktailsbadge-200.png](assets/images/image08.png)
 ### Overview {#overview}
 
-Basics of how to structure your websites and applications for more efficient and sustainable management
+Basics of how to structure your websites and applications for more efficient workflows and sustainable maintenance.
 
 ### Project
 

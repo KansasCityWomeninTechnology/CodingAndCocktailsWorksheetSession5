@@ -12,7 +12,7 @@ If you're using a Chromebook, skip down to the Cloud9 instructions at the bottom
 
 ### 2. Install/Update Node.js & npm {#install-nodejs}
 
-In the second part of this session, we use a tool called Yeoman, which we install using npm [a package manager, which we'll cover in detail in the August session]. npm requires we install Node.js [which we'll cover in the September session], all you need to know about them for this session is how to install or update these tools.
+In the second part of this session, we use a tool called Yeoman, which we install using npm [a package manager, which we'll cover in detail in the August session]. npm requires we install Node.js [which we'll cover in the September session]. All you need to know about them for this session is how to install or update these tools.
 
 1.  Open your CLI
 
@@ -42,7 +42,7 @@ The "terminal" and "command line" (aka CLI, command line interface) are the same
 
       <!--sec data-title="Windows - Install Node" data-id="sectionInstallWindows" data-show=true data-collapse=true ces-->
 
-      1. [Download](https://nodejs.org/en/) the _Current_ installer for Windows [v.7.9.0].
+      1. [Download](https://nodejs.org/en/) the **Current** installer for Windows [v.7.10.0].
 
       2. Double-click on the downloaded file & follow the installation prompts.
 
@@ -66,7 +66,7 @@ The "terminal" and "command line" (aka CLI, command line interface) are the same
 
       <!--sec data-title="Windows - Update Node" data-id="sectionUpdateWindows" data-show=true data-collapse=true ces-->
 
-      1. [Download](https://nodejs.org/en/) the **Current** installer for Windows [v.7.9.0].
+      1. [Download](https://nodejs.org/en/) the **Current** installer for Windows [v.7.10.0].
 
       2. Double-click on the downloaded file & follow the installation prompts.
 
@@ -136,7 +136,7 @@ If your CLI doesn't look similar to the above screenshot, grab a mentor. You may
 
    Cloud9 will take a minute and create your workspace here.
 
-10. In the terminal section of your workspace, type `mkdir CodingAndCocktails` to create your folder/directory that you'll be working in tonight. You'll notice a new folder show up on the left side of your screen.
+10. In the terminal section of your workspace, type: `nvm install 6`
 
 {% hint style='tip' %}
 
@@ -146,7 +146,18 @@ To make the terminal section bigger, hover over the top line of the terminal sec
 
 {% endhint %}
 
-11. Create a folder within _CodingAndCocktails_ named _Architecture_.
+11. In the terminal, type: TODO: should we also set default??
+
+12. Copy the line below & paste it in the terminal:  
+    `echo "export NODE_PATH=$NODE_PATH:/home/ubuntu/.nvm/v0.10.35/lib/node_modules" >> ~/.bashrc && source ~/.bashrc`
+
+13. In the terminal, type: `npm install -g npm`
+
+14. In the terminal, type: `npm install -g gulp`
+
+15. In the terminal, type `mkdir CodingAndCocktails` to create your folder/directory that you'll be working in tonight. You'll notice a new folder show up on the left side of your screen.
+
+16. Create a folder within _CodingAndCocktails_ named _Architecture_.
 
 {% hint style='danger' %}
 
@@ -154,6 +165,6 @@ Any time the worksheet mentions to change directory to your home directory or ty
 
 {% endhint %}
 
-12. All the files that were cloned from the Github repo are in your workspace. That means you're ready to start with Part I, Step 2 & skip downloading the files in Step 1.
+17. All the files that were cloned from the Github repo are in your workspace. That means you're ready to start with Part I, Step 2 & skip downloading the files in Step 1.
 
 <!--endsec-->
