@@ -20,8 +20,8 @@ There are custom options available for the fountain-webapp generator. Let's make
 
   Yeoman will be installing a bunch of files and can take a few minutes. It can even seem like nothing is going on in your CLI at times [but trust me, it is]. This is a great time to get another drink & socialize with your neighbors!
 
-  If you happen to close or cancel the CLI window during this time, no fear! Make sure _mytodo_ is the current working directory [hint: `pwd`] in your CLI, and type: `npm install` and the process will kick-off and finish installing.
+  _If_ you happen to close the CLI window or cancel the install process during this time, don't panic! Make sure _mytodo_ is the current working directory [hint: `pwd`] in your CLI and type: `npm install`. The process will kick-off and finish installing.
 
-  Note: Cloud9 users, this process can easily take 15 minutes.
+  _Note: Cloud9 users, this process can easily take 15 minutes._
 
   {% endhint %}
