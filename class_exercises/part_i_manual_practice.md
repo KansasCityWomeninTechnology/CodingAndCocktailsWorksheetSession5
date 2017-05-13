@@ -56,7 +56,7 @@ First, let’s take a look at how to manually organize your project files.
 
   {% hint style='tip' %}
 
-  Watch out for the `data-video="DIR"`! Make sure to read all the `<!-- Banner -->` comment details for replacing `DIR` with the file path. When you set this correctly, there is _JavaScript_ that will load a video in the background of your site.
+  Watch out for `data-video="DIR"`. Make sure to read all the `<!-- Banner -->` comment details for replacing `DIR` with the file path. When you set this correctly, there is _JavaScript_ that will load a video in the background of your site.
 
   {% endhint %}
 
