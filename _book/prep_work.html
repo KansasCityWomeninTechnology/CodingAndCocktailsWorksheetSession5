@@ -167,9 +167,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.2" data-path="class_exercises/part_2_installyeoman.html">
+        <li class="chapter " data-level="1.4.2" data-path="class_exercises/part_2_install_yeoman.html">
             
-                <a href="class_exercises/part_2_installyeoman.html">
+                <a href="class_exercises/part_2_install_yeoman.html">
             
                     
                     Part 2:  Install Yeoman
@@ -180,9 +180,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="class_exercises/part_3_installa_generator.html">
+        <li class="chapter " data-level="1.4.3" data-path="class_exercises/part_3_install_a_generator.html">
             
-                <a href="class_exercises/part_3_installa_generator.html">
+                <a href="class_exercises/part_3_install_a_generator.html">
             
                     
                     Part 3:  Install a generator
@@ -230,6 +230,19 @@
             
                     
                     Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="survey.html">
+            
+                <a href="survey.html">
+            
+                    
+                    Survey
             
                 </a>
             
@@ -288,17 +301,16 @@
 <p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>If you&apos;re using a Chromebook, skip down to the Cloud9 instructions at the bottom.</p>
 </div></div></p>
 <h3 id="install-nodejs">2. Install/Update Node.js &amp; npm </h3>
-<p>In the second part of this session, we use a tool called Yeoman, which we install using npm [a package manager, which we&apos;ll cover in detail in the August session]. npm requires we install Node.js [which we&apos;ll cover in the September session], all you need to know about them for this session is how to install or update these tools.</p>
+<p>In the second part of this session, we use a tool called Yeoman, which we install using npm [a package manager, which we&apos;ll cover in detail in the August session]. npm requires we install Node.js [which we&apos;ll cover in the September session]. All you need to know about them for this session is how to install or update these tools.</p>
 <ol>
-<li>Open your CLI</li>
-</ol>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>The &quot;terminal&quot; and &quot;command line&quot; (aka CLI, command line interface) are the same thing.</p>
+<li><p>Open your CLI</p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>  The &quot;terminal&quot; and &quot;command line&quot; (aka CLI, command line interface) are the same thing.</p>
 <ul>
 <li>On Windows, we use <strong>Git Bash</strong></li>
 <li>On Mac, we use <strong>iTerm2</strong></li>
 </ul>
 </div></div></p>
-<ol>
+</li>
 <li><p>In your CLI, type: <code>node --version</code></p>
 <p>Do you get a version number [<em>Version <strong>6 or greater</strong> required.</em>]?</p>
 <ol>
@@ -315,7 +327,7 @@
 </div></div></div></sec>
 <sec data-title="Windows - Install Node" data-id="sectionInstallWindows" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="windows---install-node">Windows - Install Node<a class="pull-right section atTitle btn btn-default" target="sectionInstallWindows"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="sectionInstallWindows"><div class="panel-body">
 <ol>
-<li><p><a href="https://nodejs.org/en/" target="_blank">Download</a> the <em>Current</em> installer for Windows [v.7.9.0].</p>
+<li><p><a href="https://nodejs.org/en/" target="_blank">Download</a> the <strong>Current</strong> installer for Windows [v.7.10.0].</p>
 </li>
 <li><p>Double-click on the downloaded file &amp; follow the installation prompts.</p>
 </li>
@@ -324,7 +336,7 @@
 </ol>
 </div></div></div></sec>
 </li>
-<li><p>If your version number is <strong>6 or greater</strong>, proceed to step 3.</p>
+<li><p>If your version number is <strong>6 or greater</strong>, proceed to Step 3.</p>
 </li>
 <li><p>If your version number is less than <strong>6</strong>, you&apos;ll need to update Node.</p>
 <sec data-title="Mac - Update Node" data-id="sectionUpdateMac" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="mac---update-node">Mac - Update Node<a class="pull-right section atTitle btn btn-default" target="sectionUpdateMac"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="sectionUpdateMac"><div class="panel-body">
@@ -339,7 +351,7 @@
 </div></div></div></sec>
 <sec data-title="Windows - Update Node" data-id="sectionUpdateWindows" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="windows---update-node">Windows - Update Node<a class="pull-right section atTitle btn btn-default" target="sectionUpdateWindows"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="sectionUpdateWindows"><div class="panel-body">
 <ol>
-<li><p><a href="https://nodejs.org/en/" target="_blank">Download</a> the <strong>Current</strong> installer for Windows [v.7.9.0].</p>
+<li><p><a href="https://nodejs.org/en/" target="_blank">Download</a> the <strong>Current</strong> installer for Windows [v.7.10.0].</p>
 </li>
 <li><p>Double-click on the downloaded file &amp; follow the installation prompts.</p>
 </li>
@@ -352,7 +364,7 @@
 </li>
 <li><p>Let&apos;s check your version of npm [which was installed with Node]. [<em>Version <strong>3 or greater</strong> required.</em>]<br>In your CLI, type: <code>npm --version</code>  </p>
 <ol>
-<li><p>If your version is <strong>3 or greater</strong>, proceed to the Step 3.</p>
+<li><p>If your version is <strong>3 or greater</strong>, proceed to Step 3.</p>
 </li>
 <li><p>If your version is less than <strong>3</strong>, update to the latest by typing: <code>npm install npm -g</code></p>
 </li>
@@ -407,14 +419,25 @@
 <li><p>Click on the <code>Create Workspace</code> button.</p>
 <p>Cloud9 will take a minute and create your workspace here.</p>
 </li>
-<li><p>In the terminal section of your workspace, type <code>mkdir CodingAndCocktails</code> to create your folder/directory that you&apos;ll be working in tonight. You&apos;ll notice a new folder show up on the left side of your screen.</p>
+<li><p>In the terminal section of your workspace, type: <code>nvm install 6</code></p>
 </li>
 </ol>
 <p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>To make the terminal section bigger, hover over the top line of the terminal section with your mouse - it will change to an up-down arrow icon and then you can drag up which will also make the file editing area smaller.</p>
 <p><img src="assets/images/c9_terminal.png" alt=""></p>
 </div></div></p>
 <ol>
-<li>Create a folder within <em>CodingAndCocktails</em> named <em>Architecture</em>.</li>
+<li><p>In the terminal, type: TODO: should we also set default??</p>
+</li>
+<li><p>Copy the line below &amp; paste it in the terminal:<br><code>echo &quot;export NODE_PATH=$NODE_PATH:/home/ubuntu/.nvm/v0.10.35/lib/node_modules&quot; &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc</code></p>
+</li>
+<li><p>In the terminal, type: <code>npm install -g npm</code></p>
+</li>
+<li><p>In the terminal, type: <code>npm install -g gulp</code></p>
+</li>
+<li><p>In the terminal, type <code>mkdir CodingAndCocktails</code> to create your folder/directory that you&apos;ll be working in tonight. You&apos;ll notice a new folder show up on the left side of your screen.</p>
+</li>
+<li><p>Create a folder within <em>CodingAndCocktails</em> named <em>Architecture</em>.</p>
+</li>
 </ol>
 <p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>Any time the worksheet mentions to change directory to your home directory or type <code>cd ~</code> you will want to type <code>cd ~/workspace</code> instead.</p>
 </div></div></p>
@@ -465,7 +488,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Prep Work","level":"1.2","depth":1,"next":{"title":"Part I: Manual Practice","level":"1.3","depth":1,"path":"class_exercises/part_i_manual_practice.md","ref":"class_exercises/part_i_manual_practice.md","articles":[]},"previous":{"title":"Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx"],"pluginsConfig":{"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"prep_work.md","mtime":"2017-05-03T02:36:42.773Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-03T02:37:04.543Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Prep Work","level":"1.2","depth":1,"next":{"title":"Part I: Manual Practice","level":"1.3","depth":1,"path":"class_exercises/part_i_manual_practice.md","ref":"class_exercises/part_i_manual_practice.md","articles":[]},"previous":{"title":"Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx"],"pluginsConfig":{"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"prep_work.md","mtime":"2017-05-12T06:02:35.782Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-13T17:44:34.302Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
