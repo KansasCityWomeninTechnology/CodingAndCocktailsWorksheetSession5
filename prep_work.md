@@ -110,15 +110,15 @@ If your CLI doesn't look similar to the above screenshot, grab a mentor. You may
 
 1. Sign up for an account at [c9.io](https://c9.io)
 
-   Note: It will ask you for credit card information but you will not get charged for anything since we do not use features of Cloud9 that cost money. Ask a mentor for the Coding & Cocktails card for Cloud9.
+   Note: It will ask you for credit card information, but you will not get charged for anything since we do not use features of Cloud9 that cost money. Ask a mentor for the Coding & Cocktails card for Cloud9.
 
 2. Confirm your account from your email and log in to Cloud9.
 
-3. Select `Workspaces` from the left side panel if you are not already there.
+3. Select **Workspaces** from the left side panel if you are not already there.
 
-4. Choose `Create a new workspace`.
+4. Choose **Create a new workspace**.
 
-5. Pick a name for your workspace and enter it - it can be anything you'd like.  You do not need a description but feel free to add one if you'd like.
+5. Add a name for your workspace - it can be anything you like. You do not need a description, but feel free to add one if you like.
 
 6. Let's clone a repo from Github so the files we need for Part I will be in our workspace for us.
 
@@ -126,45 +126,42 @@ If your CLI doesn't look similar to the above screenshot, grab a mentor. You may
 
   2. Click the green **Clone or download** button & then click the clipboard icon to copy the path.
 
-  3. Go back to Cloud9 & paste this path into the *Clone from Git or Mercurial URL* field.
+  3. Go back to Cloud9 & paste this path into the **Clone from Git or Mercurial URL** field.
 
-7. Leave your workspace as a "Public workspace".
+7. Leave your workspace as **Public**.
 
-8. In the template section choose `Node.js`
+8. In the template section choose **Node.js**.
 
-9. Click on the `Create Workspace` button.
+9. Click on the **Create Workspace** button.
 
    Cloud9 will take a minute and create your workspace here.
 
-10. In the terminal section of your workspace, type: `nvm install 6`
+10. We need to update the version of Node.js that Cloud9 uses by default. We'll use node version manager to install version 7. In the terminal section of your workspace, type: `nvm install 7`
 
-{% hint style='tip' %}
+  {% hint style='tip' %}
 
-To make the terminal section bigger, hover over the top line of the terminal section with your mouse - it will change to an up-down arrow icon and then you can drag up which will also make the file editing area smaller.
+  To make the terminal section bigger, hover over the top line of the terminal section with your mouse - it will change to an up-down arrow icon and then you can drag up which will also make the file editing area smaller.
 
-![](assets/images/c9_terminal.png)
+  ![](assets/images/c9_terminal.png)
 
-{% endhint %}
+  {% endhint %}
 
-11. In the terminal, type: TODO: should we also set default??
+11. If we leave Cloud9 and come back to this workspace, the version of Node.js resets, so let's change the default. In the terminal, type: `nvm alias default 7`
 
-12. Copy the line below & paste it in the terminal:  
-    `echo "export NODE_PATH=$NODE_PATH:/home/ubuntu/.nvm/v0.10.35/lib/node_modules" >> ~/.bashrc && source ~/.bashrc`
+12. In the terminal, type: `npm install -g npm`
 
-13. In the terminal, type: `npm install -g npm`
+13. In the terminal, type: `npm install -g gulp`
 
-14. In the terminal, type: `npm install -g gulp`
+14. In the terminal, type `mkdir CodingAndCocktails` to create your folder/directory that you'll be working in tonight. You'll notice a new folder show up on the left side of your screen.
 
-15. In the terminal, type `mkdir CodingAndCocktails` to create your folder/directory that you'll be working in tonight. You'll notice a new folder show up on the left side of your screen.
+15. Create a folder within _CodingAndCocktails_ named _Architecture_.
 
-16. Create a folder within _CodingAndCocktails_ named _Architecture_.
+  {% hint style='danger' %}
 
-{% hint style='danger' %}
+  Any time the worksheet mentions to change directory to your home directory or type `cd ~` you will want to type `cd ~/workspace` instead.
 
-Any time the worksheet mentions to change directory to your home directory or type `cd ~` you will want to type `cd ~/workspace` instead.
+  {% endhint %}
 
-{% endhint %}
-
-17. All the files that were cloned from the Github repo are in your workspace. That means you're ready to start with Part I, Step 2 & skip downloading the files in Step 1.
+16. All the files that were cloned from the Github repo are in your workspace. That means you're ready to start with Part I, Step 2 & skip downloading the files in Step 1.
 
 <!--endsec-->

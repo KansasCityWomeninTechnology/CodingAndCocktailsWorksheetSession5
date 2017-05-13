@@ -392,15 +392,15 @@
 <sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="section0" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="chromebooks-only-cloud9-instructions">Chromebooks Only: Cloud9 Instructions<a class="pull-right section atTitle btn btn-default" target="section0"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section0"><div class="panel-body">
 <ol>
 <li><p>Sign up for an account at <a href="https://c9.io" target="_blank">c9.io</a></p>
-<p>Note: It will ask you for credit card information but you will not get charged for anything since we do not use features of Cloud9 that cost money. Ask a mentor for the Coding &amp; Cocktails card for Cloud9.</p>
+<p>Note: It will ask you for credit card information, but you will not get charged for anything since we do not use features of Cloud9 that cost money. Ask a mentor for the Coding &amp; Cocktails card for Cloud9.</p>
 </li>
 <li><p>Confirm your account from your email and log in to Cloud9.</p>
 </li>
-<li><p>Select <code>Workspaces</code> from the left side panel if you are not already there.</p>
+<li><p>Select <strong>Workspaces</strong> from the left side panel if you are not already there.</p>
 </li>
-<li><p>Choose <code>Create a new workspace</code>.</p>
+<li><p>Choose <strong>Create a new workspace</strong>.</p>
 </li>
-<li><p>Pick a name for your workspace and enter it - it can be anything you&apos;d like.  You do not need a description but feel free to add one if you&apos;d like.</p>
+<li><p>Add a name for your workspace - it can be anything you like. You do not need a description, but feel free to add one if you like.</p>
 </li>
 <li><p>Let&apos;s clone a repo from Github so the files we need for Part I will be in our workspace for us.</p>
 <ol>
@@ -408,27 +408,23 @@
 </li>
 <li><p>Click the green <strong>Clone or download</strong> button &amp; then click the clipboard icon to copy the path.</p>
 </li>
-<li><p>Go back to Cloud9 &amp; paste this path into the <em>Clone from Git or Mercurial URL</em> field.</p>
+<li><p>Go back to Cloud9 &amp; paste this path into the <strong>Clone from Git or Mercurial URL</strong> field.</p>
 </li>
 </ol>
 </li>
-<li><p>Leave your workspace as a &quot;Public workspace&quot;.</p>
+<li><p>Leave your workspace as <strong>Public</strong>.</p>
 </li>
-<li><p>In the template section choose <code>Node.js</code></p>
+<li><p>In the template section choose <strong>Node.js</strong>.</p>
 </li>
-<li><p>Click on the <code>Create Workspace</code> button.</p>
+<li><p>Click on the <strong>Create Workspace</strong> button.</p>
 <p>Cloud9 will take a minute and create your workspace here.</p>
 </li>
-<li><p>In the terminal section of your workspace, type: <code>nvm install 6</code></p>
-</li>
-</ol>
-<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>To make the terminal section bigger, hover over the top line of the terminal section with your mouse - it will change to an up-down arrow icon and then you can drag up which will also make the file editing area smaller.</p>
-<p><img src="assets/images/c9_terminal.png" alt=""></p>
+<li><p>We need to update the version of Node.js that Cloud9 uses by default. We&apos;ll use node version manager to install version 7. In the terminal section of your workspace, type: <code>nvm install 7</code></p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>  To make the terminal section bigger, hover over the top line of the terminal section with your mouse - it will change to an up-down arrow icon and then you can drag up which will also make the file editing area smaller.</p>
+<p>  <img src="assets/images/c9_terminal.png" alt=""></p>
 </div></div></p>
-<ol>
-<li><p>In the terminal, type: TODO: should we also set default??</p>
 </li>
-<li><p>Copy the line below &amp; paste it in the terminal:<br><code>echo &quot;export NODE_PATH=$NODE_PATH:/home/ubuntu/.nvm/v0.10.35/lib/node_modules&quot; &gt;&gt; ~/.bashrc &amp;&amp; source ~/.bashrc</code></p>
+<li><p>If we leave Cloud9 and come back to this workspace, the version of Node.js resets, so let&apos;s change the default. In the terminal, type: <code>nvm alias default 7</code></p>
 </li>
 <li><p>In the terminal, type: <code>npm install -g npm</code></p>
 </li>
@@ -437,12 +433,11 @@
 <li><p>In the terminal, type <code>mkdir CodingAndCocktails</code> to create your folder/directory that you&apos;ll be working in tonight. You&apos;ll notice a new folder show up on the left side of your screen.</p>
 </li>
 <li><p>Create a folder within <em>CodingAndCocktails</em> named <em>Architecture</em>.</p>
-</li>
-</ol>
-<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>Any time the worksheet mentions to change directory to your home directory or type <code>cd ~</code> you will want to type <code>cd ~/workspace</code> instead.</p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>  Any time the worksheet mentions to change directory to your home directory or type <code>cd ~</code> you will want to type <code>cd ~/workspace</code> instead.</p>
 </div></div></p>
-<ol>
-<li>All the files that were cloned from the Github repo are in your workspace. That means you&apos;re ready to start with Part I, Step 2 &amp; skip downloading the files in Step 1.</li>
+</li>
+<li><p>All the files that were cloned from the Github repo are in your workspace. That means you&apos;re ready to start with Part I, Step 2 &amp; skip downloading the files in Step 1.</p>
+</li>
 </ol>
 </div></div></div></sec>
 
@@ -488,7 +483,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Prep Work","level":"1.2","depth":1,"next":{"title":"Part I: Manual Practice","level":"1.3","depth":1,"path":"class_exercises/part_i_manual_practice.md","ref":"class_exercises/part_i_manual_practice.md","articles":[]},"previous":{"title":"Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["custom-favicon","hints","sectionx"],"pluginsConfig":{"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"prep_work.md","mtime":"2017-05-12T06:02:35.782Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-13T17:44:34.302Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Prep Work","level":"1.2","depth":1,"next":{"title":"Part I: Manual Practice","level":"1.3","depth":1,"path":"class_exercises/part_i_manual_practice.md","ref":"class_exercises/part_i_manual_practice.md","articles":[]},"previous":{"title":"Overview","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["copy-code-button","custom-favicon","hints","sectionx"],"pluginsConfig":{"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"assets/images/favicon.ico","custom-favicon":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"prep_work.md","mtime":"2017-05-13T19:32:09.513Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-13T20:07:04.641Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -496,6 +491,10 @@
         
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
     
         
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
