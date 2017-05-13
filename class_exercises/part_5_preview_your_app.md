@@ -8,7 +8,7 @@ Now, let’s run a Node.js web server to preview our app.
 
   When you run the `npm run serve` command, you may receive a prompt that looks like this:
 
-  ![](../assets/images/node-prompt.png)
+  ![](../../assets/images/node-prompt.png)
 
   Select **Allow**.
 
