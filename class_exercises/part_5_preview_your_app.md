@@ -57,7 +57,7 @@ Cloud9 only listens for a few ports: `8080`, `8081` & `8082`. By default, the fo
 
   ```
 
-3. Now, you're ready to type `npm run serve` in the terminal. In the output, you'll see something like this:  
+3. After saving the file, you're ready to type `npm run serve` in the terminal. In the output, you'll see something like this:  
 
   ![](../assets/images/c9-npm-run-serve-output.png)
 
