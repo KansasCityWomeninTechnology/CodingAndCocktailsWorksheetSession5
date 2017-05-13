@@ -54,7 +54,7 @@ The _CREDITS_, _LICENSE_ and _index.html_ files will live here for the website w
 
 3.  Go through the rest of the _index.html_ file and make the same necessary changes for the other lines beginning with  `<-- REPLACE DIR PATH`. Once done, save _index.html_ and reload it in your browser.
 
-{% hint style='info' %}
+{% hint style='tip' %}
 
 Watch out for the `data-video="DIR"`! Make sure to read all the `<!-- Banner -->` comment details for replacing `DIR` with the file path. When you set this correctly, there is _JavaScript_ that will load a video in the background of your site.
 
