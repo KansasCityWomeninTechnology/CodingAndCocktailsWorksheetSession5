@@ -1,34 +1,23 @@
-# Coding & Cocktails Session 5:
-## Intro to Front-End Architecture {#intro-to-front-end-architecture}
-<hr>
-![codingcocktailsbadge-200.png](assets/images/image08.png)
-### Overview {#overview}
+# Coding & Cocktails Session 5: Introduction to Front-End Architecture
 
-Basics of how to structure your websites and applications for more efficient workflows and sustainable maintenance.
+The `docs` directory contains worksheets for Coding & Cocktails session 5 published on Gitbooks: [Coding & Cocktails - Session 5: Intro to Front-End Architecture](https://www.gitbook.com/book/codingandcocktailskc/session-5-intro-to-front-end-architecture/details).
 
-### Project
+## Getting Going
+Install [Gitbook](https://www.npmjs.com/package/gitbook) CLI from npm.
 
-Front-end architecture is the organization of code and project files. Though there can be customizations specific to a team, the goal of good front-end architecture is to provide an efficient workflow that is maintainable throughout the project’s life.
+```bash
+gitbook install
+gitbook serve
+```
+To build without serving, `gitbook build`.
 
-In this session, we will become familiar with best practices for front-end architecture by organizing a pack of assets in a way that will make it easy to maintain the website in a sustainable way.
+## Associated Repos
+[front-end-architecture-ws](https://github.com/KansasCityWomeninTechnology/front-end-architecture-ws) 
 
-### Helpful Keyboard Shortcuts
-|Command|Mac Key Combination|Windows Key Combination|
-|--|--|--|
-|Cut|`cmd` + `x`|`ctrl` + `x`|
-|Copy|`cmd` + `c`|`ctrl` + `c`|
-|Paste|`cmd` + `v`|`ctrl` + `v`|
-|Undo|`cmd` + `z`|`ctrl` + `z`|
-|Redo|`cmd` + `y`|`ctrl` + `y`|
-|Save|`cmd` + `s`|`ctrl` + `s`|
-|Select all|`cmd` + `a`|`ctrl` + `a`|
-|Find|`cmd` + `f`|`ctrl` + `f`|
-|Switch between open apps/programs |`cmd` + `tab`|`alt` + `tab`|
-|Switch between programs on the taskbar| N/A | `windows key` + `tab`|
-|Switch between Chrome windows. |`shift` + `cmd` + `~`| N/A |
+## TODO
+- [ ] 2018 updates!
 
-{% hint style='danger' %}
-While following along with the worksheet, type out the commands instead of doing a copy & paste (_unless instructed to copy & paste_) to avoid inadvertently using any incorrect characters.
-{% endhint %}
+## License
+![](https://lh6.googleusercontent.com/osprAumZLusoNUcKnPtOWMijWYLZ8ydrUS0gMTvMCoyhSVBd69InqiXqQjc7fH8iQiVbZLXvyyvPZXwKjeyHuPnrd2zJT1mYLa1WoziryvxOo0q7nvMnpfeeVPBgfqW0bnp1--wa)![](https://lh5.googleusercontent.com/AZZipN4uXuU6FkxA0zLbrq9EwMhky22oNI8UtjQ2-Kgzy64Jmbij_IKUwXDcqGjnHWSMg9h3ii2Dx_SLI871nVn56NyF1VnmDbkEL2m9sJ_9YYGpNC8kdiYepai1jAZLEWWt8iTW)![](https://lh6.googleusercontent.com/GSxH81qYzBJkBR39GbviwKcwxem0RbN8XTx_6BOHgziQ6OomnG-au25ZSdiNQ4rX2p2HanRGa8_SzTPhJ3SKW-Vrs6fJ8N9s0FLq1EVSwUZXrLZuUVONachwFWwqTr6PMpn1csnu)
 
-[![](assets/images/glossary.png)](http://bit.ly/CnCgloss)   [![](assets/images/tools.png)](http://bit.ly/CnCTools)
+This work is licensed by [http://kcwomenintech.org/](http://kcwomenintech.org/) under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).

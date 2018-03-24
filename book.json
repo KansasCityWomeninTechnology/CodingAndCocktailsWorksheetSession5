@@ -1,11 +1,12 @@
 {
-"plugins": [
-"copy-code-button",
-"custom-favicon",
-"hints",
-"sectionx"
-],
-"pluginsConfig": {
-"favicon": "assets/images/favicon.ico"
-}
+    "root": "./docs",
+    "plugins": [
+        "copy-code-button",
+        "custom-favicon",
+        "hints",
+        "sectionx"
+    ],
+    "pluginsConfig": {
+        "favicon": "assets/images/favicon.ico"
+    }
 }
