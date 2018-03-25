@@ -3,6 +3,10 @@
 There are over [3500+ generators](http://yeoman.io/generators/) available for Yeoman. A generator is a plugin that can be used to scaffold your app. A plugin is software that complements and integrates into an existing application.
 
 1.  Let’s install the [Fountain Webapp](http://fountainjs.io/) generator using CLI, by typing: ``npm install -g generator-fountain-webapp``
+```bash
+sudo npm install --no-bin-links generator-fountain-webapp
+``` 
+for Chromebooks (in a different folder)
 
 2.  Type ``yo`` to see your generators.  
 

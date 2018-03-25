@@ -10,6 +10,14 @@ If you're using a Chromebook, skip down to the Cloud9 instructions at the bottom
 
 {% endhint %}
 
+
+Chromebooks (CodeAnywhere)
+1. [Install nvm and update node](https://github.com/creationix/nvm/blob/master/README.md#installation) 
+   ```bash
+   curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+   nvm install node
+   ```
+
 ### 2. Install/Update Node.js & npm {#install-nodejs}
 
 In the second part of this session, we use a tool called Yeoman, which we install using npm [a package manager, which we'll cover in detail in the August session]. npm requires we install Node.js [which we'll cover in the September session]. All you need to know about them for this session is how to install or update these tools.

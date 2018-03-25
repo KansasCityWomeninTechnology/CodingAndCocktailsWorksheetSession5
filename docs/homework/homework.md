@@ -2,7 +2,12 @@
 
 The more you practice, the better you’ll get. Reinforce what you’ve learned tonight with the following tutorial.
 
-[![](assets/images/slack.png)](http://kcwit.slack.com)
+{% hint style='tip' %}
+##### Hey Slacker!
+
+Remember, we're here to help.
+Join the KCWiT #codingandcocktails Slack Channel: [kcwit.slack.com](http://kcwit.slack.com)
+{% endhint %}
 
 ### Part 1: Another Yeoman tutorial {#part-1-another-yeoman-tutorial}
 

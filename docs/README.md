@@ -1,34 +1,26 @@
-# Coding & Cocktails Session 5:
-## Intro to Front-End Architecture {#intro-to-front-end-architecture}
+<div>
+    <img src="assets/logo.png" style="float: left; margin: 0px 15px 15px 0px; height:125px;">
+    <h2 style="display:inline-block;margin-top:1em;">Coding &amp; Cocktails Session 5:</h2>
+    <h3 style="margin-top:0;margin-bottom:2em;">Intro to Front-End Architecture</h3>
+</div>
 <hr>
-![codingcocktailsbadge-200.png](assets/images/image08.png)
-### Overview {#overview}
 
-Basics of how to structure your websites and applications for more efficient workflows and sustainable maintenance.
-
-### Project
-
+### Overview
 Front-end architecture is the organization of code and project files. Though there can be customizations specific to a team, the goal of good front-end architecture is to provide an efficient workflow that is maintainable throughout the project’s life.
 
-In this session, we will become familiar with best practices for front-end architecture by organizing a pack of assets in a way that will make it easy to maintain the website in a sustainable way.
+In this session, we will become familiar with best practices for front-end architecture by organizing assets in a way that will make it easy to maintain the website.
 
-### Helpful Keyboard Shortcuts
-|Command|Mac Key Combination|Windows Key Combination|
-|--|--|--|
-|Cut|`cmd` + `x`|`ctrl` + `x`|
-|Copy|`cmd` + `c`|`ctrl` + `c`|
-|Paste|`cmd` + `v`|`ctrl` + `v`|
-|Undo|`cmd` + `z`|`ctrl` + `z`|
-|Redo|`cmd` + `y`|`ctrl` + `y`|
-|Save|`cmd` + `s`|`ctrl` + `s`|
-|Select all|`cmd` + `a`|`ctrl` + `a`|
-|Find|`cmd` + `f`|`ctrl` + `f`|
-|Switch between open apps/programs |`cmd` + `tab`|`alt` + `tab`|
-|Switch between programs on the taskbar| N/A | `windows key` + `tab`|
-|Switch between Chrome windows. |`shift` + `cmd` + `~`| N/A |
-
-{% hint style='danger' %}
-While following along with the worksheet, type out the commands instead of doing a copy & paste (_unless instructed to copy & paste_) to avoid inadvertently using any incorrect characters.
+{% hint style='tip' %}
+First time at Coding & Cocktails?   [Click here to Install the Tools!](http://bit.ly/CnCTheTools)
 {% endhint %}
 
-[![](assets/images/glossary.png)](http://bit.ly/CnCgloss)   [![](assets/images/tools.png)](http://bit.ly/CnCTools)
+{% hint style='tip' %}
+Don't know a term?   [Click here to check out our glossary!](http://bit.ly/CnCgloss)
+{% endhint %}
+
+{% hint style='tip' %}
+Want to be more efficient at working with your computer?
+
+[Click here to see our list of Helpful Keyboard Shortcuts!](/references/README.md)
+{% endhint %}
+

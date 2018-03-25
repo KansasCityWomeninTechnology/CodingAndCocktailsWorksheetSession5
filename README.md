@@ -15,6 +15,7 @@ To build without serving, `gitbook build`.
 [front-end-architecture-ws](https://github.com/KansasCityWomeninTechnology/front-end-architecture-ws) 
 
 ## TODO
+- [ ] Update front-end-architecture-ws repo to point to correct links in EventBrite
 - [ ] 2018 updates!
 
 ## License
