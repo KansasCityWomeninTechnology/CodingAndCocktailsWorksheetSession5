@@ -5,8 +5,6 @@
 ### Worksheet
 * [Manual Practice](ws1-manual/README.md)
 * [Scaffolding with Yeoman](ws2-yeoman/README.md)
-  * [Install Yeoman](ws2-yeoman/1install/README.md)
-  * [Generate and Preview App](ws2-yeoman/2generate/README.md)
 * [Quiz](survey.md)
 ### Bonus
 * [Scaffold an Angular App](homework/angular-cli.md)

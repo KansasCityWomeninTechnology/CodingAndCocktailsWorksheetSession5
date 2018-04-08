@@ -8,6 +8,7 @@
   },
   "scripts": {
     "docs:install": "gitbook install",
+    "docs:build": "gitbook build",
     "start": "gitbook serve"
   },
   "repository": {
@@ -15,7 +16,7 @@
     "url": "git+https://github.com/KansasCityWomeninTechnology/CodingAndCocktailsWorksheetSession5.git"
   },
   "author": "Kansas City Women In Technology - Coding And Cocktails",
-  "license": "CC BY-SA 4.0",
+  "license": "CC-BY-SA-4.0",
   "bugs": {
     "url": "https://github.com/KansasCityWomeninTechnology/CodingAndCocktailsWorksheetSession5/issues"
   },

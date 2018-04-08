@@ -1,5 +1,5 @@
 <div>
-    <img src="assets/logo.png" style="float: left; margin: 0px 15px 15px 0px; height:125px;">
+    <img src="assets/images/logo.png" style="float: left; margin: 0px 15px 15px 0px; height:125px;">
     <h2 style="display:inline-block;margin-top:1em;">Coding &amp; Cocktails Session 5:</h2>
     <h3 style="margin-top:0;margin-bottom:2em;">Intro to Front-End Architecture</h3>
 </div>

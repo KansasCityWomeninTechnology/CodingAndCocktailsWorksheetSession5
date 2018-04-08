@@ -3,13 +3,13 @@
 The `docs` directory contains worksheets for Coding & Cocktails session 5 published on Gitbooks: [Coding & Cocktails - Session 5: Intro to Front-End Architecture](https://www.gitbook.com/book/codingandcocktailskc/session-5-intro-to-front-end-architecture/details).
 
 ## Getting Going
-Install [Gitbook](https://www.npmjs.com/package/gitbook) CLI from npm.
 
 ```bash
-gitbook install
-gitbook serve
+npm install
+npm run docs:install
 ```
-To build without serving, `gitbook build`.
+To serve Gitbook, `npm start`.
+To build without serving, `npm run docs:build`.
 
 ## Associated Repos
 [front-end-architecture-ws](https://github.com/KansasCityWomeninTechnology/front-end-architecture-ws) 

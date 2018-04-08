@@ -23,7 +23,7 @@ Let's get organizing!
 {% include "./2organize.md" %}
 
 ## Update references in the HTML file {#references} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Let's get organizing!
+Lastly, we need to update references to the assets in _index.html_ so that our website displays properly.
 {% include "./3references.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
