@@ -9,28 +9,24 @@ This section will help guide you through the following steps:
 {% include "./instruction-steps.html" %}
 
 ## Install Yeoman {#yeoman} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-We can take advantage of the power of our CLI to install Yeoman.
-
-Yeoman is a tool for setting up your project structure which can be used throughout a variety of projects. You can run these commands from anywhere, since we’ll be installing Yeoman globally.
+Yeoman is a tool for setting up your project structure which can be used throughout a variety of projects. You can run these commands from anywhere, since we’ll be installing Yeoman globally via the CLI.
 {% include "./1yeoman.md" %}
 
 ## Install a generator {#generator} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Now that we have Yeoman installed, we can install generators we want.
-
-There are over [3500+ generators](http://yeoman.io/generators/) available for Yeoman. A generator is a plugin that can be used to scaffold your app. A plugin is software that complements and integrates into an existing application.
+There are over [3500+ generators](http://yeoman.io/generators/) available for Yeoman. A generator is a plugin used to scaffold your app. A plugin is software that complements and integrates into an existing application.
 {% include "./2generator.md" %}
 
 ## Generate an application {#generate} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Let's generate an application!
+There are custom options available for the fountain-webapp generator. Let's make our configuration selections to generate an application.
 {% include "./3generate.md" %}
 
 ## Serve and view your application {#references} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Generators can scaffold complete applications. Let's serve and view our application. 
+Generators can scaffold complete applications. Let’s run a Node.js web server to serve and view our application.
 {% include "./4serve.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
 
 ## References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-[Atlassian Git Tutorial-- What is version control](https://www.atlassian.com/git/tutorials/what-is-version-control)
+[Learning Yeoman](http://yeoman.io/learning/index.html)
 

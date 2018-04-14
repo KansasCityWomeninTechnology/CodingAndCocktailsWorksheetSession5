@@ -30,4 +30,4 @@ Lastly, we need to update references to the assets in _index.html_ so that our w
 ## 
 
 ## References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-[Atlassian Git Tutorial-- What is version control](https://www.atlassian.com/git/tutorials/what-is-version-control)
+[Good Front End Architecture](https://www.sitepoint.com/good-front-end-architecture/)

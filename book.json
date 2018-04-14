@@ -4,7 +4,8 @@
         "custom-favicon",
         "hints",
         "sectionx",
-        "anchors"
+        "anchors",
+        "codetabs"
     ],
     "pluginsConfig": {
         "favicon": "assets/images/favicon.ico",

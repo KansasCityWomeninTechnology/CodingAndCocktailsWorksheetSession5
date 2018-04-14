@@ -6,6 +6,7 @@
 * [Manual Practice](ws1-manual/README.md)
 * [Scaffolding with Yeoman](ws2-yeoman/README.md)
 * [Quiz](survey.md)
+
 ### Bonus
 * [Scaffold an Angular App](homework/angular-cli.md)
 * [Homework](homework/homework.md)
