@@ -1,10 +1,5 @@
 1. Install the [Fountain Webapp](http://fountainjs.io/) generator by typing `npm install -g generator-fountain-webapp` <i class="fa fa-share fa-rotate-180"></i>.
 
-```bash
-sudo npm install --no-bin-links generator-fountain-webapp
-``` 
-for Chromebooks (in a different folder)
-
 1. Type `yo` <i class="fa fa-share fa-rotate-180"></i> to see your generators.
 
    ![](images/yeoman-options.png)
@@ -27,7 +22,7 @@ cd ~/CodingAndCocktails/Architecture
    {%- language name="Windows", type="bash" -%} 
 cd %USERPROFILE%/CodingAndCocktails/Architecture
    {%- language name="Chromebooks", type="bash" -%} 
-cd ~/CodingAndCocktails/Architecture
+cd ~/workspace/CodingAndCocktails/Architecture
    {%- endcodetabs %}
 
 1. Type `mkdir mytodo` <i class="fa fa-share fa-rotate-180"></i> to make a new folder called "mytodo". 

@@ -9,7 +9,7 @@ This section will help guide you through the following steps:
 {% include "./instruction-steps.html" %}
 
 ## Install Yeoman {#yeoman} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Yeoman is a tool for setting up your project structure which can be used throughout a variety of projects. You can run these commands from anywhere, since we’ll be installing Yeoman globally via the CLI.
+Yeoman is a tool for setting up your project structure used throughout a variety of projects. You can run these commands from anywhere since we’ll install Yeoman globally via the terminal.
 {% include "./1yeoman.md" %}
 
 ## Install a generator {#generator} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>

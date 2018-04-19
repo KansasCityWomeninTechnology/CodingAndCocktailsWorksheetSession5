@@ -21,7 +21,7 @@
 
 **Grep \(aka search\):** `grep searchterm filename`
 
-**Get out of “stuck” command:**  CTRL + C
+**Get out of “stuck” command:**  `CTRL` + `c`
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 

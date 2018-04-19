@@ -11,11 +11,18 @@ Join the KCWiT #codingandcocktails Slack Channel: [kcwit.slack.com](http://kcwit
 
 1. In the terminal, install Angular CLI by typing `npm install -g @angular/cli` <i class="fa fa-share fa-rotate-180"></i>.
 
-1. Navigate to "CodingAndCocktails/Architecture" folder.
+1. Navigate to "CodingAndCocktails/Architecture" folder by following the instruction for your OS and press `Enter`.
+   {% codetabs name="Mac", type="bash" -%} 
+cd ~/CodingAndCocktails/Architecture
+   {%- language name="Windows", type="bash" -%} 
+cd %USERPROFILE%/CodingAndCocktails/Architecture
+   {%- language name="Chromebooks", type="bash" -%} 
+cd ~/CodingAndCocktails/Architecture
+   {%- endcodetabs %}
 
 1. Type `ng new angular-app` <i class="fa fa-share fa-rotate-180"></i>.
    {% hint style='tip' %}
-Angular CLI creates a folder for you.
+Angular CLI creates a folder for you so there's no need to create a folder for your application.
    {% endhint %}
 
 1. Type `cd angular-app` <i class="fa fa-share fa-rotate-180"></i> to navigate into the newly created "angular-app" directory.
