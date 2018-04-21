@@ -18,6 +18,14 @@ You will need the following for the worksheet:
 1. [Chrome browser](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-browser/)
 
 1. [Terminal for your OS](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-command-line/)
+   {% hint style='danger' %}
+##### Attention Windows users
+
+Don't forget to open Cmder using **Run as administrator** to avoid file access problems tonight. Follow the instructions in the [Using Cmder section of The Tools](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-command-line/cmder.html#using-cmder).
+
+
+Use Cmder for tonight's session. You will have problems if you use Git Bash. Feel free to grab a mentor if you need help installing Cmder.
+   {% endhint %}
 
 1. [Atom IDE](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/)
 
@@ -33,11 +41,11 @@ The <i class="fa fa-share fa-rotate-180"></i> icon tells you when to press `Ente
 
 1.  Open your terminal. Type `node --version` <i class="fa fa-share fa-rotate-180"></i>.
 
-1. If your version of Node is not >= 8, follow the instructions in [The Tools](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-node/) to upgrade Node for your OS.
+1. If your version of Node is not >= 9.11, follow the instructions in [The Tools](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-node/) to upgrade Node for your OS.
 
 1. In your terminal type `npm --version` <i class="fa fa-share fa-rotate-180"></i>.
 
-1. If your version of npm is not >= 5, follow the instructions in [The Tools](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-node/) to upgrade Node for your OS.
+1. If your version of npm is not >= 5.6, follow the instructions in [The Tools](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-node/) to upgrade Node for your OS.
 
 
 ## Create a folder for tonight's work

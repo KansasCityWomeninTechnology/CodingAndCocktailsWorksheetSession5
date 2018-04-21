@@ -11,15 +11,15 @@ Join the KCWiT #codingandcocktails Slack Channel: [kcwit.slack.com](http://kcwit
 
 ### Another Yeoman tutorial
 
-Get some more practice! Follow along with the tutorial on [http://bit.ly/2ciNXfC](http://bit.ly/2ciNXfC). You’ll be setting up a directory structure using Yeoman with another generator. The tutorial also introduces you to Grunt, a task runner, and Bower, a package manager.
+Get some more practice! Follow along with the tutorial on [http://bit.ly/2ciNXfC](http://bit.ly/2ciNXfC). You’ll set up a directory structure using Yeoman with another generator. The tutorial also introduces you to Grunt (a task runner) and Bower (a package manager).
 
 ### Git
 
-Yeoman initializes a git repository for you in your source folder. Check git by running `git status`. You can also stage and commit your files to your own Github repository if you’d like more practice. Push your project at this point up to Github & come tell us about it in <a href="slack://channel?team=T06BZHS4U&id=C0BGBKGG6">Slack</a>!
+Yeoman initializes a Git repository for you in your source folder. Check Git by running `git status` <i class="fa fa-share fa-rotate-180"></i>. You can also stage and commit your files to your own Github repository if you’d like more practice. Push your project at this point up to Github & tell us about it in <a href="slack://channel?team=T06BZHS4U&id=C0BGBKGG6">Slack</a>!
 
 ### Extra Credit: Creating your own generators 
 
-You can also create your own Yeoman generators for any custom projects you’re working on. Just follow along with the tutorial at [http://yeoman.io/authoring/](http://yeoman.io/authoring/).
+You can also create your own Yeoman generators for any custom projects you’re working on. Follow along with the tutorial at [http://yeoman.io/authoring/](http://yeoman.io/authoring/).
 
 ### Extra Credit: More Yeoman
 

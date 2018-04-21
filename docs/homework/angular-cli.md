@@ -17,7 +17,7 @@ cd ~/CodingAndCocktails/Architecture
    {%- language name="Windows", type="bash" -%} 
 cd %USERPROFILE%/CodingAndCocktails/Architecture
    {%- language name="Chromebooks", type="bash" -%} 
-cd ~/CodingAndCocktails/Architecture
+cd ~/workspace/CodingAndCocktails/Architecture
    {%- endcodetabs %}
 
 1. Type `ng new angular-app` <i class="fa fa-share fa-rotate-180"></i>.
@@ -26,6 +26,8 @@ Angular CLI creates a folder for you so there's no need to create a folder for y
    {% endhint %}
 
 1. Type `cd angular-app` <i class="fa fa-share fa-rotate-180"></i> to navigate into the newly created "angular-app" directory.
+
+1. Take a look at the file organization using Atom or the file explorer.
 
 1. Type `ng serve` <i class="fa fa-share fa-rotate-180"></i> to serve your application.
 

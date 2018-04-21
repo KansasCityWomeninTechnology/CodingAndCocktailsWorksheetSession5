@@ -5,6 +5,10 @@ Organizing like files makes creating and maintaining web applications easier. In
 ## 
 {% hint style='danger' %}
 Before starting the worksheet, please take a moment to review [Setup instructions](/setup) to ensure you have all the tools and workspace setup you need for tonight's work.
+
+##### Attention Windows users
+
+Use Cmder for tonight's session. You will have problems if you use Git Bash. Feel free to grab a mentor if you need help installing Cmder.
 {% endhint %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
