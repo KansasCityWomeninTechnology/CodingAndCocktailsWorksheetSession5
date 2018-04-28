@@ -19,11 +19,11 @@ nvm install node
 Feel free to grab a mentor to help guide you through this step.
    {% endhint %}
 
-1. In the terminal, type `node --version` <i class="fa fa-share fa-rotate-180"></i>. You should be version >=9.
+1. In the terminal, type `node --version` <i class="fa fa-share fa-rotate-180"></i>. You should be version 10.0.0.
 
-1. Type `npm --version` <i class="fa fa-share fa-rotate-180"></i>. If a message comes up saying an update is available, follow the instructions to update your npm version.
+1. Type `npm --version` <i class="fa fa-share fa-rotate-180"></i>. You should be version 5.6.0.
 
-1. Type `npm install -g bower` <i class="fa fa-share fa-rotate-180"></i> to updated a needed dependency for tonight's work.
+1. Type `npm install -g bower` <i class="fa fa-share fa-rotate-180"></i> to update a needed dependency for tonight's work.
 
 1. Create a "CodingAndCocktails" folder by typing `mkdir CodingAndCocktails` <i class="fa fa-share fa-rotate-180"></i>. 
    {% hint style='info' %}
@@ -49,5 +49,5 @@ The <i class="fa fa-share fa-rotate-180"></i> icon tells you when to press `Ente
    ![](images/codeanywhere-refresh.png)
 
    {% hint style='info' %}
-Your container may automatically turn off if you leave it idle for too long. Right click on "KCWIT" container and select **Restart**. You will have to navigate to the correct directory.
+Your container may automatically turn off if you leave it idle for too long. Right click on "KCWIT" container and select **Restart**. You will have to navigate to the correct directory and depending on how long the container was idle, you may have to reinstall Node and npm.
    {% endhint %}
