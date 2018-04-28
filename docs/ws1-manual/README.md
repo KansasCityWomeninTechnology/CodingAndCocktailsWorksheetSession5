@@ -1,5 +1,5 @@
 # Organizing Assets {#top}
-Organizing like files makes creating and maintaining web applications easier. In this section we will manually organize files for a website.
+Organizing files with similar purposes makes creating and maintaining web applications easier. In this section we will manually organize files for a website.
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
@@ -41,7 +41,7 @@ Lastly, we need to update references to the assets in _index.html_ so that our w
 <!--sec data-title="Chromebook instructions" data-id="section1" data-show=true data-collapse=true ces-->
 - You already have the files you need so you can skip the first step to download files. 
 
-- To preview your file in codeanywhere, right click on the _index.html_ in the file explorer and select **Preview**.
+- To preview your file in Codeanywhere, right click on the _index.html_ in the file explorer and select **Preview**.
 
 - Instead of Atom, you'll be using the built-in text editor in your workspace. Double-click on the _index.html_ file to open it in the editor.
 <!--endsec-->

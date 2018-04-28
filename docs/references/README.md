@@ -1,25 +1,25 @@
 ### Command Line Reference 
-**Change Directory:** `cd directoryname`
+**Change Directory:** `cd [directoryname]`
 
 **Print Working Directory:** `pwd`
 
 **List Directory Contents:** `ls`
 
-**Make Directory:** `mkdir directoryname`
+**Make Directory:** `mkdir [directoryname]`
 
-**Create Empty File:** `touch filename`
+**Create Empty File:** `touch [filename]`
 
-**Write Content to File:** `echo "content" > filename`
+**Write Content to File:** `echo "content" > [filename]`
 
-**Append Content to a File:** `echo "content" >> filename`
+**Append Content to a File:** `echo "content" >> [filename]`
 
-**Copy File:** `cp sourcefile destfile`
+**Copy File:** `cp [sourcefile] [destfile]`
 
-**Move/Rename File:** `mv sourcefile destfile`
+**Move/Rename File:** `mv [sourcefile] [destfile]`
 
-**Remove File:** `rm filename`
+**Remove File:** `rm [filename]`
 
-**Grep \(aka search\):** `grep searchterm filename`
+**Grep \(aka search\):** `grep [searchterm] [filename]`
 
 **Get out of “stuck” command:**  `CTRL` + `c`
 
