@@ -11,8 +11,6 @@ You can run these commands for extra help, if you run into trouble...
   - `yo --help` _for help with Yeoman_
   - `yo fountain-webapp --help` _for information on the fountain-webapp generator_
   - `yo doctor` _to detect potential issues_
-
-You may notice messages asking about reporting usage statistics. You can choose **Yes** or **No** depending on your preferences - both options are safe.
    {% endhint %}
 
 1. Type the command for your OS and press `Enter` to navigate to your "CodingAndCocktails/Architecture" folder.

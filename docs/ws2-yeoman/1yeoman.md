@@ -3,5 +3,5 @@
 1. Confirm the installation by typing `yo --version` <i class="fa fa-share fa-rotate-180"></i>.
 
    {% hint style='info' %}
-Yeoman may display a message asking to report usage statistics. Choose whichever option you wish.
+Yeoman may display a message asking to report usage statistics. You can choose **Yes** or **No** depending on your preferences - both options are safe.
    {% endhint %}
