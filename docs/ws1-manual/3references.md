@@ -8,7 +8,7 @@ Chromebook users- You will use the built in file editor
 1. In Atom, search for all the lines starting with `< -- REPLACE DIR PATH`  to remove that block of code. Also remove the closing comment mark, `-->` at the end of the same lines.
 
   {% hint style="info" %}
-The `<--   -->` wraps a comment in HTML. Feel free to grab a mentor and ask for a quick synopsis of HTML if you didn't attend the HTML session or if you need a refresher.
+The `<!--   -->` wraps a comment in HTML. Feel free to grab a mentor and ask for a quick synopsis of HTML if you didn't attend the HTML session or if you need a refresher.
   {% endhint %}
 
 1.  In those same lines, you’ll see `DIR` where the path of the files referenced should be. Replace `DIR` with the applicable file path. In the example below, that would be `assets/css`.
