@@ -15,8 +15,8 @@ Select **Allow**.
 - When you run the `npm run serve` command, you are telling Node to start a server that uses the http protocol to listen on port 3000.
 - Ports are communication endpoints that exist between operating systems.
 - Port 3000 is a local port, so a web server listening on that port will only be available on your local system. You'd typically use ports 80 or 443 if you wanted to publish a site to the Internet.
-- This a good opportunity to create a public tunnel to view your application! Follow the instructions from [Command Line Basics Bonus: Create a public tunnel](https://codingandcocktailskc.gitbooks.io/session-2-command-line-basics/content/homework/web-server.html#create-a-public-tunnel). 
-- Once you're ready to stop your http server, you can press keys **Ctrl+C** together, to cancel out of your command.
+- This a good opportunity to practice creating a public tunnel so you can show off your app on #codingandcocktails channel in Slack! Follow the instructions from [Command Line Basics Bonus: Create a public tunnel](https://codingandcocktailskc.gitbooks.io/session-2-command-line-basics/content/homework/web-server.html#create-a-public-tunnel). 
+- Once you're ready to stop your http server, press keys **Ctrl+C** together to cancel out of your command.
  {% endhint %}
 
 <!--sec data-title="Chromebook instructions to serve app" data-id="section2" data-show=true data-collapse=true ces-->

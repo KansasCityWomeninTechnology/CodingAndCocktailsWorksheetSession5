@@ -31,5 +31,7 @@ Angular CLI creates a folder for you so there's no need to create a folder for y
 
 1. Type `ng serve` <i class="fa fa-share fa-rotate-180"></i> to serve your application.
 
-1. In Chrome, navigate to [localhost:4200](http://localhost:4200/).
+1. In Chrome, navigate to [localhost:4200](http://localhost:4200/). You'll see the Angular logo and helpful links! 🎉
+
+1. Press keys **Ctrl+C** together to stop the server.
  
