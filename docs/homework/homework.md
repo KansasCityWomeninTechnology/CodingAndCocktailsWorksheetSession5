@@ -9,9 +9,9 @@ Remember, we're here to help.
 Join the KCWiT #codingandcocktails Slack Channel: [kcwit.slack.com](http://kcwit.slack.com)
 {% endhint %}
 
-### Another Yeoman tutorial
+### Another Organization Technique
 
-Get some more practice! Follow along with the tutorial on [http://bit.ly/2ciNXfC](http://bit.ly/2ciNXfC). You’ll set up a directory structure using Yeoman with another generator. The tutorial also introduces you to Grunt (a task runner) and Bower (a package manager).
+Read this article about [good front-end architecture](https://www.sitepoint.com/good-front-end-architecture/).
 
 ### Git
 

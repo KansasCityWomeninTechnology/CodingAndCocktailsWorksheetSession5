@@ -32,7 +32,7 @@ Now we need to group like files so that the website assets are well organized.
 {% include "./2organize.md" %}
 
 ## Update references in the HTML file {#references} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Lastly, we need to update references to the assets in _index.html_ so that our website displays properly.
+Lastly, we need to update references to the assets in _index.html_ so that our website displays properly by replacing the string `DIR` with the correct path name.
 {% include "./3references.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->

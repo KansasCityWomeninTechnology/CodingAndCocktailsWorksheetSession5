@@ -1,4 +1,4 @@
-1. Let’s get organizing! Create the necessary folders and add your project files like in the following diagram.
+1. Let’s get organizing! Create the necessary folders in the "app" directory and move the downloaded project files to the correct folder like in the following diagram.
 
    ![](images/file-diagram.png)
 
