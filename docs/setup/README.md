@@ -17,6 +17,10 @@ If you are using a Chromebook, please skip to the [Chromebook instructions](#chr
 You will need the following for the worksheet:
 1. [Chrome browser](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-browser/)
 
+1. [Atom IDE](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/)
+
+1. [Node & npm](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-node/)
+
 1. [Terminal for your OS](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-command-line/)
    {% hint style='danger' %}
 ##### Attention Windows users
@@ -27,11 +31,9 @@ Don't forget to open Cmder using **Run as administrator** to avoid file access p
 Use Cmder for tonight's session. You will have problems if you use Git Bash. Feel free to grab a mentor if you need help installing Cmder.
    {% endhint %}
 
-1. [Atom IDE](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/)
-
 1. [Coding & Cocktails folder](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tips-directory-structure/)
 
-1. [Node & npm](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-node/)
+
 
 ## Ensure you are on the correct version of Node & npm
 
