@@ -8,7 +8,7 @@
 
    ![](images/codeanywhere-tabs.png)
 
-1. We need to install the toolsets that we will use tonight. Copy all the code below and paste into the terminal using `Shift` + `Insert`. The terminal will start executing. Press `Enter` so the commands finish executing.
+1. We need to install the toolsets that we will use tonight. Copy all the code below and paste into the terminal using `Shift` + `search` + `.`. The terminal will start executing. Press `Enter` so the commands finish executing.
    ```bash
 sudo apt-get update
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
@@ -42,7 +42,7 @@ The <i class="fa fa-share fa-rotate-180"></i> icon tells you when to press `Ente
 
   1. Click the green **Clone or download** button and then click the <span class="octicon octicon-clippy"></span> button to copy the path.
 
-1. In the Codeanywhere terminal, type `git clone` and paste the link you copied using `Shift` + `Insert`. Press `Enter`. It will create a folder called "front-end-architecture-ws". You will use the contents inside this folder instead of downloading the files in Manual Practice.
+1. In the Codeanywhere terminal, type `git clone` and paste the link you copied using `Shift` + `search` + `.`. Press `Enter`. It will create a folder called "front-end-architecture-ws". You will use the contents inside this folder instead of downloading the files in Manual Practice.
 
 1. Right click on "KCWIT" container and select **Refresh**. This will show all your new folders and files in the left pane. You can now drag and drop files between folders in this pane. You will have to manually refresh the view every time you create or make changes to folders and files in the terminal.
    
