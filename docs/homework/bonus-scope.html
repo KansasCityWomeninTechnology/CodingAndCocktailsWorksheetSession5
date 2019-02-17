@@ -1,0 +1,464 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Scope Exploration · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codetabs/codetabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="homework.html" />
+    
+    
+    <link rel="prev" href="bonus.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../setup/">
+            
+                <a href="../setup/">
+            
+                    
+                    Setup Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Worksheet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../ws1-dom/">
+            
+                <a href="../ws1-dom/">
+            
+                    
+                    Review and DOM Manipulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ws2-events/">
+            
+                <a href="../ws2-events/">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ws3-scope/">
+            
+                <a href="../ws3-scope/">
+            
+                    
+                    Objects and Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ws4-fetch/">
+            
+                <a href="../ws4-fetch/">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../ws5-templates/">
+            
+                <a href="../ws5-templates/">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../quiz.html">
+            
+                <a href="../quiz.html">
+            
+                    
+                    Quiz
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bonus</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="bonus.html">
+            
+                <a href="bonus.html">
+            
+                    
+                    Bug Fix & Enhancements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="bonus-scope.html">
+            
+                <a href="bonus-scope.html">
+            
+                    
+                    Scope Exploration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="homework.html">
+            
+                <a href="homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../references/">
+            
+                <a href="../references/">
+            
+                    
+                    References & Shortcuts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Scope Exploration</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="explore-scope"><a name="explore-scope" class="plugin-anchor" href="#explore-scope"><i class="fa fa-link" aria-hidden="true"></i></a>Explore Scope</h1>
+<p>Let&apos;s explore variable scope together to better understand how to access variables within a JavaScript application.</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><h5 id="hey-slacker"><a name="hey-slacker" class="plugin-anchor" href="#hey-slacker"><i class="fa fa-link" aria-hidden="true"></i></a>Hey Slacker!</h5>
+<p>Remember, we&apos;re here to help.
+Join the KCWiT #codingandcocktails Slack Channel: <a href="http://kcwit.slack.com" target="_blank">kcwit.slack.com</a></p>
+</div></div></p>
+<ol>
+<li><p>Open Atom and start atom-live-server. Open Chrome DevTools in the browser tab that atom-live-server opens.
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Don&apos;t forget to save your file after each code change to see your web page reload. If another browser opens, you can open Chrome and open a tab using the same URL as the other browser tab.</p>
+</div></div></p>
+</li>
+<li><p>In <em>my-script.js</em>, add a new method called <code>testScope</code> to the <code>menu</code> object. Call the <code>testScope</code> method in the <code>document.addEventListener(&quot;DOMContentLoaded&quot;...)</code> function. Follow the same pattern as what you did with <code>buildDrinkMenu</code> method.</p>
+</li>
+<li><p>Inside the <code>testScope</code> method, add a <code>console.log()</code> to log out <code>numberOfDrinks</code> and take a look at the console in Chrome. We can access a variable declared at global scope inside our function scope.</p>
+</li>
+<li><p>In the <code>testScope</code> function before the <code>console.log()</code>, declare a new variable called <code>numberOfDrinks</code> and set the value to 5. Notice the value logged.<br><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>The <code>const</code> and <code>let</code> syntax has block scope, meaning it can&apos;t be accessed outside of the <code>testScope</code> function. In this case, it creates a new variable with the same name but a different value and uses the new variable in place of the one declared at the global scope.</p>
+<p>To help write maintainable code, use the most restrictive scope you can. Doing so will help prevent you from inadvertently changing a variable or unintentionally changing functionality. </p>
+</div></div></p>
+</li>
+<li><p>Create a new function called <code>inner</code> inside <code>testScope</code> after the <code>console.log()</code>. In the <code>inner</code> function, log <code>numberOfDrinks</code> variable again. We can access variables declared in parent&apos;s scope from the child function, so <code>inner</code> can access <code>testScope</code> variable. Your <code>testScope</code> function looks like this</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+   <span class="hljs-keyword">const</span> numberOfDrinks = <span class="hljs-number">5</span>;
+   <span class="hljs-built_in">console</span>.log(numberOfDrinks);
+
+   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">inner</span>(<span class="hljs-params"></span>) </span>{
+         <span class="hljs-built_in">console</span>.log(numberOfDrinks);
+   }
+
+   inner();
+}
+</code></pre>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>This is an example of nested functions.</p>
+</div></div>
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>What do you see in the console? What does <code>numberOfDrinks</code> log inside the <code>inner</code> function.</p>
+</div></div></p>
+</li>
+<li><p>Add a new <code>const</code> variable called <code>testVariable</code> inside <code>inner</code> function. You can make the value anything you want. How about &quot;Hello there smartie pants!&quot;.</p>
+</li>
+<li><p>Outside the <code>inner</code> function (but still inside the <code>testScope</code>) function, try to log out your new <code>testVariable</code>. What do you see in the console?</p>
+</li>
+<li><p>What if you changed the <code>const</code> declaration to <code>let</code> or <code>var</code>? Can you log out your new <code>testVariable</code>?</p>
+</li>
+<li><p>What if you removed all declarations (no <code>const</code>, <code>let</code>, or <code>var</code>) to have <code>testVariable = &quot;Hello there smartie pants!&quot;;</code>. What do you see in the console?
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>What scope is <code>testVariable</code> in if a parent function can access a variable declared inside a child function? (Hint- <strong>global</strong> scope).</p>
+</div></div></p>
+</li>
+</ol>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Feel free to explore more with scope variables and <code>this</code> by using console log. The more you practice, explore, and try things, the more you&apos;ll learn and understand. Mentors are happy to help via Slack!</p>
+</div></div></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="bonus.html" class="navigation navigation-prev " aria-label="Previous page: Bug Fix & Enhancements">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="homework.html" class="navigation navigation-next " aria-label="Next page: Homework">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Scope Exploration","level":"3.2","depth":1,"next":{"title":"Homework","level":"3.3","depth":1,"path":"homework/homework.md","ref":"homework/homework.md","articles":[]},"previous":{"title":"Bug Fix & Enhancements","level":"3.1","depth":1,"path":"homework/bonus.md","ref":"homework/bonus.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"homework/bonus-scope.md","mtime":"2019-02-17T16:46:23.412Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-17T19:16:02.908Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-codetabs/codetabs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,15 +1,16 @@
 {
   "name": "session5",
   "version": "0.0.0",
-  "description": "Instructions for Coding & Cocktails program session 5 - Intro to front-end architecture",
-  "main": "docs/README.md",
+  "description": "Instructions for Coding & Cocktails program session 5: The Mixer- Intro to interactive JavaScript",
+  "main": "book/README.md",
   "directories": {
-    "doc": "docs"
+    "doc": "book"
   },
   "scripts": {
-    "docs:install": "gitbook install",
-    "docs:build": "gitbook build",
-    "start": "gitbook serve"
+    "book:install": "gitbook install",
+    "book:build": "gitbook build",
+    "start": "gitbook serve",
+    "book:deploy": "npm run book:build && rimraf docs && mkdirp docs && copyfiles -u 1 \"./_book/**/!(*.md)\" docs"
   },
   "repository": {
     "type": "git",
@@ -22,14 +23,16 @@
   },
   "homepage": "https://github.com/KansasCityWomeninTechnology/CodingAndCocktailsWorksheetSession5#readme",
   "devDependencies": {
-    "gitbook-cli": "^2.3.2"
+    "copyfiles": "^2.1.0",
+    "gitbook-cli": "^2.3.2",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.6.3"
   },
   "dependencies": {
     "gitbook-plugin-anchors": "^0.7.1",
+    "gitbook-plugin-codeblock-label": "^1.0.1",
     "gitbook-plugin-codetabs": "^1.0.0",
-    "gitbook-plugin-copy-code-button": "0.0.2",
     "gitbook-plugin-custom-favicon": "0.0.4",
-    "gitbook-plugin-hints": "^1.0.2",
-    "gitbook-plugin-sectionx": "^3.1.0"
+    "gitbook-plugin-hints": "^1.0.2"
   }
 }

@@ -1,14 +1,14 @@
 {
-    "root": "./docs",
+    "root": "./book",
     "plugins": [
         "custom-favicon",
         "hints",
-        "sectionx",
         "anchors",
+        "codeblock-label",
         "codetabs"
     ],
     "pluginsConfig": {
-        "favicon": "docs/assets/images/favicon.ico",
+        "favicon": "book/assets/images/favicon.ico",
         "hints": {
             "info": "fa fa-info-circle fa-lg",
             "tip": "fa fa-lightbulb-o fa-lg",

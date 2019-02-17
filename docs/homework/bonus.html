@@ -1,0 +1,573 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Bug Fix & Enhancements · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codetabs/codetabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bonus-scope.html" />
+    
+    
+    <link rel="prev" href="../quiz.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../setup/">
+            
+                <a href="../setup/">
+            
+                    
+                    Setup Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Worksheet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../ws1-dom/">
+            
+                <a href="../ws1-dom/">
+            
+                    
+                    Review and DOM Manipulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ws2-events/">
+            
+                <a href="../ws2-events/">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ws3-scope/">
+            
+                <a href="../ws3-scope/">
+            
+                    
+                    Objects and Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ws4-fetch/">
+            
+                <a href="../ws4-fetch/">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../ws5-templates/">
+            
+                <a href="../ws5-templates/">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../quiz.html">
+            
+                <a href="../quiz.html">
+            
+                    
+                    Quiz
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bonus</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="bonus.html">
+            
+                <a href="bonus.html">
+            
+                    
+                    Bug Fix & Enhancements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="bonus-scope.html">
+            
+                <a href="bonus-scope.html">
+            
+                    
+                    Scope Exploration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="homework.html">
+            
+                <a href="homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../references/">
+            
+                <a href="../references/">
+            
+                    
+                    References & Shortcuts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Bug Fix & Enhancements</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="fix-a-bug-and-add-an-enhancement"><a name="fix-a-bug-and-add-an-enhancement" class="plugin-anchor" href="#fix-a-bug-and-add-an-enhancement"><i class="fa fa-link" aria-hidden="true"></i></a>Fix a bug and add an enhancement</h1>
+<p>Let&apos;s practice what we learned by simulating project requirements. We have a bug to fix and add an enhancement to our drink order web app.</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><h5 id="hey-slacker"><a name="hey-slacker" class="plugin-anchor" href="#hey-slacker"><i class="fa fa-link" aria-hidden="true"></i></a>Hey Slacker!</h5>
+<p>Remember, we&apos;re here to help.
+Join the KCWiT #codingandcocktails Slack Channel: <a href="http://kcwit.slack.com" target="_blank">kcwit.slack.com</a></p>
+</div></div></p>
+<h2 id="fix-a-bug-by-using-equality-and-conditional-logic"><a name="fix-a-bug-by-using-equality-and-conditional-logic" class="plugin-anchor" href="#fix-a-bug-by-using-equality-and-conditional-logic"><i class="fa fa-link" aria-hidden="true"></i></a>Fix a bug by using equality and conditional logic</h2>
+<p>You&apos;re getting ready to release the web page to your customer, Coding &amp; Cocktails, and realize there&apos;s a bug! You can submit an order without a name. And if you submit an order without selecting a drink order, we see an error in the console. Let&apos;s check to make sure a name and a drink order exists before submitting the order.</p>
+<ol>
+<li><p>Open Atom and start atom-live-server. Open Chrome DevTools in the browser tab that atom-live-server opens.
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Don&apos;t forget to save your file after each code change to see your web page reload. If another browser opens, you can open Chrome and open a tab using the same URL as the other browser tab.</p>
+</div></div></p>
+</li>
+<li><p>In <em>my-script.js</em>, inside the first <code>click</code> event handler, wrap the call to <code>submitOrder</code> in an <code>if</code> statement. Add an equality check for <code>orderName</code> variable is not empty in the <code>if</code> condition.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Your code will look like this
+<pre>
+<code class="lang-javascript">
+<span class="hljs-keyword">if</span> (orderName) {
+       submitOrder(orderName, drinkId);
+}
+</code>
+</pre>
+</details>
+</div></div></p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Remember, in JavaScript, <code>null</code>, <code>undefined</code>, and empty strings are <strong>falsy</strong>.</p>
+</div></div></p>
+</li>
+<li><p>Try submitting an order without the name. A drink order didn&apos;t submit. Yay! Now try submitting an order where the order contains only <strong>whitespace</strong> by using the spacebar to add one space in the order name. Uh oh.</p>
+</li>
+<li><p>We can use the built in <code>trim()</code> function to trim leading and trailing <strong>whitespace</strong> from user entry. The <code>trim()</code> function returns a new string without leading and trailing whitespace. We can add the call to <code>trim()</code> right after retrieving the value of the input element.Your code will look like this</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> orderName = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value.trim();
+</code></pre>
+</li>
+<li><p>Try submitting an order with spaces as the name. A drink order didn&apos;t submit. Yay! We&apos;re getting closer! Now try submitting an order without the drink selected. Uh oh. We still see an error in the console: <code>Uncaught TypeError: Cannot read property &apos;id&apos; of null</code>.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Look at the code to query for the radio button. We use <code>document.querySelector(&apos;input[type=&quot;radio&quot;]:checked&apos;).id</code>. But if we don&apos;t select a drink, the <code>querySelector</code> can&apos;t find any elements matching a checked radio button. The return from <code>querySelector()</code> where no elements match the criteria is <code>null</code>. We then try to get the <code>id</code> property of <code>null</code>. We need to check the element is not <code>null</code> before proceeding.</p>
+</div></div></p>
+</li>
+<li><p>Change the variable name <code>drinkId</code> to <code>drinkElement</code> and remove the call to get the <code>id</code> property.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Your code will look like this
+<pre>
+<code class="lang-javascript">
+<span class="hljs-keyword">const</span> drinkElement = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;input[type=&quot;radio&quot;]:checked&apos;</span>);
+</code>
+</pre>
+</details>
+</div></div></p>
+</li>
+<li><p>We can now check if <code>drinkElement</code> is <code>null</code>. We can do this at the same time as the <code>if (orderName)</code> expression. We will use <strong>logical operators</strong>. We want both <code>orderName</code> and <code>drinkElement</code> to be truthy before calling <code>submitOrder</code>. We can use the <strong>logical AND</strong> operator: <code>&amp;&amp;</code>. Your <code>if</code> expression will look like this</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (orderName &amp;&amp; drinkElement)
+</code></pre>
+</li>
+<li><p>Update the call to <code>submitOrder</code> to send the <code>id</code> of the <code>drinkElement</code> so that the <code>submitOrder</code> function still works.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Your code will look like this
+<pre>
+<code class="lang-javascript">
+submitOrder(orderName, drinkElement.id);
+</code>
+</pre>
+</details>
+</div></div></p>
+</li>
+<li><p>Try submitting a drink order without selecting a drink. Yay! A drink order was not submitted!</p>
+</li>
+</ol>
+<h2 id="enhance-the-web-app-by-adding-a-way-to-show-a-limited-drink-menu"><a name="enhance-the-web-app-by-adding-a-way-to-show-a-limited-drink-menu" class="plugin-anchor" href="#enhance-the-web-app-by-adding-a-way-to-show-a-limited-drink-menu"><i class="fa fa-link" aria-hidden="true"></i></a>Enhance the web app by adding a way to show a limited drink menu</h2>
+<p>Our bartender, Laura, doesn&apos;t want to have so many drinks available each session. She wants the ability to limit the drink menu to only show drinks she&apos;s prepared that evening. We will add a new property to the drink object and filter the array when building out the menu.</p>
+<p>Here is another example where building out the menu programmatically allows us to easily add more functionality.</p>
+<ol>
+<li><p>In <em>my-script.js</em>, in the <code>drinkArray</code>, add a new property to each drink object called <code>isAvailable</code>. The value is a <strong>boolean</strong> so set the values to <code>true</code> or <code>false</code>.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Your drink object inside the array will look like this
+<pre>
+<code class="lang-javascript">
+{
+      <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;focusedLady&apos;</span>,
+      <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;Focused Lady&apos;</span>,
+      <span class="hljs-string">&apos;photoId&apos;</span>: <span class="hljs-string">&apos;eXdKs9d37Sc&apos;</span>,
+      <span class="hljs-string">&apos;isAvailable&apos;</span>: <span class="hljs-literal">true</span>
+}
+</code>
+</pre>
+Don&apos;t forget the single quotes and a comma between the <code>photoId</code> property and the new property. Make sure you add the property to every object!
+</details>
+</div></div></p>
+</li>
+<li><p>In the <code>buildDrinkMenu</code> method we want to create a new array of drinks where <code>isAvailable == true</code> and use that array to build the menu. We can do that using the built in <code>filter()</code> method on arrays. After the <code>fragment</code> variable declaration, but be before the <code>forEach</code>, create a new variable called <code>availableDrinks</code> and type the following code</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> availableDrinks = <span class="hljs-keyword">this</span>.drinkArray.filter( (arrayElement) =&gt; {
+   <span class="hljs-keyword">return</span> arrayElement.isAvailable === <span class="hljs-literal">true</span>;
+});
+</code></pre>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Let&apos;s walk through what we did here. We created a variable called <code>availableDrinks</code>. We access the <code>drinkArray</code> buy using <code>this</code> and iterate over each drink in <code>drinkArray</code> to apply the <code>filter</code> conditional. If <code>arrayElement.isAvailable == true</code>, that drink is added to <code>availableDrinks</code> array.</p>
+</div></div></p>
+</li>
+<li><p>Update the code to build the drink menu using the drinks in <code>availableDrinks</code>.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Your code will look like this
+<pre>
+<code class="lang-javascript">
+<span class="hljs-keyword">const</span> availableDrinks = <span class="hljs-keyword">this</span>.drinkArray.filter( (element) =&gt; {
+      <span class="hljs-keyword">return</span> element.isAvailable == <span class="hljs-literal">true</span>;
+});
+
+availableDrinks.forEach( (drink) =&gt; {
+      ...
+});
+</code>
+</pre>
+</details>
+</div></div></p>
+</li>
+<li><p>Does the drink menu show a subset of the drink array? Great job!!</p>
+</li>
+</ol>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p><strong>Way to stick with it!!</strong></p>
+<p><img src="https://media.giphy.com/media/QvBPuk3difuYU/giphy.gif" alt=""></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="checkpoint-"><a name="checkpoint-" class="plugin-anchor" href="#checkpoint-"><i class="fa fa-link" aria-hidden="true"></i></a>Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Compare your <em>my-script.js</em> against the answer key for your work so far. It might look a little different depending on spacing and photos you selected.  </p>
+<div class="checkpoint">
+    <div class="badge">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-certificate fa-stack-2x certificate"></i>
+            <i class="fa fa-check fa-stack-1x checkmark"></i>
+        </span>
+    </div>
+    <div class="content">
+        <details>
+            <summary>
+                Expand this section to compare your work.
+            </summary>
+            <img src="images/checkpoint.png">
+            <p>
+             You can also compare your <i>my-script.js</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/javascript-102/blob/answerkey-bonus/assets/scripts/my-script.js" target="_blank">answer key</a> if the image is too difficult to read.
+            </p>
+        </details>
+    </div>
+</div>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../quiz.html" class="navigation navigation-prev " aria-label="Previous page: Quiz">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bonus-scope.html" class="navigation navigation-next " aria-label="Next page: Scope Exploration">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bug Fix & Enhancements","level":"3.1","depth":1,"next":{"title":"Scope Exploration","level":"3.2","depth":1,"path":"homework/bonus-scope.md","ref":"homework/bonus-scope.md","articles":[]},"previous":{"title":"Quiz","level":"2.6","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"homework/bonus.md","mtime":"2019-02-17T16:46:23.412Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-17T19:16:02.908Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-codetabs/codetabs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

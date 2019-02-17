@@ -1,0 +1,704 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Objects and Scope · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codetabs/codetabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ws4-fetch/" />
+    
+    
+    <link rel="prev" href="../ws2-events/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../setup/">
+            
+                <a href="../setup/">
+            
+                    
+                    Setup Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Worksheet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../ws1-dom/">
+            
+                <a href="../ws1-dom/">
+            
+                    
+                    Review and DOM Manipulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ws2-events/">
+            
+                <a href="../ws2-events/">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Objects and Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ws4-fetch/">
+            
+                <a href="../ws4-fetch/">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../ws5-templates/">
+            
+                <a href="../ws5-templates/">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../quiz.html">
+            
+                <a href="../quiz.html">
+            
+                    
+                    Quiz
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bonus</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../homework/bonus.html">
+            
+                <a href="../homework/bonus.html">
+            
+                    
+                    Bug Fix & Enhancements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../homework/bonus-scope.html">
+            
+                <a href="../homework/bonus-scope.html">
+            
+                    
+                    Scope Exploration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../homework/homework.html">
+            
+                <a href="../homework/homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../references/">
+            
+                <a href="../references/">
+            
+                    
+                    References & Shortcuts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Objects and Scope</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="top"><a name="top" class="plugin-anchor" href="#top"><i class="fa fa-link" aria-hidden="true"></i></a>Objects, Scopes, and this </h1>
+<p>Grouping like properties and functionality together can make applications easier to write and maintain. Keeping scope small and targeted is part of that process. These are abstract concepts and will require hands-on practice to connect the dots.</p>
+<p>We will move the drink list that is hard coded in the HTML and build it out programmatically using JavaScript. </p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p>This section will help guide you through the following steps:</p>
+<div class="instructions">
+    <ul class="fa-ul">
+        <li>
+            <a href="#object">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Create an object</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#scope">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Work with scope access</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#this">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Build a DOM</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>                
+</div>
+
+
+
+<h2 id="object"><a name="object" class="plugin-anchor" href="#object"><i class="fa fa-link" aria-hidden="true"></i></a>Create an array of objects  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>We will create an array of objects and access object properties.</p>
+<ol>
+<li><p>In Atom, open <em>index.html</em> and find the <code>div</code> tag containing the drink list. Comment out all the drinks listed inside the <code>div</code>, but don&apos;t comment the <code>div</code> tag itself. Save your <em>index.html</em>. We no longer see the drink list in Chrome and our web page is broken for the moment.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Highlight all the <code>&lt;label&gt;</code> elements inside the <code>div</code> with class &quot;drink-menu&quot; and select <strong>Edit</strong> <i class="fa fa-long-arrow-right"></i> <strong>Toggle Comments</strong>. You can also use the keyboard shortcut <code>ctrl</code> + <code>/</code> on Windows and <code>cmd</code> + <code>/</code> on Macs. Feel free to ask a mentor for help. </p>
+</div></div>
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Remember to use Atom to type code statements and Chrome to verify your work when your web page reloads. Don&apos;t forget to save <em>my-script.js</em> every time you type a code statement.</p>
+</div></div></p>
+</li>
+<li><p>Let&apos;s create a new object. At the top of <em>my-script.js</em>, declare a new object called <code>menu</code> like this</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> menu = {};
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Everything inside the <code>{}</code> is part of the object. The curly braces help group code statements together. We know the difference between objects and functions by the way we declare it. <code>const myObject = {};</code> is an object and <code>const myFunction = function(){};</code> is a function because use the <code>function</code> keyword.</p>
+</div></div></p>
+</li>
+<li><p>We want <code>menu</code> to handle menu related items, such as owning the list of drinks. Place your cursor between the opening and closing curly brace for the <code>menu</code> object and press <code>Enter</code>. Create a new property called <code>drinkArray</code> with an empty array. Your <code>menu</code> object should look like this</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> menu = {
+ drinkArray: []
+};
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>This creates an empty array called <code>drinkArray</code> as a property of <code>menu</code>.</p>
+<p>Objects can contain properties and functions.</p>
+</div></div>  </p>
+</li>
+<li><p>We want to populate <code>drinkArray</code> with the list of available drinks, which is everything with a radio button in front of it. To do so, each element in the array is an object with 2 properties: &quot;id&quot; and &quot;label&quot;. We can add an object to the array like this</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> menu = {
+ drinkArray: [{
+   <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;focusedLady&apos;</span>,
+   <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;Focused Lady&apos;</span>
+ }]
+};
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We can have objects inside other objects. Remember, we&apos;re grouping similar code statements together. So the inner object has information about a specific drink while the outer <code>menu</code> object has all information about the drink menu.</p>
+<p>Objects can contain key-value pairs like this:</p>
+<pre><code class="lang-javascript">{
+          <span class="hljs-string">&quot;key&quot;</span>: <span class="hljs-string">&quot;value&quot;</span>,
+          <span class="hljs-string">&quot;anotherKey&quot;</span>: <span class="hljs-string">&quot;Another Value&quot;</span>
+}
+</code></pre>
+<p>You can use single quotes, double quotes, or use no quotes when declaring keys in an object.</p>
+</div></div></p>
+</li>
+<li><p>Populate the rest of the <code>drinkArray</code> with the remaining drinks. Copy and paste the following code snippet to replace <code>drinkArray</code> to avoid typing fatigue. </p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> menu = {
+ drinkArray: [{
+         <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;focusedLady&apos;</span>,
+         <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;Focused Lady&apos;</span>
+     },
+     {
+         <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;strongLady&apos;</span>,
+         <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;Strong Lady&apos;</span>
+     },
+     {
+         <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;frontEndPunch&apos;</span>,
+         <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;Front-End Punch&apos;</span>
+     },
+     {
+         <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;cachedOut&apos;</span>,
+         <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;Cached Out&apos;</span>
+     },
+     {
+         <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;httPapaya&apos;</span>,
+         <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;httPAPAYA://&apos;</span>
+     },
+     {
+         <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;nerdyDaiquiri&apos;</span>,
+         <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;Nerdy Daiquiri&apos;</span>
+     },
+     {
+         <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;theAvernaCode&apos;</span>,
+         <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;The Averna Code&apos;</span>
+     },
+     {
+         <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;focusedTheMostest&apos;</span>,
+         <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;Focused the Mostest&apos;</span>
+     },
+ ],
+};
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Notice a comma replaces the semicolon after the array declaration and we&apos;re not using quotes for the <code>drinkArray</code> property but are using single quotes for <code>id</code> and <code>label</code> properties inside each object within the array.</p>
+</div></div></p>
+</li>
+<li><p>Add a new property to the <code>menu</code> object called <code>buildDrinkMenu</code> with a log to console. This is a method on the object. A shortened version of the <code>menu</code> object will look like this</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> menu = {
+ drinkArray: [{
+         <span class="hljs-string">&apos;id&apos;</span>: <span class="hljs-string">&apos;focusedLady&apos;</span>,
+         <span class="hljs-string">&apos;label&apos;</span>: <span class="hljs-string">&apos;Focused Lady&apos;</span>
+     },
+     <span class="hljs-comment">// other drinks here</span>
+ ],
+ buildDrinkMenu: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;inside buildDrinkMenu&apos;</span>);
+ }
+};
+</code></pre>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Defining responsibilities and grouping code for that purpose helps make code easier to maintain. In this case, adding a method <code>buildDrinkMenu</code> that contains the code needed to build out a drink menu makes it easier to know what area of code to look at when there is a bug in building the drink menu.</p>
+</div></div></p>
+</li>
+</ol>
+<h2 id="scope"><a name="scope" class="plugin-anchor" href="#scope"><i class="fa fa-link" aria-hidden="true"></i></a>Explore scope of variables  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Scope affects visibility and access. Let&apos;s explore how scope changes the way we interact with objects, properties, and variables.</p>
+<ol>
+<li><p>In Atom, open <em>my-script.js</em> and navigate to the bottom of the file. Inside the <code>document.addEventListener(&quot;DOMContentLoaded&quot;, ...)</code> function, before the calls to register the event listeners for the order button, iterate over the <code>drinkArray</code> and log each element to the console using the following code</p>
+<pre><code class="lang-javascript">menu.drinkArray.forEach( (item) =&gt; { <span class="hljs-built_in">console</span>.log(item);});
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We can access properties inside objects using the <code>.</code> notation. The <code>drinkArray</code> property is available at object scope (meaning we can access the property as a part of the <code>menu</code> object), not global scope (meaning the entire script file cannot access the property).</p>
+</div></div></p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>The entire object in the array is logged out. What if you want to only log the <code>label</code> within each drink? How would you change your log statement to do so?</p>
+</div></div></p>
+</li>
+<li><p>We&apos;ll have the <code>buildDrinkMenu()</code> iterate across the array and be responsible for building out the menu itself. Replace the call <code>menu.drinkArray.forEach</code> with <code>menu.buildDrinkMenu();</code>. You should see the log to the console say &quot;inside buildDrinkMenu&quot;.</p>
+</li>
+</ol>
+<h2 id="this"><a name="this" class="plugin-anchor" href="#this"><i class="fa fa-link" aria-hidden="true"></i></a>Use <code>this</code> keyword and build a DOM  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>The <code>this</code> keyword specifies the scope that we&apos;re in. We&apos;ll explore <code>this</code>, see how it affects access, and build a separate DOM to append to our application&apos;s DOM tree.</p>
+<ol>
+<li><p>We want to iterate over <code>drinkArray</code> in the <code>buildMenu</code> method to build the drink menu. Remove the existing console log and instead log out <code>drinkArray</code>. The console log has an error stating &quot;Uncaught ReferenceError: drinkArray is not defined&quot;. Uh oh. We can&apos;t access <code>drinkArray</code>?</p>
+</li>
+<li><p>In <code>buildDrinkMenu</code> method, change the console log statement to log <code>this.drinkArray</code>. &#x1F62E;</p>
+</li>
+<li><p>What is up that!? Let&apos;s change the log statement to <code>console.log(this);</code>. The console log states that the output of &quot;this&quot; is the contents of the <code>menu</code> object. We see the <code>drinkArray</code> property with 8 elements in the array and the <code>buildDrinkMenu</code> function in the console log output. 
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>The <code>this</code> keyword provides the context from which we are working. In this case, it&apos;s the <code>menu</code> object. This is a tricky concept so you might need to explore a little to better understand what &quot;this&quot; is. What happens if you <code>console.log(this);</code> inside the second click handler? What is the &quot;this&quot; context? </p>
+<p>Note you&apos;ll see an error from the first click handler, but you&apos;ll still see the console log statements from the second click handler.</p>
+<p>Arrow functions do not have their own <code>this</code> context so they are primarily used for small functions that don&apos;t require context complexity. </p>
+</div></div></p>
+</li>
+<li><p>Now that we know how to access <code>drinkArray</code> from inside <code>buildDrinkMenu</code> function, iterate through the array and log each item out to the console. Your code will look like this</p>
+<pre><code class="lang-javascript">buildDrinkMenu: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+   <span class="hljs-keyword">this</span>.drinkArray.forEach( (drink) =&gt; {
+         <span class="hljs-built_in">console</span>.log(drink);
+   });
+}
+</code></pre>
+</li>
+<li><p>We&apos;re back in business. Let&apos;s build that drink menu out. We have to implement the code to build out the same HTML we commented out previously. Inside the <code>forEach</code>, remove the console log. Create a new <code>label</code> element and assign it to a variable by typing the following code</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> labelNode = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;label&apos;</span>);
+</code></pre>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Our goal is to build an HTML element structure that looks like what you commented out in the HTML using JavaScript for each drink object in the array. We want to create something that looks like this using the drink&apos;s name and id:</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;focusedLady&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;focusedLady&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;drink&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Focused Lady&quot;</span>&gt;</span>
+      Focused Lady
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+</code></pre>
+<p>We now have the following HTML</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">label</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+</code></pre>
+</div></div></p>
+</li>
+<li><p>We want a way to tie the radio button to the id of the drink we can do this by setting the attribute &quot;for&quot; and adding the id of the drink to it. This is it for the parent <code>label</code> tag. Add the following line code right after creating the <code>label</code> element</p>
+<pre><code class="lang-javascript">labelNode.setAttribute(<span class="hljs-string">&apos;for&apos;</span>, drink.id);
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Notice we&apos;re accessing the &apos;id&apos; property of the array element. The <code>for</code> attribute connects the visible label element to the input&apos;s <code>id</code> attribute. We are tying these two elements together using the drink id.</p>
+<p>We now have</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;focusedLady&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+</code></pre>
+</div></div></p>
+</li>
+<li><p>Next we need to build the inner <code>&lt;input&gt;</code> element. After the <code>setAttribute</code> call, create a new element for <code>input</code> and assign it to a variable called <code>radioNode</code>. 
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Add <code>let radioNode = document.createElement(&apos;input&apos;);</code> after the previous <code>setAttribute</code> call in the <code>forEach</code>.
+</details>
+</div></div></p>
+</li>
+<li><p>We&apos;ll set the id of the <code>&lt;input&gt;</code> to the drink id and the value of the <code>&lt;input&gt;</code> to the drink label.  Add the following code after the <code>radioNode</code> declaration</p>
+<pre><code class="lang-javascript">radioNode.id = drink.id;
+radioNode.name = <span class="hljs-string">&apos;drink&apos;</span>;
+radioNode.setAttribute(<span class="hljs-string">&apos;type&apos;</span>, <span class="hljs-string">&apos;radio&apos;</span>);
+radioNode.setAttribute(<span class="hljs-string">&apos;value&apos;</span>, drink.label);
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>The input element is a radio button, so we add the <code>type</code> attribute and set it to <code>radio</code>. The <code>id</code> ties the radio button, the label, and the drink object together. The <code>name</code> is &apos;drink&apos; for all elements. This ensures a user can select only one radio button at a time. Finally, the <code>value</code> attribute contains the drink object&apos;s label and helps display formatted text. </p>
+<p>We now have</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;focusedLady&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;drink&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Focused Lady&quot;</span>&gt;</span>
+</code></pre>
+</div></div></p>
+</li>
+<li><p>Create the text node for the label and assign it to a variable called <code>textNode</code>.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Add <code>const textNode = document.createTextNode(drink.label);</code> after the previous <code>setAttribute</code> call in the <code>forEach</code> to create a node with the text for the drink name.
+</details>
+</div></div></p>
+</li>
+<li><p>Now we can start assembling the nodes. Add the <code>radioNode</code> and <code>textNode</code> to the <code>labelNode</code> like this</p>
+<pre><code class="lang-javascript">labelNode.appendChild(radioNode);
+labelNode.appendChild(textNode);
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We are enclosing the radio button and the text inside the label to build the nested HTML element structure that looks like this</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;focusedLady&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;radio&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;focusedLady&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;drink&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;Focused Lady&quot;</span>&gt;</span>
+      Focused Lady
+<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+</code></pre>
+</div></div></p>
+</li>
+<li><p>Now we need to add <code>labelNode</code> to the DOM. We can do so by building a separate DOM from the application via <strong>DocumentFragment</strong>. Inside the <code>buildDrinkMenu</code> function before the <code>forEach</code> call, declare a new variable</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> fragment = <span class="hljs-built_in">document</span>.createDocumentFragment();
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Building up a separate DOM and adding it to our main DOM tree when complete results in better performance. We can use the <strong>Document</strong> and <strong>DocumentFragment</strong> API to do this. Read more about <strong>DocumentFragment</strong> in the references for this section.</p>
+</div></div></p>
+</li>
+<li><p>Inside the <code>forEach</code> call, add <code>fragment.appendChild(labelNode);</code> as the last line to add the labelNode to the fragment DOM.</p>
+</li>
+<li><p>After the <code>forEach</code> call, add the fragment to the DOM by calling </p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.radio-group&apos;</span>).appendChild(fragment);
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Why go through this effort instead of adding the drink list to the HTML? Because it&apos;s easier to add new drinks and edit the menu items. There are Javascript frameworks to help with making this process easier.</p>
+</div></div></p>
+</li>
+<li><p>Interact with your web app in Chrome. You should see the drink list and be able to place orders again!</p>
+</li>
+</ol>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p><strong>You leveled up your JavaScript skills like a boss! Way to go!!</strong></p>
+<p><img src="https://i.giphy.com/media/3o7TKx78XweLhgI52M/giphy.webp" alt=""></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="checkpoint-"><a name="checkpoint-" class="plugin-anchor" href="#checkpoint-"><i class="fa fa-link" aria-hidden="true"></i></a>Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Compare your <em>my-script.js</em> against the answer key for your work so far. It might look a little different depending on spacing.  </p>
+<div class="checkpoint">
+    <div class="badge">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-certificate fa-stack-2x certificate"></i>
+            <i class="fa fa-check fa-stack-1x checkmark"></i>
+        </span>
+    </div>
+    <div class="content">
+        <details>
+            <summary>
+                Expand this section to compare your work.
+            </summary>
+            <img src="images/checkpoint.png">
+            <p>
+             You can also compare your <i>my-script.js</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/javascript-102/blob/answerkey-scope/assets/scripts/my-script.js" target="_blank">answer key</a> if the image is too difficult to read.
+            </p>
+        </details>
+    </div>
+</div>
+
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="references-and-helpful-links-"><a name="references-and-helpful-links-" class="plugin-anchor" href="#references-and-helpful-links-"><i class="fa fa-link" aria-hidden="true"></i></a>References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const" target="_blank">MDN Reference: const keyword</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let" target="_blank">MDN Reference: let keyword</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var" target="_blank">MDN Reference: var keyword</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this" target="_blank">MDN Reference: this keyword</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment" target="_blank">MDN Reference: DocumentFragment</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../ws2-events/" class="navigation navigation-prev " aria-label="Previous page: Events">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ws4-fetch/" class="navigation navigation-next " aria-label="Next page: APIs">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Objects and Scope","level":"2.3","depth":1,"next":{"title":"APIs","level":"2.4","depth":1,"path":"ws4-fetch/README.md","ref":"ws4-fetch/README.md","articles":[]},"previous":{"title":"Events","level":"2.2","depth":1,"path":"ws2-events/README.md","ref":"ws2-events/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws3-scope/README.md","mtime":"2019-02-17T16:41:20.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-17T19:16:02.908Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-codetabs/codetabs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

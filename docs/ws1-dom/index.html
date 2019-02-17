@@ -1,0 +1,756 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Review and DOM Manipulation · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codetabs/codetabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ws2-events/" />
+    
+    
+    <link rel="prev" href="../setup/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../setup/">
+            
+                <a href="../setup/">
+            
+                    
+                    Setup Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Worksheet</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Review and DOM Manipulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../ws2-events/">
+            
+                <a href="../ws2-events/">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ws3-scope/">
+            
+                <a href="../ws3-scope/">
+            
+                    
+                    Objects and Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ws4-fetch/">
+            
+                <a href="../ws4-fetch/">
+            
+                    
+                    APIs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../ws5-templates/">
+            
+                <a href="../ws5-templates/">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../quiz.html">
+            
+                <a href="../quiz.html">
+            
+                    
+                    Quiz
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bonus</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../homework/bonus.html">
+            
+                <a href="../homework/bonus.html">
+            
+                    
+                    Bug Fix & Enhancements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../homework/bonus-scope.html">
+            
+                <a href="../homework/bonus-scope.html">
+            
+                    
+                    Scope Exploration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../homework/homework.html">
+            
+                <a href="../homework/homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../references/">
+            
+                <a href="../references/">
+            
+                    
+                    References & Shortcuts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Review and DOM Manipulation</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="top"><a name="top" class="plugin-anchor" href="#top"><i class="fa fa-link" aria-hidden="true"></i></a>A Deeper Dive into JavaScript </h1>
+<p>We will start by practicing JavaScript fundamentals and diving deeper into DOM (<a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction" target="_blank">Document Object Model</a>) manipulation before we explore new concepts such as events and objects. JavaScript is one of many programming languages used for application development.</p>
+<p>Tonight we will create an web application with interactive elements and dynamic content that looks like this: </p>
+<p><img src="images/completed.png" alt=""></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>Before starting the worksheet, please take a moment to review <a href="../setup">Setup instructions</a> to ensure you have all the tools and workspace setup you need for tonight&apos;s work.</p>
+</div></div></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p>This section will help guide you through the following steps:</p>
+<div class="instructions">
+    <ul class="fa-ul">
+        <li>
+            <a href="#prepare">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Prepare workspace</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#text">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Update text in the DOM</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" aria-hidden="true" title="Take me to this step"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#counter">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Add a counter</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#conditional">
+                <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                <span class="text">Apply conditional logic</span>
+                <i class="fa fa-chevron-circle-down fa-lg navigate-arrow" title="Take me to this step" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>                
+</div>
+
+
+
+<h2 id="prepare"><a name="prepare" class="plugin-anchor" href="#prepare"><i class="fa fa-link" aria-hidden="true"></i></a>Prepare your workspace and serve your web page  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<ol>
+<li><p>Using Chrome, <a href="https://github.com/KansasCityWomeninTechnology/javascript-102/archive/master.zip" target="_blank">download the zip file from the GitHub repository</a>. </p>
+</li>
+<li><p>Extract the contents and copy the <em>index.html</em> and &quot;assets&quot; folder to &quot;CodingAndCocktails/JavaScript102&quot; folder. Your &quot;JavaScript102&quot; folder should contain the following files and folders:</p>
+<p><img src="images/files.png" alt=""></p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you don&apos;t have a &quot;CodingAndCocktails/JavaScript102&quot; folder, take a moment to <a href="../setup">set up your workspace</a>.</p>
+</div></div></p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Not sure how to extract the contents of the zip file?</p>
+<p><strong>Mac users</strong>: Double click on the downloaded file with the .zip extension<br>
+<strong>Windows users</strong>: Right click on the file with the .zip extension and choose &quot;Extract All.&quot; Select the destination you would like to extract the files to.</p>
+</div></div>   </p>
+</li>
+<li><p>Open the &quot;JavaScript102&quot; folder in Atom.
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>To open the folder in Atom, follow the instructions below:</p>
+<ol>
+<li>Open Atom </li>
+<li>Select <strong>File</strong> <i class="fa fa-long-arrow-right"></i> <strong>Open Folder</strong></li>
+<li><p>Navigate to your &quot;CodingAndCocktails&quot; folder and select the &quot;JavaScript102&quot; folder</p>
+<p>You can close all tabs that Atom displays. Open <em>index.html</em> and <em>my-script.js</em> located in the &quot;assets/scripts&quot; folder. We will use both files tonight.</p>
+</li>
+</ol>
+</div></div>   </p>
+</li>
+<li><p>We will use the atom-live-server package we installed to serve the <em>index.html</em> file. This package opens up the web page in your default web browser and reloads the page whenever you save files. Start the live server by selecting <strong>Packages</strong> <i class="fa fa-long-arrow-right"></i> <strong>atom-live-server</strong>. Select <strong>Start server</strong>. A browser tab will open.
+<div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you don&apos;t have the atom-live-server package, take a moment to <a href="../setup">set up your workspace</a>.</p>
+</div></div>   </p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If the tab opens in another browser, copy the URL and paste it into a new tab in Chrome. The reload will automatically happen in Chrome.</p>
+<p>If you get an access warning, click &quot;Allow&quot; to let atom-live-server serve the application.</p>
+</div></div>   </p>
+</li>
+</ol>
+<h2 id="text"><a name="text" class="plugin-anchor" href="#text"><i class="fa fa-link" aria-hidden="true"></i></a>Create a function and update the text of an element  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>We&apos;ll write a function that updates the DOM dynamically with text. Remember a function is a bit of code that takes input, process the input and returns some output - sort of like a coffee machine!</p>
+<ol>
+<li><p>Using Atom, open <em>my-script.js</em> in the &quot;assets/scripts&quot; folder. </p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Two functions are already defined in the file: one function associated with the DOM content load completion event.  That function accepts an event as the input parameter. The second function is included to handle the click event on the HTML element with the id of <code>order-btn</code>. The second function currently has no input parameters passed to it. Both functions are lacking code in the function body - let&apos;s get to adding some!</p>
+</div></div></p>
+</li>
+<li><p>Find the <code>onclick</code> event handler on line 4. Place your cursor between the opening and closing curly braces (these: <code>{}</code>) and press <code>Enter</code>. </p>
+<p>Your cursor will be on a new line in between those curly braces that denote the function body.  Notice how Atom indents your cursor position as well.  This is to help with code readability. Your code should now look similar to this:</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-btn&apos;</span>).onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+};
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>The opening and closing curly brace signify the starting and ending boundaries for groups of code statements. All the code inside the curly brace are part of the same group. Code outside of the curly braces are not part of the group. In this case, all code inside the curly braces are part of a function and all code outside of the curly brace is not part of the function. You will see instructions to add code inside and outside functions tonights.</p>
+</div></div>      </p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>View the worksheet and the <strong>IDE</strong> (<strong>I</strong>ntegrated <strong>D</strong>evelopment <strong>E</strong>nvironment - a generic term for where you write your code, Atom is serving as the IDE in our case) in split screen mode to make it easier to work through tonight&apos;s session. Check out the <a href="../setup#tips">helpful tips in the Setup guide</a>. </p>
+</div></div></p>
+</li>
+<li><p>Add an alert with the message &quot;Hi LadyDev!&quot; inside the function body to verify we wired up the click handler correctly. Your click handler should look like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-btn&apos;</span>).onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+   alert(<span class="hljs-string">&quot;Hi LadyDev!&quot;</span>);
+};
+</code></pre>
+</li>
+<li><p>Save your file. </p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p><strong>Every time you make a change, save the file.</strong> </p>
+<p>The atom-live-server package will automatically refresh the Chrome tab to keep the app up to date with your <strong>saved</strong> work. Atom alerts you to unsaved work by displaying a blue circle in the tab:</p>
+<p><img src="images/atom-save.png" alt=""></p>
+<p>Save the file by navigating to <strong>File</strong> <i class="fa fa-long-arrow-right"></i> <strong>Save</strong> or by using the keyboard shortcut <code>cmd</code> + <code>s</code> for Macs and <code>ctrl</code> + <code>s</code> for Windows. Refer to <a href="../references">Helpful Keyboard Shortcuts</a>.</p>
+</div></div></p>
+</li>
+<li><p>In Chrome, click on the order button. Do you see the alert pop up? </p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you don&apos;t see the alert pop up when you click the button, double check that you&apos;ve saved your files and grab a mentor if you&apos;re stuck!</p>
+</div></div></p>
+<p>Great! We&apos;ve got a form on our page that accepts user input to work with. Now that we know the click handler works, let&apos;s get the value of the form input!</p>
+</li>
+<li><p>In Atom, remove the alert code. </p>
+</li>
+<li><p>First we need to select the HTML element that represents the form input. In the <code>onclick</code> function body (that area inside the curly braces!), type <code>document.getElementById(&apos;order-form-input&apos;)</code>.</p>
+</li>
+<li><p>Open the <em>index.html</em> file and take a look at line 70.  You should see an HTML element for input with an <code>id</code> attribute of <code>order-form-input</code>. This is the element we just targeted in the previous step.</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Need an HTML refresher? Grab a mentor or review the Coding &amp; Cocktails <a href="http://bit.ly/CnCJanSlides" target="_blank">HTML Slides</a> or <a href="http://bit.ly/CnCJanWork" target="_blank">Worksheet</a>!</p>
+</div></div></p>
+</li>
+<li><p>Next, in the <em>my-script.js</em> file, ensure we get the value entered in that form input element.  Any guesses how we might do that? </p>
+<p>Your click handler function should now look like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-btn&apos;</span>).onclick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+   <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value;
+};
+</code></pre>
+</li>
+<li><p>Wrap the value of the form in the <code>console.log()</code> method to see what the value of the input is. </p>
+<p>You could add another alert message, or log it out to the console to do so.  Since we used the alert method already, try using <code>console.log()</code> here.  Your <code>onclick</code> function body should look like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value);
+</code></pre>
+</li>
+<li><p>In Google Chrome, open the Chrome DevTools by using keyboard shortcuts <code>cmd</code> + <code>option</code> + <code>i</code> on Macs, <code>F12</code> on Windows, and <code>ctrl</code> + <code>shift</code> + <code>i</code> on Chromebooks. </p>
+</li>
+<li><p>Enter text in the name form field and click on the order button. You should see your text write to the DevTools console. Leave DevTools open.  </p>
+</li>
+<li><p>In Atom, place your cursor at the top of the <em>my-script.js</em> file and press <code>Enter</code> twice.  Place your cursor back on the first line of the file and create a constant variable named <code>submitOrder</code>. This will be your new function&apos;s name.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> submitOrder
+</code></pre>
+</li>
+<li><p>Next to the <code>submitOrder</code> variable, add an <code>=</code> sign to set your variable to some content.  Type the <code>function</code> keyword to start your function definition.</p>
+</li>
+<li><p>Add the open and close parenthesis for the area where you enter the input parameters for the function and add a single parameter called <code>name</code> as input to this function. </p>
+</li>
+<li><p>Wrap up the function structure by adding the open and close curly braces <code>{}</code> and a semi-colon to end the line of code. Your function should look like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> submitOrder = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name</span>) </span>{};
+</code></pre>
+</li>
+<li><p>The click handler function needs to call our new <code>submitOrder</code> function. Replace the <code>console.log</code> text with <code>submitOrder</code> in the click handler function. The click handler function body should look like this:</p>
+<pre><code class="lang-javascript">submitOrder(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value);
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We are passing the value as a parameter to the <code>submitOrder</code> function. We can now access the value of the form input in the <code>submitOrder</code> function body using the variable <code>name</code>. </p>
+</div></div>   </p>
+</li>
+<li><p>Inside the <code>submitOrder</code> function, add an alert on <code>name</code> to verify we wired it up correctly and save your work. </p>
+</li>
+<li><p>In Chrome, try testing this out to see the alert pop up with the value you enter in the name field.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Change the <code>submitOrder</code> function to
+<pre>
+<code class="lang-javascript">
+<span class="hljs-keyword">const</span> submitOrder = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">name</span>) </span>{
+      alert(name);
+};
+</code>
+</pre>
+</details>
+</div></div></p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Notice we can leave the name blank. The value will be empty but the alert still displays with nothing inside.  </p>
+</div></div>   </p>
+</li>
+</ol>
+<h1 id="jad-todo--dont-update-dom-for-submitorder-leave-as-alert"><a name="jad-todo--dont-update-dom-for-submitorder-leave-as-alert" class="plugin-anchor" href="#jad-todo--dont-update-dom-for-submitorder-leave-as-alert"><i class="fa fa-link" aria-hidden="true"></i></a>JAD TODO- Don&apos;t update DOM for <code>submitOrder</code>. Leave as <code>alert</code></h1>
+<ol>
+<li><p>Great! Now we can update the DOM with information about the order in the <code>submitOrder</code> function. We should also append extra text to their name so it sounds friendly. We can do this using <strong>string concatenation</strong>. In Atom, remove the alert message from the <code>submitOrder</code> function body and replace it with</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.order-details&apos;</span>).innerHTML = name + <span class="hljs-string">&quot; would like a drink!&quot;</span>;
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We are using <code>document.querySelector</code> here instead of <code>document.getElementById</code>. We are querying for the class <code>order-details</code> instead of the element id. The <code>Document</code> API has different ways to find and access elements from the DOM depending on what you are trying to access and how many elements fit the criteria of the search. Check out the references for the section to read more about the different ways to access elements in the DOM. </p>
+</div></div>   </p>
+</li>
+<li><p>In Chrome, try adding your name and click the order button. Do you see your name added to the web page?
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>You will use Atom to type code statements and Chrome to verify your work when your web page reloads. Don&apos;t forget to save <em>my-script.js</em> every time you type a code statement.</p>
+</div></div></p>
+</li>
+</ol>
+<h1 id="jad-todo--remove-counter"><a name="jad-todo--remove-counter" class="plugin-anchor" href="#jad-todo--remove-counter"><i class="fa fa-link" aria-hidden="true"></i></a>JAD TODO- Remove counter</h1>
+<h2 id="counter"><a name="counter" class="plugin-anchor" href="#counter"><i class="fa fa-link" aria-hidden="true"></i></a>Add a counter and update the DOM element text  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>We&apos;ll practice using variables and arithmetic operators to add a counter and update the DOM. </p>
+<ol>
+<li><p>In Atom, above the <code>submitOrder</code> function, declare a new variable using <code>let</code> named <code>numberOfDrinks</code> to count the number of drinks ordered. Assign it to the value 0. </p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Your variable will look like this:
+<pre>
+<code class="lang-javascript">
+<span class="hljs-keyword">let</span> numberOfDrinks = <span class="hljs-number">0</span>;
+</code>
+</pre>
+</details>
+</div></div></p>
+</li>
+<li><p>We want to increment the drink counter whenever someone submits an order. Increment <code>numberOfDrinks</code> as the first line inside <code>submitOrder</code> function. One way to do this is by adding <code>numberOfDrinks++;</code>.
+<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We are incrementing <code>numberOfDrinks</code> by 1 using a shorthand method. This is functionally equivalent to either </p>
+<pre><code class="lang-javascript">numberOfDrinks = numberOfDrinks + <span class="hljs-number">1</span>;
+
+numberOfDrinks += <span class="hljs-number">1</span>;
+</code></pre>
+</div></div>   </p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Feel free to add <code>console.log()</code> statements to troubleshoot, double check your work, or to help reinforce concepts. You can also use the <code>debugger;</code> statement to <strong>debug</strong> your code using Chrome DevTools. Refer to the <a href="https://codingandcocktailskc.gitbooks.io/session-6-programming-fundamentals-101-jquery-js/content/ws2-functions/#conditional" target="_blank">debugging steps</a> from last session or feel free to grab a mentor!</p>
+</div></div></p>
+</li>
+<li><p>Place your cursor after the closing curly brace for the <code>submitOrder</code> function, press <code>Enter</code> twice and create a new function called <code>updateOrderCount</code> that accepts one parameter: <code>count</code>. This time we&apos;re going to use arrow syntax to create the function.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> updateOrderCount = (count) =&gt; {};
+</code></pre>
+<p>Since this function is being created outside of existing functions that means it is created in the global scope.</p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>In JavaScript, you can declare <strong>functions</strong> and <strong>function expressions</strong>. Function declarations use the syntax <code>function myFunction(){}</code> while function expressions use the syntax <code>const myFunction = function(){};</code>. In a function expression, you are assigning the function to a variable. This makes it easier to pass functions as parameters. We have been using <strong>function expressions</strong>.</p>
+<p>The <strong>arrow function</strong> is a shorthand hand way to write function expressions and is an ECMAScript 2015 standard. When you use arrow functions, you pass parameters in the open and close parenthesis, just the same as a regular function. The <code>=&gt;</code> symbol signifies the keyword <code>function</code>. </p>
+<p>Check out the references in this section to learn more about functions.</p>
+</div></div></p>
+</li>
+<li><p>In the <em>index.html</em> file, find the section that displays the number of drinks ordered and make note of the HTML element&apos;s <code>id</code> attribute.</p>
+</li>
+<li><p>In <em>my-script.js</em>, inside the <code>updateOrderCount</code> function, select the element you found in the previous step using the <code>getElementById</code> method.   </p>
+</li>
+<li><p>Update the <code>innerHTML</code> of that HTML element by using string concatenation to build out the string &quot;Drinks Ordered: 0&quot; (except replace the &quot;0&quot; with the actual count).</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Change the <code>updateOrderCount</code> function to
+<pre>
+<code class="lang-javascript">
+<span class="hljs-keyword">const</span> updateOrderCount = (count) =&gt; {
+      <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;drink-count&apos;</span>).innerHTML = <span class="hljs-string">&quot;Drinks Ordered: &quot;</span> + count;
+};
+</code>
+</pre>
+</details>
+</div></div></p>
+</li>
+<li><p>Add a call to the <code>updateOrderCount</code> function as the last line of the <code>submitOrder</code> function (right before the closing curly brace) so that we can see the drink count change. Make sure to pass in the <code>numberOfDrinks</code> as a parameter for the <code>updateOrderCount</code> function.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+In <code>submitOrder</code> function add the following code as the last line of the function 
+<pre>
+<code class="lang-javascript">
+updateOrderCount(numberOfDrinks);
+</code>
+</pre>
+</details>
+</div></div></p>
+</li>
+<li><p>Click on the order button in Chrome. Do you see the drink counter change? &#x1F60E;</p>
+</li>
+</ol>
+<h2 id="conditional"><a name="conditional" class="plugin-anchor" href="#conditional"><i class="fa fa-link" aria-hidden="true"></i></a>Add conditional logic to display an alert  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>We want to conditionally display an alert by using <code>if</code> and <code>else</code> to control code flow.</p>
+<ol>
+<li><p>In Atom, inside the <code>submitOrder</code> function in <em>my-script.js</em> set up your if block structure to add conditional logic that will update the name for the order only on the first 4 orders. Remember an if block looks like this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> () {
+   <span class="hljs-comment">// Code goes here</span>
+}
+</code></pre>
+</li>
+<li><p>Add the condition inside the parentheses to specify what needs to be true for the code inside the <code>if</code> block to execute.  Remember we want the code to execute only for the first 4 orders.</p>
+</li>
+<li><p>Move the code that updates the <code>innerHTML</code> inside the if blocks curly braces.  Your code should now look similar to this:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (numberOfDrinks &lt; <span class="hljs-number">5</span>) {
+   <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.order-details&apos;</span>).innerHTML = name + <span class="hljs-string">&quot; would like a drink!&quot;</span>;
+}
+</code></pre>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>We can write the conditional logic using the &apos;&lt;=&apos; operator. What would that look like?</p>
+</div></div></p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Notice the indention on the <code>document.querySelector()</code>. Indent everything inside the <code>if</code> statement to make it easier to read your code. Doing so helps your brain group logical units of code together at a glance!</p>
+</div></div></p>
+</li>
+<li><p>In cases where there are more than 5 orders, we want to display an alert. Add an else condition with an alert that says &quot;Drink order queue is full. Please try ordering again in a few minutes.&quot;
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Change the <code>if</code> statement to
+<pre>
+<code class="lang-javascript">
+<span class="hljs-keyword">if</span> (numberOfDrinks &lt; <span class="hljs-number">6</span>) {
+     <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.order-details&apos;</span>).innerHTML = name + <span class="hljs-string">&quot; would like a drink!&quot;</span>;
+} <span class="hljs-keyword">else</span> {
+    alert(<span class="hljs-string">&quot;Drink order queue is full. Please try ordering again in a few minutes.&quot;</span>);
+}
+</code>
+</pre>
+</details>
+</div></div></p>
+</li>
+</ol>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p><strong>High Five!!</strong></p>
+<p>You got through a lot of concepts in a short amount time. Nice job!!! Time to grab a drink and celebrate!</p>
+<p><img src="https://media.giphy.com/media/CW27AW0nlp5u0/giphy.gif" alt=""></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="checkpoint-"><a name="checkpoint-" class="plugin-anchor" href="#checkpoint-"><i class="fa fa-link" aria-hidden="true"></i></a>Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Compare your <em>my-script.js</em> against the answer key for your work so far. It might look a little different depending on spacing.  </p>
+<div class="checkpoint">
+    <div class="badge">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-certificate fa-stack-2x certificate"></i>
+            <i class="fa fa-check fa-stack-1x checkmark"></i>
+        </span>
+    </div>
+    <div class="content">
+        <details>
+            <summary>
+                Expand this section to compare your work.
+            </summary>
+            <img src="images/checkpoint.png">
+            <p>
+             You can also compare your <i>my-script.js</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/javascript-102/blob/answerkey-dom/assets/scripts/my-script.js" target="_blank">answer key</a> if the image is too difficult to read.
+            </p>
+        </details>
+    </div>
+</div>
+
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="references-and-helpful-links-"><a name="references-and-helpful-links-" class="plugin-anchor" href="#references-and-helpful-links-"><i class="fa fa-link" aria-hidden="true"></i></a>References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p><a href="https://vimeo.com/250067069" target="_blank">What is a programming language video</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById" target="_blank">MDN Reference: Document API&apos;s getElementById</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank">MDN Reference: Document API&apos;s querySelector</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Function" target="_blank">MDN Reference: Function</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">MDN Reference: Arrow functions</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../setup/" class="navigation navigation-prev " aria-label="Previous page: Setup Instructions">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ws2-events/" class="navigation navigation-next " aria-label="Next page: Events">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"next":{"title":"Events","level":"2.2","depth":1,"path":"ws2-events/README.md","ref":"ws2-events/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-dom/README.md","mtime":"2019-02-17T19:12:31.674Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-17T19:16:02.908Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-codetabs/codetabs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
