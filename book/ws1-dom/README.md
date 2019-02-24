@@ -21,24 +21,19 @@ This section will help guide you through the following steps:
 ## Prepare your workspace and serve your web page {#prepare} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 {% include "./1prepare.md" %}
 
-## Create a function and update the text of an element {#text} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+## Create a function and retrieve element value by id {#text} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 We'll write a function that updates the DOM dynamically with text. Remember a function is a bit of code that takes input, process the input and returns some output - sort of like a coffee machine!
 {% include "./2elementvalue.md" %}
 
-# JAD TODO- Remove counter
-## Add a counter and update the DOM element text {#counter} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-We'll practice using variables and arithmetic operators to add a counter and update the DOM. 
-{% include "./3counter.md" %}
-
-## Add conditional logic to display an alert {#conditional} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-We want to conditionally display an alert by using `if` and `else` to control code flow.
-{% include "./4conditional.md" %}
+## Retrieve an element by query selector {#radio} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a><span>
+We retrieved an element from the DOM via its id. Now we'll retrieve the selected radio button value by its CSS selector string.
+{% include "./3radioselection.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
 **High Five!!**
 
-You got through a lot of concepts in a short amount time. Nice job!!! Time to grab a drink and celebrate!
+Nice job!!! Time to grab a drink and celebrate!
 
 ![](https://media.giphy.com/media/CW27AW0nlp5u0/giphy.gif)
 
@@ -57,10 +52,12 @@ Compare your _my-script.js_ against the answer key for your work so far. It migh
 
 [MDN Reference: Document API's getElementById](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById)
 
+[MDN Reference: Locating DOM elements using selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Locating_DOM_elements_using_selectors)
+
 [MDN Reference: Document API's querySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 
 [MDN Reference: Function](https://developer.mozilla.org/en-US/docs/Glossary/Function)
 
-[MDN Reference: Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
 
 

@@ -31,9 +31,9 @@ Compare your _my-script.js_ against the answer key for your work so far. It migh
 ## References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 [MDN Reference: EventTarget.addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
-[MDN Reference: Document.createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
+[MDN Reference: Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
-[MDN Reference: if else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+[MDN Reference: Document.createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 
 [Chrome DevTools HTML Inspection Reference](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/)
 
