@@ -13,7 +13,7 @@ We will convert from string concatenation to template literals and try adding an
 
 ## Retrieve drink photos by the photo id {#photo-id} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 We'll find cocktail photos we like and add the photo ids to our drink objects. Then we'll update the `fetchImage` method to retrieve the photo by id.
-{% include "./2photo-id.md" %}
+{% include "./2radio-buttons.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 

@@ -14,13 +14,9 @@ This section will help guide you through the following steps:
 We will create an array of objects and access object properties.
 {% include "./1object.md" %}
 
-## Explore scope of variables {#scope} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-Scope affects visibility and access. Let's explore how scope changes the way we interact with objects, properties, and variables.
-{% include "./2scope.md" %}
-
 ## Use <code>this</code> keyword and build a DOM {#this} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
 The `this` keyword specifies the scope that we're in. We'll explore `this`, see how it affects access, and build a separate DOM to append to our application's DOM tree.
-{% include "./3this.md" %}
+{% include "./2build-dom.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 

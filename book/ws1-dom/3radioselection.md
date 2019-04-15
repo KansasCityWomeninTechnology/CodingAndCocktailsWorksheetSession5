@@ -1,4 +1,4 @@
-1. Let's retrieve the value of the selected drink by first creating the variable to hold the value. In _my-script.js_, inside the `onclick` handler, declare a variable for the name of the drink using a descriptive name. 
+1. Let's retrieve the value of the selected drink by first creating the variable to hold the value. In _my-script.js_, inside the `onclick` handler above the call to the `submitOrder` function, declare a variable for the name of the drink using a descriptive name. 
 
       {% hint style="working" %}
 <details>
@@ -15,7 +15,7 @@ const drinkName
 </details>
    {% endhint %}
 
-1. Last time we retrieved an element by id. This time we'll use `document.querySelector()`. Set your variable to `document.querySelector().value;`.
+1. Last time we retrieved an element by its id using `getElementById()`. This time we'll use `querySelector()` to retrieve an element by CSS selectors. Set your variable equal to `document.querySelector();`.
 
    {% hint style="info" %}
 There's different ways to access the DOM from JavaScript. Tonight we explore `getElementById()` and `querySelector()`. Sometimes it makes sense to define an id to an element so your code can access it easily. But as an application grows and the number of elements increases, having a way access elements without defining an id to each is powerful. 
@@ -49,7 +49,7 @@ console.log(drinkName);
 Need a CSS refresher? Grab a mentor or review the Coding & Cocktails [CSS Slides](http://bit.ly/cnccssslide) or [Worksheet](http://bit.ly/cnccsswork)!
   {% endhint %}
 
-1. Save your file. In Chrome, select a drink and press the **Order** button. Do you see your query selector write out to the console?
+1. Save your file. In Chrome, select a drink and press the **Order** button. Do you see your query selector write out to the console? Since we didn't specify that we only want the text, we see the entire `<h1>` HTML element.
 
    {% hint style="working" %}
 How can we change our `getElementById` to use `querySelector` instead? Can we use `getElementById` to retrieve the text in the `<h1>`? Feel free to talk it out with your mentor. They love acting as a sounding board!
@@ -66,5 +66,5 @@ You can also write a style in the CSS file using this selector too!
 1. Save your file. In Chrome, select a drink and press the **Order** button. Do you see your drink name write out to the console?
 
    {% hint style='info' %}
-We can't get the selected drink name by id because we don't know which id to use. This is an example of the power of query selectors.
+We can't get the selected drink name by id because we don't know which id is the **selected** drink. This is an example of the power of query selectors.
    {% endhint %}

@@ -1,0 +1,1 @@
+Use template literals for the radio buttons

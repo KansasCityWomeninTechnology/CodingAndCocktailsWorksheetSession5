@@ -59,7 +59,7 @@ If you don't see the alert pop up when you click the button, double check that y
 Need an HTML refresher? Grab a mentor or review the Coding & Cocktails [HTML Slides](http://bit.ly/cnchtmlslide) or [Worksheet](http://bit.ly/cnchtmlwork)!
   {% endhint %}
 
-1. Next, in the _my-script.js_ file, ensure we get the value entered in that form input element.  Any guesses how we might do that? 
+1. Next, in the _my-script.js_ file, ensure we get the value entered in that form input element by using the `value` property of the HTML element.
 
   Your click handler function should now look like this:
    ```javascript
@@ -96,7 +96,7 @@ Need an HTML refresher? Grab a mentor or review the Coding & Cocktails [HTML Sli
 You created a **function** named `submitOrder` that takes 1 parameter named `name`.
   {% endhint %}
 
-1. The click handler function needs to call our new `submitOrder` function instead of logging to the console. Replace the `console.log` text with `submitOrder` in the click handler function.
+1. The click handler function needs to call our new `submitOrder` function instead of logging to the console. Replace `console.log` with `submitOrder` in the click handler function.
       {% hint style='working' %}
 <details>
 <summary>
@@ -116,8 +116,6 @@ We are passing the value as a parameter to the `submitOrder` function. We can no
    {% endhint %}   
 
 1. Inside the `submitOrder` function, add an alert on `name` to verify we wired it up correctly and save your work. 
-
-1. In Chrome, try testing this out to see the alert pop up with the value you enter in the name field.
    {% hint style='working' %}
 <details>
 <summary>
@@ -133,6 +131,8 @@ const submitOrder = function (name) {
 </pre>
 </details>
    {% endhint %}
+
+1. In Chrome, try testing this out to see the alert pop up with the value you enter in the name field.
 
   {% hint style='tip' %}
 Notice we can leave the name blank. The value will be empty but the alert still displays with nothing inside.  

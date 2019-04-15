@@ -8,25 +8,6 @@
 We are adding an event listener for 'click' events onto the DOM element with the id 'order-btn'. Upon clicking, we want the function to execute. The advantage of using `addEventListener` instead of `onclick` is that we can dynamically add and remove event listeners. We can also add multiple listeners for the same event.
    {% endhint %}
 
-1. Let's add another listener to the same event. After the `document.getElementById('order-btn')` function, press `Enter` to add a new line. Add another event listener for the same element id but this time log "second click handler" to the console.
-      {% hint style='working' %}
-<details>
-<summary>
-Need a little help? Expand this section for guidance. 
-</summary> 
-Add
-<pre>
-<code class="lang-javascript">
-document.getElementById('order-btn').addEventListener('click', function () {
-      console.log('second click handler');
-});
-</code>
-</pre>
-</details>
-   {% endhint %}
-
-1. Double check that everything still works when you interact with the button in Chrome. Do you see the second event handler log in the console as well as changes to the DOM from the `submitOrder` function?
-
 1. It's about time to add the drink name to the order list. Change the `submitOrder` function to take `drink` as a second parameter.
 
 1. We need to pass in the drink name into the `submitOrder` function. We can do that from the first 'order-btn' event listener function where we are passing in the order name, but the call to `submitOrder` is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first. Declare a variable called `orderName` inside the first event handler function and assign it to the value of the form input. Your code should look like this
