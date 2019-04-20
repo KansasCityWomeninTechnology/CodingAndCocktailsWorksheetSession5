@@ -9,7 +9,7 @@ Two functions are already defined in the file: one function associated with the 
   Your cursor will be on a new line in between those curly braces that denote the function body.  Notice how Atom indents your cursor position as well.  This is to help with code readability. Your code should now look similar to this:
 
    ```javascript
-  document.getElementById('order-btn').onclick = function () {
+  document.getElementById('order-btn').onclick = () => {
   };
    ```
 
@@ -24,7 +24,7 @@ View the worksheet and the **IDE** (**I**ntegrated **D**evelopment **E**nvironme
 1. Add an alert with the message "Hi LadyDev!" inside the function body to verify we wired up the click handler correctly. Your click handler should look like this:
 
    ```javascript
-  document.getElementById('order-btn').onclick = function () {
+  document.getElementById('order-btn').onclick = () => {
         alert("Hi LadyDev!");
   };
    ```
@@ -63,7 +63,7 @@ Need an HTML refresher? Grab a mentor or review the Coding & Cocktails [HTML Sli
 
   Your click handler function should now look like this:
    ```javascript
-  document.getElementById('order-btn').onclick = function () {
+  document.getElementById('order-btn').onclick = () => {
         document.getElementById('order-form-input').value;
   };
    ```
@@ -84,13 +84,13 @@ Need an HTML refresher? Grab a mentor or review the Coding & Cocktails [HTML Sli
   const submitOrder
    ```
 
-1. Next to the `submitOrder` variable, add an `=` sign to set your variable to some content.  Type the `function` keyword to start your function definition.
+1. Next to the `submitOrder` variable, add an `=` sign to set your variable to some content.  Type `() =>` to start your function definition.
 
-1. Add the open and close parenthesis for the area where you enter the input parameters for the function and add a single parameter called `name` as input to this function. 
+1. In the open and close parenthesis for the area where you enter the input parameters for the function and add a single parameter called `name` as input to this function. 
 
 1. Wrap up the function structure by adding the open and close curly braces `{}` and a semi-colon to end the line of code. Your function should look like this:
   ```javascript
-  const submitOrder = function (name) {};
+  const submitOrder = (name) => {};
   ```
   {% hint style="info" %}
 You created a **function** named `submitOrder` that takes 1 parameter named `name`.
@@ -124,7 +124,7 @@ Need a little help? Expand this section for guidance.
 Change the <code>submitOrder</code> function to
 <pre>
 <code class="lang-javascript">
-const submitOrder = function (name) {
+const submitOrder = (name) => {
       alert(name);
 };
 </code>

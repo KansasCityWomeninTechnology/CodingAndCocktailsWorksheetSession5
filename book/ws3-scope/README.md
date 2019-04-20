@@ -1,4 +1,4 @@
-# Objects, Scopes, and this {#top}
+# Objects and Scopes {#top}
 Grouping like properties and functionality together can make applications easier to write and maintain. Keeping scope small and targeted is part of that process. These are abstract concepts and will require hands-on practice to connect the dots.
 
 We will move the drink list that is hard coded in the HTML and build it out programmatically using JavaScript. 
@@ -14,8 +14,8 @@ This section will help guide you through the following steps:
 We will create an array of objects and access object properties.
 {% include "./1object.md" %}
 
-## Use <code>this</code> keyword and build a DOM {#this} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
-The `this` keyword specifies the scope that we're in. We'll explore `this`, see how it affects access, and build a separate DOM to append to our application's DOM tree.
+## Use built in array function to build a DOM {#this} <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span>
+We want to iterate over array to build the menu. We have to implement the code to build out the same HTML we commented out previously. Last time we used the built in methods to add to the DOM in a structured way. This time we'll build a string to add to the DOM. 
 {% include "./2build-dom.md" %}
 
 <!-- trick markdown to give me a little space between these two sections of text -->
@@ -41,8 +41,4 @@ Compare your _my-script.js_ against the answer key for your work so far. It migh
 [MDN Reference: let keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
 
 [MDN Reference: var keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
-
-[MDN Reference: this keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
-
-[MDN Reference: DocumentFragment](https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment)
 

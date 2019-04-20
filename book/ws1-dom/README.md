@@ -58,6 +58,9 @@ Compare your _my-script.js_ against the answer key for your work so far. It migh
 
 [MDN Reference: Function](https://developer.mozilla.org/en-US/docs/Glossary/Function)
 
+[MDN Reference: Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
+
+
 
 
 

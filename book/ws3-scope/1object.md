@@ -6,19 +6,17 @@ Highlight all the `<label>` elements inside the `div` with class "drink-menu" an
 Remember to use Atom to type code statements and Chrome to verify your work when your web page reloads. Don't forget to save _my-script.js_ every time you type a code statement.
    {% endhint %}
 
-1. In _my-script.js_, at the top of the file, create a new `const` variable named `drinkArray` that will hold the array of drinks. 
+1. In _my-script.js_, at the top of the file, create a new `const` variable named `cocktailsArray` that will hold the array of drinks. 
 
-1. We want to populate `drinkArray` with the list of available drinks, which is everything with a radio button in front of it. To do so, each element in the array is an object with 2 properties: "id" and "label". We can add an object to the array like this
+1. We want to populate `cocktailsArray` with the list of available drinks, which is everything with a radio button in front of it. To do so, each element in the array is an object with 2 properties: "id" and "label". We can add an object to the array like this
    ```javascript
-const menu = {
-    drinkArray: [{
+   const cocktailsArray = [{
       'id': 'focusedLady',
       'label': 'Focused Lady'
-    }]
-};
+    }];
    ```
     {% hint style="info" %}
-Everything inside the `{}` is part of the object. The curly braces help group code statements together. We know the difference between objects and functions by the way we declare it. `const myObject = {};` is an object and `const myFunction = function(){};` is a function because use the `function` keyword.
+Everything inside the `{}` is part of the object. The curly braces help group code statements together. We know the difference between objects and functions by the way we declare it. `const myObject = {};` is an object and `const myFunction = () => {};` is a function because of the parenthesis arrow in the definition.
 
 Objects can contain key-value pairs like this:
 ```javascript
@@ -31,9 +29,9 @@ Objects can contain key-value pairs like this:
 You can use single quotes, double quotes, or use no quotes when declaring keys in an object.
    {% endhint %}
 
-1. Populate the rest of the `drinkArray` with the remaining drinks. Copy and paste the following code snippet to replace `drinkArray` to avoid typing fatigue. 
+1. Populate the rest of the `cocktailsArray` with the remaining drinks. Copy and paste the following code snippet to replace `cocktailsArray` to avoid typing fatigue. 
    ```javascript
-    drinkArray: [{
+    const cocktailsArray = [{
             'id': 'focusedLady',
             'label': 'Focused Lady'
         },
@@ -68,7 +66,7 @@ You can use single quotes, double quotes, or use no quotes when declaring keys i
     ];
    ```
    {% hint style="info" %}
-Notice a comma replaces the semicolon after the array declaration and we're not using quotes for the `drinkArray` property but are using single quotes for `id` and `label` properties inside each object within the array.
+Notice a comma replaces the semicolon after the array declaration and we're not using quotes for the `cocktailsArray` property but are using single quotes for `id` and `label` properties inside each object within the array.
    {% endhint %}
 
 

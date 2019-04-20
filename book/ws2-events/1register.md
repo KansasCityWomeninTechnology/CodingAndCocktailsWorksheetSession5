@@ -1,6 +1,6 @@
-1. Inside the `document.addEventListener("DOMContentLoaded", ...)` function at the bottom of _my-script.js_, we defined a function for the `onclick` event for the order button. We want to change the way we listen to events by registering an event lister. Replace the `onclick` with
+1. Inside the `document.addEventListener("DOMContentLoaded", ...)` function at the bottom of _my-script.js_, we defined a function for the `onclick` event for the order button. We want to change the way we listen to events by registering an event listener. Replace the `onclick` with
    ```javascript
-   document.getElementById('order-btn').addEventListener('click', function () {
+   document.getElementById('order-btn').addEventListener('click', () => {
          submitOrder(document.getElementById('order-form-input').value);
    });
    ```
@@ -9,19 +9,28 @@ We are adding an event listener for 'click' events onto the DOM element with the
    {% endhint %}
 
 1. It's about time to add the drink name to the order list. Change the `submitOrder` function to take `drink` as a second parameter.
-
-1. We need to pass in the drink name into the `submitOrder` function. We can do that from the first 'order-btn' event listener function where we are passing in the order name, but the call to `submitOrder` is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first. Declare a variable called `orderName` inside the first event handler function and assign it to the value of the form input. Your code should look like this
-   ```javascript
-   const orderName = document.getElementById('order-form-input').value;
-   ```
-
-1. Let's do the same for the drink name. Declare a variable named `drinkName` after the variable `orderName` and assign it to value of the selected radio button by using the following code
-```javascript
-   const drinkName = document.querySelector('input[type="radio"]:checked').value;
-``` 
-   {% hint style='info' %}
-Notice how we queried for the radio buttons. We used `querySelector` to match by element tag and had to use a combination of single and double quotes. We can't use single quotes for the "radio" type since we used single quotes for the selector.
+   {% hint style="tip" %}
+Remember to separate parameters with a comma.
    {% endhint %}
+
+1. We need to pass in the drink name into the `submitOrder` function. We can do that from the first 'order-btn' event listener function where we are passing in the order name, but the call to `submitOrder` is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first, just like we did for `drinkName`. After the `drinkName` variable, create a variable called `orderName` and assign it to the value of `getElementById` call. 
+   {% hint style="working" %}
+<details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+You want to store the value of <code>document.getElementById()</code> call to a variable named <code>orderName</code>.
+Your code will look like this
+<pre>
+<code class="lang-javascript">
+const drinkName = document.querySelector('input[type="radio"]:checked').value;
+const orderName = document.getElementById('order-form-input').value;
+</code>
+</pre>
+</details>
+   {% endhint %}
+
+1. Let's get rid of the `console.log()` in the event handler. We don't need that any more.
 
 1. Update the call to `submitOrder` in the event listener to pass in the `orderName` and `drinkName` variables. 
    {% hint style='working' %}
@@ -39,7 +48,7 @@ Change <code>submitOrder(document.getElementById('order-form-input').value);</co
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-Change the <code>name + " would like a drink!"</code> function to
+Change <code>name + " would like a drink!"</code> to
 <code>name + " would like a " + drink</code>
 </details>
    {% endhint %}

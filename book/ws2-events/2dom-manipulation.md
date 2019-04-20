@@ -1,4 +1,4 @@
-1. Inside the `if` statement in the `submitOrder` function, we'll programmatically add new HTML elements to append to the DOM. Create an `<h3>` element and assign it to a variable using the following code as the first line inside the `if` statement.
+1. In the `submitOrder` function, we'll programmatically add new HTML elements to append to the DOM instead of calling `alert`. Create an `<h3>` element and assign it to a variable. Replace the call to `alert` with the following code:
    ```javascript
 let node = document.createElement('h3');
    ```

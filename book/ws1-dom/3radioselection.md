@@ -55,7 +55,7 @@ Need a CSS refresher? Grab a mentor or review the Coding & Cocktails [CSS Slides
 How can we change our `getElementById` to use `querySelector` instead? Can we use `getElementById` to retrieve the text in the `<h1>`? Feel free to talk it out with your mentor. They love acting as a sounding board!
    {% endhint %}
 
-1. Time to get the selected drink! This time, the CSS selector string is a little more specific. In Atom, change the CSS selector string for your `querySelector` to `input[type="radio"]:checked`.
+1. Time to get the selected drink! This time, the CSS selector string is a little more specific. In Atom, change the CSS selector string for your `querySelector` to `'input[type="radio"]:checked'`.
 
    {% hint style='info' %}
 Let's walk through this CSS selector string. The radio buttons are `<input>` elements with the **attribute** `type="radio"`. Selectors use square brackets `[]` for attributes. Then we only want the selected radio button, which uses the pseudo-class `checked`. Selectors use colons `:` for pseudo-classes.
@@ -63,8 +63,25 @@ Let's walk through this CSS selector string. The radio buttons are `<input>` ele
 You can also write a style in the CSS file using this selector too!
   {% endhint %}
 
-1. Save your file. In Chrome, select a drink and press the **Order** button. Do you see your drink name write out to the console?
+1. Save your file. In Chrome, select a drink and press the **Order** button. Hrm... We see the HTML element not the drink name.Do you see your drink name write out to the console?
 
    {% hint style='info' %}
 We can't get the selected drink name by id because we don't know which id is the **selected** drink. This is an example of the power of query selectors.
+   {% endhint %}
+
+1. Let's get the drink name-- that's the `value` of the HTML element. In Atom, make your change and double check your work by saving your file and testing it out in Chrome.
+   {% hint style="working" %}
+<details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+You want the <code>value</code> of the <code>document.querySelector()</code>.
+Your code will look like this
+<pre>
+<code class="lang-javascript">
+const drinkName = document.querySelector('input [type="radio"]:checked').value;
+console.log(drinkName);
+</code>
+</pre>
+</details>
    {% endhint %}

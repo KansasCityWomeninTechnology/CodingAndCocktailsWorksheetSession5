@@ -1,6 +1,6 @@
 # Fix a bug and add an enhancement
 
-Let's practice what we learned by simulating project requirements. We have a bug to fix and add an enhancement to our drink order web app.
+Let's practice what we learned by simulating project requirements. We have a bug to fix and an enhancement to add to our drink order web app.
 
 {% hint style='tip' %}
 ##### Hey Slacker!
@@ -18,7 +18,7 @@ You're getting ready to release the web page to your customer, Coding & Cocktail
 Don't forget to save your file after each code change to see your web page reload. If another browser opens, you can open Chrome and open a tab using the same URL as the other browser tab.
    {% endhint %}
 
-1. In _my-script.js_, inside the first `click` event handler, wrap the call to `submitOrder` in an `if` statement. Add an equality check for `orderName` variable is not empty in the `if` condition.
+1. In _my-script.js_, inside the `click` event handler, wrap the call to `submitOrder` in an `if` statement. Add an equality check for `orderName` variable is not empty in the `if` condition.
    {% hint style="working" %}
 <details>
 <summary>
@@ -28,7 +28,7 @@ Your code will look like this
 <pre>
 <code class="lang-javascript">
 if (orderName) {
-       submitOrder(orderName, drinkId);
+       submitOrder(orderName, drinkName);
 }
 </code>
 </pre>
@@ -46,12 +46,12 @@ Remember, in JavaScript, `null`, `undefined`, and empty strings are **falsy**.
 const orderName = document.getElementById('order-form-input').value.trim();
    ```
 
-1. Try submitting an order with spaces as the name. A drink order didn't submit. Yay! We're getting closer! Now try submitting an order without the drink selected. Uh oh. We still see an error in the console: `Uncaught TypeError: Cannot read property 'id' of null`.
+1. Try submitting an order with spaces as the name. A drink order didn't submit. Yay! We're getting closer! Now try submitting an order without the drink selected. Uh oh. We still see an error in the console: `Uncaught TypeError: Cannot read property 'value' of null`.
    {% hint style="working" %}
-Look at the code to query for the radio button. We use `document.querySelector('input[type="radio"]:checked').id`. But if we don't select a drink, the `querySelector` can't find any elements matching a checked radio button. The return from `querySelector()` where no elements match the criteria is `null`. We then try to get the `id` property of `null`. We need to check the element is not `null` before proceeding.
+Look at the code to query for the radio button. We use `document.querySelector('input[type="radio"]:checked').value`. But if we don't select a drink, the `querySelector` can't find any elements matching a checked radio button. The return from `querySelector()` where no elements match the criteria is `null`. We then try to get the `value` property of `null`. We need to check the element is not `null` before proceeding.
    {% endhint %}
 
-1. Change the variable name `drinkId` to `drinkElement` and remove the call to get the `id` property.
+1. Change the variable name `drinkName` to `drinkElement` and remove the call to get the `value` property.
    {% hint style="working" %}
 <details>
 <summary>
@@ -80,7 +80,7 @@ Need a little help? Expand this section for guidance.
 Your code will look like this
 <pre>
 <code class="lang-javascript">
-submitOrder(orderName, drinkElement.id);
+submitOrder(orderName, drinkElement.value);
 </code>
 </pre>
 </details>
@@ -94,7 +94,7 @@ Our bartender, Laura, doesn't want to have so many drinks available each session
 
 Here is another example where building out the menu programmatically allows us to easily add more functionality.
 
-1. In _my-script.js_, in the `drinkArray`, add a new property to each drink object called `isAvailable`. The value is a **boolean** so set the values to `true` or `false`.
+1. In _my-script.js_, in the `cocktailsArray`, add a new property to each drink object called `isAvailable`. The value is a **boolean** so set the values to `true` or `false`.
    {% hint style="working" %}
 <details>
 <summary>
@@ -106,23 +106,22 @@ Your drink object inside the array will look like this
 {
       'id': 'focusedLady',
       'label': 'Focused Lady',
-      'photoId': 'eXdKs9d37Sc',
       'isAvailable': true
 }
 </code>
 </pre>
-Don't forget the single quotes and a comma between the <code>photoId</code> property and the new property. Make sure you add the property to every object!
+Don't forget the single quotes and a comma between the <code>label</code> property and the new property. Make sure you add the property to every object!
 </details>
    {% endhint %}
 
-1. In the `buildDrinkMenu` method we want to create a new array of drinks where `isAvailable == true` and use that array to build the menu. We can do that using the built in `filter()` method on arrays. After the `fragment` variable declaration, but be before the `forEach`, create a new variable called `availableDrinks` and type the following code
+1. In the `buildCocktailsMenu` method we want to create a new array of drinks where `isAvailable == true` and use that array to build the menu. We can do that using the built in `filter()` method on arrays. After the `cocktailsString` variable declaration, but be before the `forEach`, create a new variable called `availableDrinks` and type the following code
    ```javascript
-const availableDrinks = this.drinkArray.filter( (arrayElement) => {
+const availableDrinks = cocktails.filter( (arrayElement) => {
       return arrayElement.isAvailable === true;
 });
    ```
    {% hint style="working" %}
-Let's walk through what we did here. We created a variable called `availableDrinks`. We access the `drinkArray` buy using `this` and iterate over each drink in `drinkArray` to apply the `filter` conditional. If `arrayElement.isAvailable == true`, that drink is added to `availableDrinks` array.
+Let's walk through what we did here. We created a variable called `availableDrinks`. We iterate over each cocktail in `cocktails` to apply the `filter` conditional. If `arrayElement.isAvailable == true`, that drink is added to `availableDrinks` array.
    {% endhint %}
 
 1. Update the code to build the drink menu using the drinks in `availableDrinks`.
@@ -134,11 +133,11 @@ Need a little help? Expand this section for guidance.
 Your code will look like this
 <pre>
 <code class="lang-javascript">
-const availableDrinks = this.drinkArray.filter( (element) => {
+const availableDrinks = cocktails.filter( (element) => {
       return element.isAvailable == true;
 });
 
-availableDrinks.forEach( (drink) => {
+availableDrinks.forEach( (cocktail) => {
       ...
 });
 </code>
