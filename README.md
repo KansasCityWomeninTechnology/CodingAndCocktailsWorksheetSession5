@@ -1,6 +1,8 @@
-# Coding & Cocktails Session 5: Introduction to Front-End Architecture
+# Coding & Cocktails Session 5: Interactive Javascript
 
 The `docs` directory contains worksheets for Coding & Cocktails session 5 published on Gitbooks: [Coding & Cocktails - Session 5: Intro to Interactive JavaScript](https://www.gitbook.com/book/codingandcocktailskc/session-5/details).
+
+The worksheet is also published as a GitHub page to [https://kansascitywomenintechnology.github.io/CodingAndCocktailsWorksheetSession5/](https://kansascitywomenintechnology.github.io/CodingAndCocktailsWorksheetSession5/)
 
 ## Getting Going
 
