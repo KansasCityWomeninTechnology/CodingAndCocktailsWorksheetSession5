@@ -1,6 +1,7 @@
 1. Inside the `document.addEventListener("DOMContentLoaded", ...)` function at the bottom of _my-script.js_, we defined a function for the `onclick` event for the order button. We want to change the way we listen to events by registering an event listener. Replace the `onclick` with
    ```javascript
    document.getElementById('order-btn').addEventListener('click', () => {
+         //drinkName code here
          submitOrder(document.getElementById('order-form-input').value);
    });
    ```

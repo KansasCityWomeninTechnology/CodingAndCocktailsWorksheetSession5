@@ -84,7 +84,7 @@ Need an HTML refresher? Grab a mentor or review the Coding & Cocktails [HTML Sli
   const submitOrder
    ```
 
-1. Next to the `submitOrder` variable, add an `=` sign to set your variable to some content.  Type `() =>` to start your function definition.
+1. Next to the `submitOrder` variable, add an `=` sign to set your variable to some content.  Type `() => {};` to start your function definition.
 
 1. In the open and close parenthesis for the area where you enter the input parameters for the function and add a single parameter called `name` as input to this function. 
 

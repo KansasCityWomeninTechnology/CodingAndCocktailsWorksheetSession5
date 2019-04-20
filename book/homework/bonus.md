@@ -114,7 +114,7 @@ Don't forget the single quotes and a comma between the <code>label</code> proper
 </details>
    {% endhint %}
 
-1. In the `buildCocktailsMenu` method we want to create a new array of drinks where `isAvailable == true` and use that array to build the menu. We can do that using the built in `filter()` method on arrays. After the `cocktailsString` variable declaration, but be before the `forEach`, create a new variable called `availableDrinks` and type the following code
+1. In the `buildCocktailsMenu` method we want to create a new array of drinks where `isAvailable == true` and use that array to build the menu. We can do that using the built in `filter()` method on arrays. In the `buildCocktailsMenu` before the `forEach`, create a new variable called `availableDrinks` and type the following code
    ```javascript
 const availableDrinks = cocktails.filter( (arrayElement) => {
       return arrayElement.isAvailable === true;
