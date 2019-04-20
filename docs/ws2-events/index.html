@@ -179,22 +179,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="../ws4-fetch/">
+        <li class="chapter " data-level="2.4" data-path="../ws4-templates/">
             
-                <a href="../ws4-fetch/">
-            
-                    
-                    APIs
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.5" data-path="../ws5-templates/">
-            
-                <a href="../ws5-templates/">
+                <a href="../ws4-templates/">
             
                     
                     Templates
@@ -205,7 +192,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.6" data-path="../quiz.html">
+        <li class="chapter " data-level="2.5" data-path="../quiz.html">
             
                 <a href="../quiz.html">
             
@@ -238,20 +225,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../homework/bonus-scope.html">
-            
-                <a href="../homework/bonus-scope.html">
-            
-                    
-                    Scope Exploration
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="3.3" data-path="../homework/homework.html">
+        <li class="chapter " data-level="3.2" data-path="../homework/homework.html">
             
                 <a href="../homework/homework.html">
             
@@ -354,43 +328,36 @@
 <h2 id="register"><a name="register" class="plugin-anchor" href="#register"><i class="fa fa-link" aria-hidden="true"></i></a>Register for click events  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p>Register an event listener on a click event.</p>
 <ol>
-<li><p>Inside the <code>document.addEventListener(&quot;DOMContentLoaded&quot;, ...)</code> function at the bottom of <em>my-script.js</em>, we defined a function for the <code>onclick</code> event for the order button. We want to change the way we listen to events by registering an event lister. Replace the <code>onclick</code> with</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-btn&apos;</span>).addEventListener(<span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-   submitOrder(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value);
+<li><p>Inside the <code>document.addEventListener(&quot;DOMContentLoaded&quot;, ...)</code> function at the bottom of <em>my-script.js</em>, we defined a function for the <code>onclick</code> event for the order button. We want to change the way we listen to events by registering an event listener. Replace the <code>onclick</code> with</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-btn&apos;</span>).addEventListener(<span class="hljs-string">&apos;click&apos;</span>, () =&gt; {
+      <span class="hljs-comment">//drinkName code here</span>
+      submitOrder(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value);
 });
 </code></pre>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We are adding an event listener for &apos;click&apos; events onto the DOM element with the id &apos;order-btn&apos;. Upon clicking, we want the function to execute. The advantage of using <code>addEventListener</code> instead of <code>onclick</code> is that we can dynamically add and remove event listeners. We can also add mutiple listeners for the same event.</p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We are adding an event listener for &apos;click&apos; events onto the DOM element with the id &apos;order-btn&apos;. Upon clicking, we want the function to execute. The advantage of using <code>addEventListener</code> instead of <code>onclick</code> is that we can dynamically add and remove event listeners. We can also add multiple listeners for the same event.</p>
 </div></div></p>
 </li>
-<li><p>Let&apos;s add another listener to the same event. After the <code>document.getElementById(&apos;order-btn&apos;)</code> function, press <code>Enter</code> to add a new line. Add another event listener for the same element id but this time log &quot;second click handler&quot; to the console.
-   <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>It&apos;s about time to add the drink name to the order list. Change the <code>submitOrder</code> function to take <code>drink</code> as a second parameter.
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Remember to separate parameters with a comma.</p>
+</div></div></p>
+</li>
+<li><p>We need to pass in the drink name into the <code>submitOrder</code> function. We can do that from the first &apos;order-btn&apos; event listener function where we are passing in the order name, but the call to <code>submitOrder</code> is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first, just like we did for <code>drinkName</code>. After the <code>drinkName</code> variable, create a variable called <code>orderName</code> and assign it to the value of <code>getElementById</code> call. 
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-Add
+You want to store the value of <code>document.getElementById()</code> call to a variable named <code>orderName</code>.
+Your code will look like this
 <pre>
 <code class="lang-javascript">
-<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-btn&apos;</span>).addEventListener(<span class="hljs-string">&apos;click&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
-      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;second click handler&apos;</span>);
-});
+<span class="hljs-keyword">const</span> drinkName = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;input[type=&quot;radio&quot;]:checked&apos;</span>).value;
+<span class="hljs-keyword">const</span> orderName = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value;
 </code>
 </pre>
 </details>
 </div></div></p>
 </li>
-<li><p>Double check that everything still works when you interact with the button in Chrome. Do you see the second event handler log in the console as well as changes to the DOM from the <code>submitOrder</code> function?</p>
-</li>
-<li><p>It&apos;s about time to add the drink name to the order list. Change the <code>submitOrder</code> function to take <code>drink</code> as a second parameter.</p>
-</li>
-<li><p>We need to pass in the drink name into the <code>submitOrder</code> function. We can do that from the first &apos;order-btn&apos; event listener function where we are passing in the order name, but the call to <code>submitOrder</code> is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first. Declare a variable called <code>orderName</code> inside the first event handler function and assign it to the value of the form input. Your code should look like this</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> orderName = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value;
-</code></pre>
-</li>
-<li><p>Let&apos;s do the same for the drink name. Declare a variable named <code>drinkName</code> after the variable <code>orderName</code> and assign it to value of the selected radio button by using the following code</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> drinkName = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;input[type=&quot;radio&quot;]:checked&apos;</span>).value;
-</code></pre>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>Notice how we queried for the radio buttons. We used <code>querySelector</code> to match by element tag and had to use a combination of single and double quotes. We can&apos;t use single quotes for the &quot;radio&quot; type since we used single quotes for the selector.</p>
-</div></div></p>
+<li><p>Let&apos;s get rid of the <code>console.log()</code> in the event handler. We don&apos;t need that any more.</p>
 </li>
 <li><p>Update the call to <code>submitOrder</code> in the event listener to pass in the <code>orderName</code> and <code>drinkName</code> variables. 
 <div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
@@ -406,7 +373,7 @@ Change <code>submitOrder(document.getElementById(&apos;order-form-input&apos;).v
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-Change the <code>name + &quot; would like a drink!&quot;</code> function to
+Change <code>name + &quot; would like a drink!&quot;</code> to
 <code>name + &quot; would like a &quot; + drink</code>
 </details>
 </div></div></p>
@@ -419,7 +386,7 @@ Change the <code>name + &quot; would like a drink!&quot;</code> function to
 <h2 id="dom"><a name="dom" class="plugin-anchor" href="#dom"><i class="fa fa-link" aria-hidden="true"></i></a>Build on to the DOM dynamically  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p>Append new elements to the DOM programmatically.</p>
 <ol>
-<li><p>Inside the <code>if</code> statement in the <code>submitOrder</code> function, we&apos;ll programmatically add new HTML elements to append to the DOM. Create an <code>&lt;h3&gt;</code> element and assign it to a variable using the following code as the first line inside the <code>if</code> statement.</p>
+<li><p>In the <code>submitOrder</code> function, we&apos;ll programmatically add new HTML elements to append to the DOM instead of calling <code>alert</code>. Create an <code>&lt;h3&gt;</code> element and assign it to a variable. Replace the call to <code>alert</code> with the following code:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> node = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;h3&apos;</span>);
 </code></pre>
 <p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>We want to create the following HTML using DOM manipulation</p>
@@ -484,7 +451,6 @@ Change the <code>name + &quot; would like a drink!&quot;</code> function to
 <h2 id="references-and-helpful-links-"><a name="references-and-helpful-links-" class="plugin-anchor" href="#references-and-helpful-links-"><i class="fa fa-link" aria-hidden="true"></i></a>References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank">MDN Reference: EventTarget.addEventListener</a></p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement" target="_blank">MDN Reference: Document.createElement</a></p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else" target="_blank">MDN Reference: if else</a></p>
 <p><a href="https://developers.google.com/web/tools/chrome-devtools/inspect-styles/" target="_blank">Chrome DevTools HTML Inspection Reference</a></p>
 
                                 
@@ -529,7 +495,7 @@ Change the <code>name + &quot; would like a drink!&quot;</code> function to
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Events","level":"2.2","depth":1,"next":{"title":"Objects and Scope","level":"2.3","depth":1,"path":"ws3-scope/README.md","ref":"ws3-scope/README.md","articles":[]},"previous":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"path":"ws1-dom/README.md","ref":"ws1-dom/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws2-events/README.md","mtime":"2019-02-17T16:41:19.942Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-02-17T19:16:02.908Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Events","level":"2.2","depth":1,"next":{"title":"Objects and Scope","level":"2.3","depth":1,"path":"ws3-scope/README.md","ref":"ws3-scope/README.md","articles":[]},"previous":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"path":"ws1-dom/README.md","ref":"ws1-dom/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws2-events/README.md","mtime":"2019-04-20T01:50:25.931Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-20T19:54:04.696Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
