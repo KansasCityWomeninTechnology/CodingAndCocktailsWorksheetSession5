@@ -1,6 +1,6 @@
 # Coding & Cocktails Session 5: Introduction to Front-End Architecture
 
-The `docs` directory contains worksheets for Coding & Cocktails session 5 published on Gitbooks: [Coding & Cocktails - Session 5: Intro to Front-End Architecture](https://www.gitbook.com/book/codingandcocktailskc/session-5-intro-to-front-end-architecture/details).
+The `docs` directory contains worksheets for Coding & Cocktails session 5 published on Gitbooks: [Coding & Cocktails - Session 5: Intro to Interactive JavaScript](https://www.gitbook.com/book/codingandcocktailskc/session-5/details).
 
 ## Getting Going
 
@@ -11,15 +11,17 @@ npm run docs:install
 To serve Gitbook, `npm start`.
 To build without serving, `npm run docs:build`.
 
-## Associated Repos
-[front-end-architecture-ws](https://github.com/KansasCityWomeninTechnology/front-end-architecture-ws) 
+## To build and deploy to Github pages
+Run command prior to pushing to master.
+```bash
+npm run book:deploy
+```
 
-## Associated CodePens 
-CodePen for generating charts (for easier updates) This probably should transfer over to C&C CodePen.
-https://codepen.io/alisaduncan/pen/yjYepR
+## Associated Repos
+[javascript-102](https://github.com/KansasCityWomeninTechnology/javascript-102)
+
 
 ## TODO
-- [x] Update front-end-architecture-ws repo to point to correct links in EventBrite
 - [x] 2018 updates!
 
 ## License

@@ -1,0 +1,538 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Events · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codetabs/codetabs.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../ws3-scope/" />
+    
+    
+    <link rel="prev" href="../ws1-dom/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Overview
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../setup/">
+            
+                <a href="../setup/">
+            
+                    
+                    Setup Instructions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Worksheet</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../ws1-dom/">
+            
+                <a href="../ws1-dom/">
+            
+                    
+                    Review and DOM Manipulation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Events
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../ws3-scope/">
+            
+                <a href="../ws3-scope/">
+            
+                    
+                    Objects and Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../ws4-templates/">
+            
+                <a href="../ws4-templates/">
+            
+                    
+                    Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../quiz.html">
+            
+                <a href="../quiz.html">
+            
+                    
+                    Quiz
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bonus</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../homework/bonus.html">
+            
+                <a href="../homework/bonus.html">
+            
+                    
+                    Bug Fix & Enhancements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../homework/homework.html">
+            
+                <a href="../homework/homework.html">
+            
+                    
+                    Homework
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../references/">
+            
+                <a href="../references/">
+            
+                    
+                    References & Shortcuts
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Events</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="top"><a name="top" class="plugin-anchor" href="#top"><i class="fa fa-link" aria-hidden="true"></i></a>Events And DOM Manipulation </h1>
+<p>Responding to events is a necessary part of application development and makes applications powerful. We will learn how to register event listeners in JavaScript and append nodes to the DOM.</p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p>This section will help guide you through the following steps:</p>
+<div class="instructions">
+    <ul class="fa-ul">
+        <li>
+            <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+            <span class="text">Add an event listener</span>
+            <a href="#register" title="Take me to this step" class="navigate-arrow"><i class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i></a>
+        </li>
+        <li>
+            <i class="check fa-li fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+            <span class="text">Build on to the DOM</span>
+            <a href="#dom" title="Take me to this step" class="navigate-arrow"><i class="fa fa-chevron-circle-down fa-lg" aria-hidden="true"></i></a>
+        </li>
+    </ul>                
+</div>
+
+
+
+<h2 id="register"><a name="register" class="plugin-anchor" href="#register"><i class="fa fa-link" aria-hidden="true"></i></a>Register for click events  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Register an event listener on a click event.</p>
+<ol>
+<li><p>Inside the <code>document.addEventListener(&quot;DOMContentLoaded&quot;, ...)</code> function at the bottom of <em>my-script.js</em>, we defined a function for the <code>onclick</code> event for the order button. We want to change the way we listen to events by registering an event listener. Replace the <code>onclick</code> with</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-btn&apos;</span>).addEventListener(<span class="hljs-string">&apos;click&apos;</span>, () =&gt; {
+      <span class="hljs-comment">//drinkName code here</span>
+      submitOrder(<span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value);
+});
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We are adding an event listener for &apos;click&apos; events onto the DOM element with the id &apos;order-btn&apos;. Upon clicking, we want the function to execute. The advantage of using <code>addEventListener</code> instead of <code>onclick</code> is that we can dynamically add and remove event listeners. We can also add multiple listeners for the same event.</p>
+</div></div></p>
+</li>
+<li><p>It&apos;s about time to add the drink name to the order list. Change the <code>submitOrder</code> function to take <code>drink</code> as a second parameter.
+<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Remember to separate parameters with a comma.</p>
+</div></div></p>
+</li>
+<li><p>We need to pass in the drink name into the <code>submitOrder</code> function. We can do that from the first &apos;order-btn&apos; event listener function where we are passing in the order name, but the call to <code>submitOrder</code> is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first, just like we did for <code>drinkName</code>. After the <code>drinkName</code> variable, create a variable called <code>orderName</code> and assign it to the value of <code>getElementById</code> call. 
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+You want to store the value of <code>document.getElementById()</code> call to a variable named <code>orderName</code>.
+Your code will look like this
+<pre>
+<code class="lang-javascript">
+<span class="hljs-keyword">const</span> drinkName = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;input[type=&quot;radio&quot;]:checked&apos;</span>).value;
+<span class="hljs-keyword">const</span> orderName = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value;
+</code>
+</pre>
+</details>
+</div></div></p>
+</li>
+<li><p>Let&apos;s get rid of the <code>console.log()</code> in the event handler. We don&apos;t need that any more.</p>
+</li>
+<li><p>Update the call to <code>submitOrder</code> in the event listener to pass in the <code>orderName</code> and <code>drinkName</code> variables. 
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Change <code>submitOrder(document.getElementById(&apos;order-form-input&apos;).value);</code> function to <code>submitOrder(orderName, drinkName);</code>
+</details>
+</div></div></p>
+</li>
+<li><p>In the <code>submitOrder</code> function update the string concatenation <code>name + &quot; would like a drink!&quot;</code> to include the drink name.
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+Change <code>name + &quot; would like a drink!&quot;</code> to
+<code>name + &quot; would like a &quot; + drink</code>
+</details>
+</div></div></p>
+</li>
+<li><p>In Chrome, select a drink, add your name, and click the order button. Do you see the drink name included in the order? Select a different drink and click the order button again. Your drink order got replaced. How can we append to the new drink to the order instead of replacing it? 
+<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>You&apos;ll see an error if you don&apos;t select a drink. We&apos;ll fix this bug together in the Bonus assignment.</p>
+</div></div></p>
+</li>
+</ol>
+<h2 id="dom"><a name="dom" class="plugin-anchor" href="#dom"><i class="fa fa-link" aria-hidden="true"></i></a>Build on to the DOM dynamically  <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Append new elements to the DOM programmatically.</p>
+<ol>
+<li><p>In the <code>submitOrder</code> function, we&apos;ll programmatically add new HTML elements to append to the DOM instead of calling <code>alert</code>. Create an <code>&lt;h3&gt;</code> element and assign it to a variable. Replace the call to <code>alert</code> with the following code:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> node = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;h3&apos;</span>);
+</code></pre>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>We want to create the following HTML using DOM manipulation</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
+       Ada Lovelace would like a Focused Lady
+<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
+       Grace Hopper would like a Nerdy Daiquiri
+<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+</code></pre>
+</div></div></p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We are using the <code>Document</code> API to create a new <code>&lt;h3&gt;</code> element and assigning it to the variable <code>node</code>. We&apos;re using <code>let</code> to assign the variable instead of <code>const</code> because we need to modify the element. Variables declared with <code>const</code> are for read-only use.</p>
+<p>We now have a structure that looks like <code>&lt;h3&gt;&lt;/h3&gt;</code>. There&apos;s no text inside yet.</p>
+</div></div></p>
+</li>
+<li><p>After creating the <code>&lt;h3&gt;</code> element, create a text node to house the text for the order detail using the code below. We can pass in the string concatenation to build the order detail into the text node.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> textNode = <span class="hljs-built_in">document</span>.createTextNode(name + <span class="hljs-string">&quot; would like a &quot;</span> + drink);
+</code></pre>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We created a structure with only text but it&apos;s not attached to anything.</p>
+</div></div></p>
+</li>
+<li><p>Now we need to append the text node on to the element. We do this by calling <code>node.appendChild(textNode);</code>. 
+<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We added the text as a child of the <code>&lt;h3&gt;</code> element to recreate HTML structure we want, but it&apos;s not attached to the DOM yet.</p>
+</div></div></p>
+</li>
+<li><p>Finally, we can append the node to the DOM element so that it shows up on the web page. We know what element to append because we queried and set the <code>innerHTML</code> earlier. Change the code from calling <code>innerHTML</code> to use <code>appendChild()</code>. You code should look like this</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.order-details&apos;</span>).appendChild(node);
+</code></pre>
+</li>
+<li>Try ordering a few drinks on your web page using Chrome. Do you see each drink getting adding to the drink order list? 
+<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>We can also see the DOM getting updated in the <strong>Elements</strong> tab inside DevTools. You can inspect DOM elements by right clicking on the drink list and selecting <strong>Inspect</strong>. Ask a mentor to help you inspect DOM elements.</p>
+</div></div></li>
+</ol>
+<p><strong>You added dynamic content to your web page. Celebrate a toast with your neighbor!</strong></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="checkpoint-"><a name="checkpoint-" class="plugin-anchor" href="#checkpoint-"><i class="fa fa-link" aria-hidden="true"></i></a>Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p>Compare your <em>my-script.js</em> against the answer key for your work so far. It might look a little different depending on spacing.  </p>
+<div class="checkpoint">
+    <div class="badge">
+        <span class="fa-stack fa-lg">
+            <i class="fa fa-certificate fa-stack-2x certificate"></i>
+            <i class="fa fa-check fa-stack-1x checkmark"></i>
+        </span>
+    </div>
+    <div class="content">
+        <details>
+            <summary>
+                Expand this section to compare your work.
+            </summary>
+            <img src="images/checkpoint.png">
+            <p>
+             You can also compare your <i>my-script.js</i> file with our <a href="https://github.com/KansasCityWomeninTechnology/javascript-102/blob/answerkey-events/assets/scripts/my-script.js" target="_blank">answer key</a> if the image is too difficult to read.
+            </p>
+        </details>
+    </div>
+</div>
+
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="references-and-helpful-links-"><a name="references-and-helpful-links-" class="plugin-anchor" href="#references-and-helpful-links-"><i class="fa fa-link" aria-hidden="true"></i></a>References and helpful links <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener" target="_blank">MDN Reference: EventTarget.addEventListener</a></p>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement" target="_blank">MDN Reference: Document.createElement</a></p>
+<p><a href="https://developers.google.com/web/tools/chrome-devtools/inspect-styles/" target="_blank">Chrome DevTools HTML Inspection Reference</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../ws1-dom/" class="navigation navigation-prev " aria-label="Previous page: Review and DOM Manipulation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../ws3-scope/" class="navigation navigation-next " aria-label="Next page: Objects and Scope">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Events","level":"2.2","depth":1,"next":{"title":"Objects and Scope","level":"2.3","depth":1,"path":"ws3-scope/README.md","ref":"ws3-scope/README.md","articles":[]},"previous":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"path":"ws1-dom/README.md","ref":"ws1-dom/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws2-events/README.md","mtime":"2019-04-20T01:50:25.931Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-20T19:54:04.696Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-codetabs/codetabs.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
