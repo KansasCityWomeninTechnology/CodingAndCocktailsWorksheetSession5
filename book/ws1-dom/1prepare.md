@@ -16,6 +16,7 @@ Not sure how to extract the contents of the zip file?
    {% endhint %}   
 
 1. Open the "JavaScript102" folder in Atom.
+
    {% hint style='tip' %}
 To open the folder in Atom, follow the instructions below:
    1. Open Atom 
@@ -26,6 +27,7 @@ To open the folder in Atom, follow the instructions below:
   {% endhint %}   
 
 1. We will use the atom-live-server package we installed to serve the _index.html_ file. This package opens up the web page in your default web browser and reloads the page whenever you save files. Start the live server by selecting **Packages** <i class="fa fa-long-arrow-right"></i> **atom-live-server**. Select **Start server**. A browser tab will open.
+
    {% hint style='danger' %}
 If you don't have the atom-live-server package, take a moment to [set up your workspace](/setup).
    {% endhint %}   

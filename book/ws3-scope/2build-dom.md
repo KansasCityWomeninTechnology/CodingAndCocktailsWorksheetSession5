@@ -3,6 +3,7 @@
 1. Inside the `document.addEventListener("DOMContentLoaded", ...)` function at the bottom of the file, before the calls to register the event listeners for the order button, call the new method, `buildCocktailsMenu` and pass in the drinks array.
 
 1. Back in the `buildCocktailsMenu` function, iterate over the `cocktails` and log each element to the console using the following code
+
    ```javascript
   cocktails.forEach( (cocktail) => { 
      console.log(cocktail);
@@ -12,7 +13,6 @@
    {% hint style='working' %}
 The entire object in the array is logged out. We can access properties inside objects using the `.` notation. What if you want to only log the `label` within each drink? How would you change your log statement to do so?
    {% endhint %}
-
 
 1. In the `buildCocktailMenu` before the `forEach`, create a variable named `cocktailsString`. Because we will modify this string, use `let` to declare the variable. Set the value to an empty string by setting `cocktailsString` to open and close quotes, `''`. This is the string we'll use to build the DOM.
 
@@ -28,11 +28,14 @@ After the <code>forEach</code> use <code>document.querySelector('.radio-group').
    {% endhint %}
 
 1. Inside `forEach`, we'll use **string concatenation** to build the string and access the properties of `cocktail` object and set it to the `cocktailString` variable. Replace the `console.log` with the following code
+
    ```js
 cocktailsString = '<label class="radio" for="' + cocktail.id + '"><input type="radio" id="' + cocktail.id + '" name="drink" value="' + cocktail.label + '">' + cocktail.label + '</label>';
    ```
+   
    {% hint style='working' %}
 Our goal is to build an HTML element structure that looks like what you commented out in the HTML for each drink object in the array. We want to create something that looks like this using the drink's name and id:
+
 ```html
 <label for="focusedLady">
       <input type="radio" id="focusedLady" name="drink" value="Focused Lady">
@@ -50,7 +53,7 @@ Our goal is to build an HTML element structure that looks like what you commente
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-To add to the cocktails string by using <code>cocktailString = cocktailString + '<label class="radio"'...</code> or use shorthand method <code>cocktailString += '<label class="radio"'...</code>.
+To add to the cocktails string by using <code>cocktailString = cocktailString + ...</code> or use shorthand method <code>cocktailString += ...</code>.
 </details>
    {% endhint %}
 

@@ -70,6 +70,7 @@ We can't get the selected drink name by id because we don't know which id is the
    {% endhint %}
 
 1. Let's get the drink name-- that's the `value` of the HTML element. In Atom, make your change and double check your work by saving your file and testing it out in Chrome.
+
    {% hint style="working" %}
 <details>
 <summary>

@@ -312,12 +312,12 @@ Join the KCWiT #codingandcocktails Slack Channel: <a href="http://kcwit.slack.co
 <h2 id="fix-a-bug-by-using-equality-and-conditional-logic"><a name="fix-a-bug-by-using-equality-and-conditional-logic" class="plugin-anchor" href="#fix-a-bug-by-using-equality-and-conditional-logic"><i class="fa fa-link" aria-hidden="true"></i></a>Fix a bug by using equality and conditional logic</h2>
 <p>You&apos;re getting ready to release the web page to your customer, Coding &amp; Cocktails, and realize there&apos;s a bug! You can submit an order without a name. And if you submit an order without selecting a drink order, we see an error in the console. Let&apos;s check to make sure a name and a drink order exists before submitting the order.</p>
 <ol>
-<li><p>Open Atom and start atom-live-server. Open Chrome DevTools in the browser tab that atom-live-server opens.
-<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Don&apos;t forget to save your file after each code change to see your web page reload. If another browser opens, you can open Chrome and open a tab using the same URL as the other browser tab.</p>
+<li><p>Open Atom and start atom-live-server. Open Chrome DevTools in the browser tab that atom-live-server opens.</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Don&apos;t forget to save your file after each code change to see your web page reload. If another browser opens, you can open Chrome and open a tab using the same URL as the other browser tab.</p>
 </div></div></p>
 </li>
-<li><p>In <em>my-script.js</em>, inside the <code>click</code> event handler, wrap the call to <code>submitOrder</code> in an <code>if</code> statement. Add an equality check for <code>orderName</code> variable is not empty in the <code>if</code> condition.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>In <em>my-script.js</em>, inside the <code>click</code> event handler, wrap the call to <code>submitOrder</code> in an <code>if</code> statement. Add an equality check for <code>orderName</code> variable is not empty in the <code>if</code> condition.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -340,12 +340,12 @@ Your code will look like this
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> orderName = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-form-input&apos;</span>).value.trim();
 </code></pre>
 </li>
-<li><p>Try submitting an order with spaces as the name. A drink order didn&apos;t submit. Yay! We&apos;re getting closer! Now try submitting an order without the drink selected. Uh oh. We still see an error in the console: <code>Uncaught TypeError: Cannot read property &apos;value&apos; of null</code>.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Look at the code to query for the radio button. We use <code>document.querySelector(&apos;input[type=&quot;radio&quot;]:checked&apos;).value</code>. But if we don&apos;t select a drink, the <code>querySelector</code> can&apos;t find any elements matching a checked radio button. The return from <code>querySelector()</code> where no elements match the criteria is <code>null</code>. We then try to get the <code>value</code> property of <code>null</code>. We need to check the element is not <code>null</code> before proceeding.</p>
+<li><p>Try submitting an order with spaces as the name. A drink order didn&apos;t submit. Yay! We&apos;re getting closer! Now try submitting an order without the drink selected. Uh oh. We still see an error in the console: <code>Uncaught TypeError: Cannot read property &apos;value&apos; of null</code>.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Look at the code to query for the radio button. We use <code>document.querySelector(&apos;input[type=&quot;radio&quot;]:checked&apos;).value</code>. But if we don&apos;t select a drink, the <code>querySelector</code> can&apos;t find any elements matching a checked radio button. The return from <code>querySelector()</code> where no elements match the criteria is <code>null</code>. We then try to get the <code>value</code> property of <code>null</code>. We need to check the element is not <code>null</code> before proceeding.</p>
 </div></div></p>
 </li>
-<li><p>Change the variable name <code>drinkName</code> to <code>drinkElement</code> and remove the call to get the <code>value</code> property.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>Change the variable name <code>drinkName</code> to <code>drinkElement</code> and remove the call to get the <code>value</code> property.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -362,8 +362,8 @@ Your code will look like this
 <pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (orderName &amp;&amp; drinkElement)
 </code></pre>
 </li>
-<li><p>Update the call to <code>submitOrder</code> to send the <code>id</code> of the <code>drinkElement</code> so that the <code>submitOrder</code> function still works.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>Update the call to <code>submitOrder</code> to send the <code>id</code> of the <code>drinkElement</code> so that the <code>submitOrder</code> function still works.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -383,8 +383,8 @@ submitOrder(orderName, drinkElement.value);
 <p>Our bartender, Laura, doesn&apos;t want to have so many drinks available each session. She wants the ability to limit the drink menu to only show drinks she&apos;s prepared that evening. We will add a new property to the drink object and filter the array when building out the menu.</p>
 <p>Here is another example where building out the menu programmatically allows us to easily add more functionality.</p>
 <ol>
-<li><p>In <em>my-script.js</em>, in the <code>cocktailsArray</code>, add a new property to each drink object called <code>isAvailable</code>. The value is a <strong>boolean</strong> so set the values to <code>true</code> or <code>false</code>.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>In <em>my-script.js</em>, in the <code>cocktailsArray</code>, add a new property to each drink object called <code>isAvailable</code>. The value is a <strong>boolean</strong> so set the values to <code>true</code> or <code>false</code>.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -410,8 +410,8 @@ Don&apos;t forget the single quotes and a comma between the <code>label</code> p
 <p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Let&apos;s walk through what we did here. We created a variable called <code>availableDrinks</code>. We iterate over each cocktail in <code>cocktails</code> to apply the <code>filter</code> conditional. If <code>arrayElement.isAvailable == true</code>, that drink is added to <code>availableDrinks</code> array.</p>
 </div></div></p>
 </li>
-<li><p>Update the code to build the drink menu using the drinks in <code>availableDrinks</code>.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>Update the code to build the drink menu using the drinks in <code>availableDrinks</code>.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -440,7 +440,7 @@ availableDrinks.forEach( (cocktail) =&gt; {
 <!-- trick markdown to give me a little space between these two sections of text -->
 <h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
 <h2 id="checkpoint-"><a name="checkpoint-" class="plugin-anchor" href="#checkpoint-"><i class="fa fa-link" aria-hidden="true"></i></a>Checkpoint <span class="navigate-top"><a href="#top" title="Take me to the top of page"><i class="fa fa-chevron-circle-up" aria-hidden="true"></i></a></span></h2>
-<p>Compare your <em>my-script.js</em> against the answer key for your work so far. It might look a little different depending on spacing and photos you selected.  </p>
+<p>Compare your <em>my-script.js</em> against the answer key for your work so far. It might look a little different depending on spacing.  </p>
 <div class="checkpoint">
     <div class="badge">
         <span class="fa-stack fa-lg">
@@ -503,7 +503,7 @@ availableDrinks.forEach( (cocktail) =&gt; {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Bug Fix & Enhancements","level":"3.1","depth":1,"next":{"title":"Homework","level":"3.2","depth":1,"path":"homework/homework.md","ref":"homework/homework.md","articles":[]},"previous":{"title":"Quiz","level":"2.5","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"homework/bonus.md","mtime":"2019-04-20T20:04:54.235Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-20T20:06:10.509Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Bug Fix & Enhancements","level":"3.1","depth":1,"next":{"title":"Homework","level":"3.2","depth":1,"path":"homework/homework.md","ref":"homework/homework.md","articles":[]},"previous":{"title":"Quiz","level":"2.5","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"homework/bonus.md","mtime":"2019-05-01T21:29:18.737Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-01T22:56:57.058Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
