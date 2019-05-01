@@ -11,7 +11,7 @@ Join the KCWiT #codingandcocktails Slack Channel: [kcwit.slack.com](http://kcwit
 
 1. Push your work (with or without the bonuses) to Github & tell us in Slack, so we can celebrate together!
 
-1. Codecademy learn JavaScript tutorial: [bit.ly/CnCLearnJS](http://bit.ly/CnCLearnJS)
+1. Codecademy Learn JavaScript tutorial: [bit.ly/CnCLearnJS](http://bit.ly/CnCLearnJS)
 
 1. Walk through some of the JavaScript tutorials on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 

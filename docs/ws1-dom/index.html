@@ -355,8 +355,8 @@
 <strong>Windows users</strong>: Right click on the file with the .zip extension and choose &quot;Extract All.&quot; Select the destination you would like to extract the files to.</p>
 </div></div>   </p>
 </li>
-<li><p>Open the &quot;JavaScript102&quot; folder in Atom.
-<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>To open the folder in Atom, follow the instructions below:</p>
+<li><p>Open the &quot;JavaScript102&quot; folder in Atom.</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>To open the folder in Atom, follow the instructions below:</p>
 <ol>
 <li>Open Atom </li>
 <li>Select <strong>File</strong> <i class="fa fa-long-arrow-right"></i> <strong>Open Folder</strong></li>
@@ -366,8 +366,8 @@
 </ol>
 </div></div>   </p>
 </li>
-<li><p>We will use the atom-live-server package we installed to serve the <em>index.html</em> file. This package opens up the web page in your default web browser and reloads the page whenever you save files. Start the live server by selecting <strong>Packages</strong> <i class="fa fa-long-arrow-right"></i> <strong>atom-live-server</strong>. Select <strong>Start server</strong>. A browser tab will open.
-<div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you don&apos;t have the atom-live-server package, take a moment to <a href="../setup">set up your workspace</a>.</p>
+<li><p>We will use the atom-live-server package we installed to serve the <em>index.html</em> file. This package opens up the web page in your default web browser and reloads the page whenever you save files. Start the live server by selecting <strong>Packages</strong> <i class="fa fa-long-arrow-right"></i> <strong>atom-live-server</strong>. Select <strong>Start server</strong>. A browser tab will open.</p>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you don&apos;t have the atom-live-server package, take a moment to <a href="../setup">set up your workspace</a>.</p>
 </div></div>   </p>
 <p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If the tab opens in another browser, copy the URL and paste it into a new tab in Chrome. The reload will automatically happen in Chrome.</p>
 <p>If you get an access warning, click &quot;Allow&quot; to let atom-live-server serve the application.</p>
@@ -413,7 +413,7 @@
 </li>
 <li><p>First we need to select the HTML element that represents the form input. In the <code>onclick</code> function body (that area inside the curly braces!), type <code>document.getElementById(&apos;order-form-input&apos;)</code>.</p>
 </li>
-<li><p>Open the <em>index.html</em> file and take a look at line 70.  You should see an HTML element for input with an <code>id</code> attribute of <code>order-form-input</code>. This is the element we just targeted in the previous step.</p>
+<li><p>Open the <em>index.html</em> file and take a look at line 67.  You should see an HTML element for input with an <code>id</code> attribute of <code>order-form-input</code>. This is the element we just targeted in the previous step.</p>
 <p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Need an HTML refresher? Grab a mentor or review the Coding &amp; Cocktails <a href="http://bit.ly/cnchtmlslide" target="_blank">HTML Slides</a> or <a href="http://bit.ly/cnchtmlwork" target="_blank">Worksheet</a>!</p>
 </div></div></p>
 </li>
@@ -431,7 +431,9 @@
 </li>
 <li><p>In Google Chrome, open the Chrome DevTools by using keyboard shortcuts <code>cmd</code> + <code>option</code> + <code>i</code> on Macs or <code>F12</code> on Windows. </p>
 </li>
-<li><p>Enter text in the name form field and click on the order button. You should see your text write to the DevTools console. Leave DevTools open.  </p>
+<li><p>Enter text in the name form field and click on the order button. You should see your text write to the DevTools console. Leave DevTools open. </p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Notice we can leave the name blank. The value will be empty but the alert still displays with nothing inside.  </p>
+</div></div>   </p>
 </li>
 <li><p>In Atom, place your cursor at the top of the <em>my-script.js</em> file and press <code>Enter</code> twice.  Place your cursor back on the first line of the file and create a constant variable named <code>submitOrder</code>. This will be your new function&apos;s name.</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> submitOrder
@@ -463,8 +465,8 @@ submitOrder(<span class="hljs-built_in">document</span>.getElementById(<span cla
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We are passing the value as a parameter to the <code>submitOrder</code> function. We can now access the value of the form input in the <code>submitOrder</code> function body using the variable <code>name</code>. </p>
 </div></div>   </p>
 </li>
-<li><p>Inside the <code>submitOrder</code> function, add an alert on <code>name</code> to verify we wired it up correctly and save your work. 
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>Inside the <code>submitOrder</code> function, add an alert on <code>name</code> to verify we wired it up correctly and save your work. </p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -480,15 +482,13 @@ Change the <code>submitOrder</code> function to
 </div></div></p>
 </li>
 <li><p>In Chrome, try testing this out to see the alert pop up with the value you enter in the name field.</p>
-<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Notice we can leave the name blank. The value will be empty but the alert still displays with nothing inside.  </p>
-</div></div>   </p>
 </li>
 <li><p>Great! Now let&apos;s make the alert message a little more helpful by appending extra text to the name so it sounds friendly. We can do this using <strong>string concatenation</strong>. In the <code>submitOrder</code> function in Atom, edit the code for the <code>alert</code> message:</p>
 <pre><code class="lang-js">alert(name + <span class="hljs-string">&quot; would like a drink!&quot;</span>);
 </code></pre>
 </li>
-<li><p>In Chrome, try adding your name and click the order button. Do you see your friendly sentence in the alert window?
-<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>You will use Atom to type code statements and Chrome to verify your work when your web page reloads. Don&apos;t forget to save <em>my-script.js</em> every time you type a code statement.</p>
+<li><p>In Chrome, try adding your name and click the order button. Do you see your friendly sentence in the alert window?</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>You will use Atom to type code statements and Chrome to verify your work when your web page reloads. Don&apos;t forget to save <em>my-script.js</em> every time you type a code statement.</p>
 </div></div></p>
 </li>
 </ol>
@@ -549,8 +549,8 @@ Your code will look like this
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We can&apos;t get the selected drink name by id because we don&apos;t know which id is the <strong>selected</strong> drink. This is an example of the power of query selectors.</p>
 </div></div></p>
 </li>
-<li><p>Let&apos;s get the drink name-- that&apos;s the <code>value</code> of the HTML element. In Atom, make your change and double check your work by saving your file and testing it out in Chrome.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>Let&apos;s get the drink name-- that&apos;s the <code>value</code> of the HTML element. In Atom, make your change and double check your work by saving your file and testing it out in Chrome.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -648,7 +648,7 @@ Your code will look like this
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"next":{"title":"Events","level":"2.2","depth":1,"path":"ws2-events/README.md","ref":"ws2-events/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-dom/README.md","mtime":"2019-04-20T20:04:54.253Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-20T20:06:10.509Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"next":{"title":"Events","level":"2.2","depth":1,"path":"ws2-events/README.md","ref":"ws2-events/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-dom/README.md","mtime":"2019-04-20T20:04:54.253Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-01T22:56:57.058Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

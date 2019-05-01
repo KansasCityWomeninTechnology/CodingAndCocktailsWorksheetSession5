@@ -337,12 +337,12 @@
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We are adding an event listener for &apos;click&apos; events onto the DOM element with the id &apos;order-btn&apos;. Upon clicking, we want the function to execute. The advantage of using <code>addEventListener</code> instead of <code>onclick</code> is that we can dynamically add and remove event listeners. We can also add multiple listeners for the same event.</p>
 </div></div></p>
 </li>
-<li><p>It&apos;s about time to add the drink name to the order list. Change the <code>submitOrder</code> function to take <code>drink</code> as a second parameter.
-<div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Remember to separate parameters with a comma.</p>
+<li><p>It&apos;s about time to add the drink name to the order list. Change the <code>submitOrder</code> function to take <code>drink</code> as a second parameter.</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Remember to separate parameters with a comma.</p>
 </div></div></p>
 </li>
-<li><p>We need to pass in the drink name into the <code>submitOrder</code> function. We can do that from the first &apos;order-btn&apos; event listener function where we are passing in the order name, but the call to <code>submitOrder</code> is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first, just like we did for <code>drinkName</code>. After the <code>drinkName</code> variable, create a variable called <code>orderName</code> and assign it to the value of <code>getElementById</code> call. 
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>We need to pass in the drink name into the <code>submitOrder</code> function. We can do that from the first &apos;order-btn&apos; event listener function where we are passing in the order name, but the call to <code>submitOrder</code> is getting too cluttered. We can clean it up by querying the DOM and assigning the element values to a variable first, just like we did for <code>drinkName</code>. After the <code>drinkName</code> variable, create a variable called <code>orderName</code> and assign it to the value of <code>getElementById</code> call. </p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -359,8 +359,8 @@ Your code will look like this
 </li>
 <li><p>Let&apos;s get rid of the <code>console.log()</code> in the event handler. We don&apos;t need that any more.</p>
 </li>
-<li><p>Update the call to <code>submitOrder</code> in the event listener to pass in the <code>orderName</code> and <code>drinkName</code> variables. 
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>Update the call to <code>submitOrder</code> in the event listener to pass in the <code>orderName</code> and <code>drinkName</code> variables. </p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -368,8 +368,8 @@ Change <code>submitOrder(document.getElementById(&apos;order-form-input&apos;).v
 </details>
 </div></div></p>
 </li>
-<li><p>In the <code>submitOrder</code> function update the string concatenation <code>name + &quot; would like a drink!&quot;</code> to include the drink name.
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<li><p>In the <code>submitOrder</code> function update the string concatenation <code>name + &quot; would like a drink!&quot;</code> to include the drink name.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
@@ -378,8 +378,8 @@ Change <code>name + &quot; would like a drink!&quot;</code> to
 </details>
 </div></div></p>
 </li>
-<li><p>In Chrome, select a drink, add your name, and click the order button. Do you see the drink name included in the order? Select a different drink and click the order button again. Your drink order got replaced. How can we append to the new drink to the order instead of replacing it? 
-<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>You&apos;ll see an error if you don&apos;t select a drink. We&apos;ll fix this bug together in the Bonus assignment.</p>
+<li><p>In Chrome, select a drink, add your name, and click the order button. Do you see the drink name included in the order? Select a different drink and click the order button again. Your drink order got replaced. How can we append to the new drink to the order instead of replacing it? </p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>You&apos;ll see an error if you don&apos;t select a drink. We&apos;ll fix this bug together in the Bonus assignment.</p>
 </div></div></p>
 </li>
 </ol>
@@ -408,17 +408,18 @@ Change <code>name + &quot; would like a drink!&quot;</code> to
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We created a structure with only text but it&apos;s not attached to anything.</p>
 </div></div></p>
 </li>
-<li><p>Now we need to append the text node on to the element. We do this by calling <code>node.appendChild(textNode);</code>. 
-<div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We added the text as a child of the <code>&lt;h3&gt;</code> element to recreate HTML structure we want, but it&apos;s not attached to the DOM yet.</p>
+<li><p>Now we need to append the text node on to the element. We do this by calling <code>node.appendChild(textNode);</code>. </p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We added the text as a child of the <code>&lt;h3&gt;</code> element to recreate HTML structure we want, but it&apos;s not attached to the DOM yet.</p>
 </div></div></p>
 </li>
 <li><p>Finally, we can append the node to the DOM element so that it shows up on the web page. We know what element to append because we queried and set the <code>innerHTML</code> earlier. Change the code from calling <code>innerHTML</code> to use <code>appendChild()</code>. You code should look like this</p>
 <pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.order-details&apos;</span>).appendChild(node);
 </code></pre>
 </li>
-<li>Try ordering a few drinks on your web page using Chrome. Do you see each drink getting adding to the drink order list? 
-<div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>We can also see the DOM getting updated in the <strong>Elements</strong> tab inside DevTools. You can inspect DOM elements by right clicking on the drink list and selecting <strong>Inspect</strong>. Ask a mentor to help you inspect DOM elements.</p>
-</div></div></li>
+<li><p>Try ordering a few drinks on your web page using Chrome. Do you see each drink getting adding to the drink order list? </p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>We can also see the DOM getting updated in the <strong>Elements</strong> tab inside DevTools. You can inspect DOM elements by right clicking on the drink list and selecting <strong>Inspect</strong>. Ask a mentor to help you inspect DOM elements.</p>
+</div></div></p>
+</li>
 </ol>
 <p><strong>You added dynamic content to your web page. Celebrate a toast with your neighbor!</strong></p>
 <!-- trick markdown to give me a little space between these two sections of text -->
@@ -495,7 +496,7 @@ Change <code>name + &quot; would like a drink!&quot;</code> to
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Events","level":"2.2","depth":1,"next":{"title":"Objects and Scope","level":"2.3","depth":1,"path":"ws3-scope/README.md","ref":"ws3-scope/README.md","articles":[]},"previous":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"path":"ws1-dom/README.md","ref":"ws1-dom/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws2-events/README.md","mtime":"2019-04-20T20:04:54.267Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-20T20:06:10.509Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Events","level":"2.2","depth":1,"next":{"title":"Objects and Scope","level":"2.3","depth":1,"path":"ws3-scope/README.md","ref":"ws3-scope/README.md","articles":[]},"previous":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"path":"ws1-dom/README.md","ref":"ws1-dom/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws2-events/README.md","mtime":"2019-04-20T20:04:54.267Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-01T22:56:57.058Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

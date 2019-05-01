@@ -1,13 +1,9 @@
-1. Inside the `updateOrderCount` function, update `innerHTML` text to use template literal instead of string concatenation. 
-
-   {% hint style='working' %}
-You can also use template literals to evaluate expressions. Change `${count}` to `${count + 10}`. Try ordering a drink and watch what happens to "Drinks Ordered" count. 😲 That's maybe too many drinks. Let's change it back to `${count}`.
-   {% endhint %}
-
 1. Inside the `submitOrder` method, we are using string concatenation to build the string `name + " would like a " + drink`. Change the 'name' to use template literal. Template literals use backticks (\`\`) instead of quotes. Change the string to
+
    ```javascript
 `${name} would like a ` + drink
    ```
+   
    {% hint style='info' %}
 Remember to change the single quotes to backticks.
    {% endhint %}

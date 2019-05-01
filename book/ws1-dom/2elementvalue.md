@@ -53,7 +53,7 @@ If you don't see the alert pop up when you click the button, double check that y
 
 1. First we need to select the HTML element that represents the form input. In the `onclick` function body (that area inside the curly braces!), type `document.getElementById('order-form-input')`.
 
-1. Open the _index.html_ file and take a look at line 70.  You should see an HTML element for input with an `id` attribute of `order-form-input`. This is the element we just targeted in the previous step.
+1. Open the _index.html_ file and take a look at line 67.  You should see an HTML element for input with an `id` attribute of `order-form-input`. This is the element we just targeted in the previous step.
 
   {% hint style='tip' %}
 Need an HTML refresher? Grab a mentor or review the Coding & Cocktails [HTML Slides](http://bit.ly/cnchtmlslide) or [Worksheet](http://bit.ly/cnchtmlwork)!
@@ -62,6 +62,7 @@ Need an HTML refresher? Grab a mentor or review the Coding & Cocktails [HTML Sli
 1. Next, in the _my-script.js_ file, ensure we get the value entered in that form input element by using the `value` property of the HTML element.
 
   Your click handler function should now look like this:
+
    ```javascript
   document.getElementById('order-btn').onclick = () => {
         document.getElementById('order-form-input').value;
@@ -71,15 +72,21 @@ Need an HTML refresher? Grab a mentor or review the Coding & Cocktails [HTML Sli
 1. Wrap the value of the form in the `console.log()` method to see what the value of the input is. 
 
   You could add another alert message, or log it out to the console to do so.  Since we used the alert method already, try using `console.log()` here.  Your `onclick` function body should look like this:
+
    ```javascript
   console.log(document.getElementById('order-form-input').value);
    ```
 
 1. In Google Chrome, open the Chrome DevTools by using keyboard shortcuts `cmd` + `option` + `i` on Macs or `F12` on Windows. 
 
-1. Enter text in the name form field and click on the order button. You should see your text write to the DevTools console. Leave DevTools open.  
+1. Enter text in the name form field and click on the order button. You should see your text write to the DevTools console. Leave DevTools open. 
+
+  {% hint style='tip' %}
+Notice we can leave the name blank. The value will be empty but the alert still displays with nothing inside.  
+  {% endhint %}   
 
 1. In Atom, place your cursor at the top of the _my-script.js_ file and press `Enter` twice.  Place your cursor back on the first line of the file and create a constant variable named `submitOrder`. This will be your new function's name.
+
    ```javascript
   const submitOrder
    ```
@@ -89,9 +96,11 @@ Need an HTML refresher? Grab a mentor or review the Coding & Cocktails [HTML Sli
 1. In the open and close parenthesis for the area where you enter the input parameters for the function and add a single parameter called `name` as input to this function. 
 
 1. Wrap up the function structure by adding the open and close curly braces `{}` and a semi-colon to end the line of code. Your function should look like this:
+
   ```javascript
   const submitOrder = (name) => {};
   ```
+  
   {% hint style="info" %}
 You created a **function** named `submitOrder` that takes 1 parameter named `name`.
   {% endhint %}
@@ -116,6 +125,7 @@ We are passing the value as a parameter to the `submitOrder` function. We can no
    {% endhint %}   
 
 1. Inside the `submitOrder` function, add an alert on `name` to verify we wired it up correctly and save your work. 
+
    {% hint style='working' %}
 <details>
 <summary>
@@ -134,10 +144,6 @@ const submitOrder = (name) => {
 
 1. In Chrome, try testing this out to see the alert pop up with the value you enter in the name field.
 
-  {% hint style='tip' %}
-Notice we can leave the name blank. The value will be empty but the alert still displays with nothing inside.  
-  {% endhint %}   
-
 1. Great! Now let's make the alert message a little more helpful by appending extra text to the name so it sounds friendly. We can do this using **string concatenation**. In the `submitOrder` function in Atom, edit the code for the `alert` message:
 
    ```js
@@ -145,6 +151,7 @@ Notice we can leave the name blank. The value will be empty but the alert still 
    ```
 
 1. In Chrome, try adding your name and click the order button. Do you see your friendly sentence in the alert window?
+
    {% hint style='tip' %}
 You will use Atom to type code statements and Chrome to verify your work when your web page reloads. Don't forget to save _my-script.js_ every time you type a code statement.
    {% endhint %}
