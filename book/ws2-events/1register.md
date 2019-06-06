@@ -35,8 +35,6 @@ const orderName = document.getElementById('order-form-input').value;
 </details>
    {% endhint %}
 
-1. Let's get rid of the `console.log()` in the event handler. We don't need that any more.
-
 1. Update the call to `submitOrder` in the event listener to pass in the `orderName` and `drinkName` variables. 
 
    {% hint style='working' %}

@@ -16,7 +16,7 @@ The entire object in the array is logged out. We can access properties inside ob
 
 1. In the `buildCocktailMenu` before the `forEach`, create a variable named `cocktailsString`. Because we will modify this string, use `let` to declare the variable. Set the value to an empty string by setting `cocktailsString` to open and close quotes, `''`. This is the string we'll use to build the DOM.
 
-1. After the `forEach`, we need to set the `innerHTML` property of the DOM element with the class `radio-group` to the `cocktailString`. Using the document selectors we learned in the first section, write the code to do so.
+1. After the `forEach`, we need to set the `innerHTML` property of the DOM element with the class `radio-group` to the `cocktailsString`. Using the document selectors we learned in the first section, write the code to do so.
 
    {% hint style='working' %}
 <details>
@@ -27,7 +27,7 @@ After the <code>forEach</code> use <code>document.querySelector('.radio-group').
 </details>
    {% endhint %}
 
-1. Inside `forEach`, we'll use **string concatenation** to build the string and access the properties of `cocktail` object and set it to the `cocktailString` variable. Replace the `console.log` with the following code
+1. Inside `forEach`, we'll use **string concatenation** to build the string and access the properties of `cocktail` object and set it to the `cocktailsString` variable. Replace the `console.log` with the following code
 
    ```js
 cocktailsString = '<label class="radio" for="' + cocktail.id + '"><input type="radio" id="' + cocktail.id + '" name="drink" value="' + cocktail.label + '">' + cocktail.label + '</label>';
@@ -46,7 +46,7 @@ Our goal is to build an HTML element structure that looks like what you commente
 
 1. Save your file and try running in Chrome. Do you see the cocktail menu? Do you only see one item in the list though? ![](../assets/emojis/confused-face.png)
 
-1. Let's take a look at the code again. We're setting the value of `cocktailString` to the DOM string for each cocktail. This means the value of `cocktailString` is getting overridden each time. We need to add to the string instead of replacing it. Hint-- what were some ways we add in JavaScript?
+1. Let's take a look at the code again. We're setting the value of `cocktailsString` to the DOM string for each cocktail. This means the value of `cocktailsString` is getting overridden each time. We need to add to the string instead of replacing it. Hint-- what were some ways we add in JavaScript?
 
    {% hint style='working' %}
 <details>

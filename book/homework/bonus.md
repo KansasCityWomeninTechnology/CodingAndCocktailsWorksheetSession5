@@ -122,7 +122,7 @@ Don't forget the single quotes and a comma between the <code>label</code> proper
 </details>
    {% endhint %}
 
-1. In the `buildCocktailsMenu` method we want to create a new array of drinks where `isAvailable == true` and use that array to build the menu. We can do that using the built in `filter()` method on arrays. In the `buildCocktailsMenu` before the `forEach`, create a new variable called `availableDrinks` and type the following code
+1. In the `buildCocktailsMenu` method we want to create a new array of drinks where `isAvailable` is equal to `true` and use that array to build the menu. We can do that using the built in `filter()` method on arrays. In the `buildCocktailsMenu` before the `forEach`, create a new variable called `availableDrinks` and type the following code
 
    ```javascript
   const availableDrinks = cocktails.filter( (arrayElement) => {
@@ -131,7 +131,7 @@ Don't forget the single quotes and a comma between the <code>label</code> proper
    ```
 
    {% hint style="working" %}
-Let's walk through what we did here. We created a variable called `availableDrinks`. We iterate over each cocktail in `cocktails` to apply the `filter` conditional. If `arrayElement.isAvailable == true`, that drink is added to `availableDrinks` array.
+Let's walk through what we did here. We created a variable called `availableDrinks`. We iterate over each cocktail in `cocktails` to apply the `filter` conditional. If `arrayElement.isAvailable === true`, that drink is added to `availableDrinks` array.
    {% endhint %}
 
 1. Update the code to build the drink menu using the drinks in `availableDrinks`.
@@ -144,8 +144,8 @@ Need a little help? Expand this section for guidance.
 Your code will look like this
 <pre>
 <code class="lang-javascript">
-const availableDrinks = cocktails.filter( (element) => {
-      return element.isAvailable == true;
+const availableDrinks = cocktails.filter( (arrayElement) => {
+      return arrayElement.isAvailable === true;
 });
 
 availableDrinks.forEach( (cocktail) => {

@@ -402,12 +402,12 @@ Don&apos;t forget the single quotes and a comma between the <code>label</code> p
 </details>
 </div></div></p>
 </li>
-<li><p>In the <code>buildCocktailsMenu</code> method we want to create a new array of drinks where <code>isAvailable == true</code> and use that array to build the menu. We can do that using the built in <code>filter()</code> method on arrays. In the <code>buildCocktailsMenu</code> before the <code>forEach</code>, create a new variable called <code>availableDrinks</code> and type the following code</p>
+<li><p>In the <code>buildCocktailsMenu</code> method we want to create a new array of drinks where <code>isAvailable</code> is equal to <code>true</code> and use that array to build the menu. We can do that using the built in <code>filter()</code> method on arrays. In the <code>buildCocktailsMenu</code> before the <code>forEach</code>, create a new variable called <code>availableDrinks</code> and type the following code</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> availableDrinks = cocktails.filter( (arrayElement) =&gt; {
    <span class="hljs-keyword">return</span> arrayElement.isAvailable === <span class="hljs-literal">true</span>;
 });
 </code></pre>
-<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Let&apos;s walk through what we did here. We created a variable called <code>availableDrinks</code>. We iterate over each cocktail in <code>cocktails</code> to apply the <code>filter</code> conditional. If <code>arrayElement.isAvailable == true</code>, that drink is added to <code>availableDrinks</code> array.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>Let&apos;s walk through what we did here. We created a variable called <code>availableDrinks</code>. We iterate over each cocktail in <code>cocktails</code> to apply the <code>filter</code> conditional. If <code>arrayElement.isAvailable === true</code>, that drink is added to <code>availableDrinks</code> array.</p>
 </div></div></p>
 </li>
 <li><p>Update the code to build the drink menu using the drinks in <code>availableDrinks</code>.</p>
@@ -418,8 +418,8 @@ Need a little help? Expand this section for guidance.
 Your code will look like this
 <pre>
 <code class="lang-javascript">
-<span class="hljs-keyword">const</span> availableDrinks = cocktails.filter( (element) =&gt; {
-      <span class="hljs-keyword">return</span> element.isAvailable == <span class="hljs-literal">true</span>;
+<span class="hljs-keyword">const</span> availableDrinks = cocktails.filter( (arrayElement) =&gt; {
+      <span class="hljs-keyword">return</span> arrayElement.isAvailable === <span class="hljs-literal">true</span>;
 });
 
 availableDrinks.forEach( (cocktail) =&gt; {
@@ -503,7 +503,7 @@ availableDrinks.forEach( (cocktail) =&gt; {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Bug Fix & Enhancements","level":"3.1","depth":1,"next":{"title":"Homework","level":"3.2","depth":1,"path":"homework/homework.md","ref":"homework/homework.md","articles":[]},"previous":{"title":"Quiz","level":"2.5","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"homework/bonus.md","mtime":"2019-05-01T21:29:18.737Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-01T22:56:57.058Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Bug Fix & Enhancements","level":"3.1","depth":1,"next":{"title":"Homework","level":"3.2","depth":1,"path":"homework/homework.md","ref":"homework/homework.md","articles":[]},"previous":{"title":"Quiz","level":"2.5","depth":1,"path":"quiz.md","ref":"quiz.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"homework/bonus.md","mtime":"2019-06-06T23:00:32.100Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-06T23:01:14.256Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
