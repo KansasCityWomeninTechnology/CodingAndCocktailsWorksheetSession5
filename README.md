@@ -22,6 +22,9 @@ npm run book:deploy
 ## Associated Repos
 [javascript-102](https://github.com/KansasCityWomeninTechnology/javascript-102)
 
+## CodePen
+[Starter CodePen for ChromeOS](https://codepen.io/CodingCocktailsKC/pen/GaqPGX)
+
 
 ## TODO
 - [x] 2018 updates!
