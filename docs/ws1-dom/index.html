@@ -33,6 +33,14 @@
                 
             
                 
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-sectionx/sectionx.css">
+                
+            
+                
                 <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -310,6 +318,10 @@
 <!-- trick markdown to give me a little space between these two sections of text -->
 <h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
 <p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>Before starting the worksheet, please take a moment to review <a href="../setup">Setup instructions</a> to ensure you have all the tools and workspace setup you need for tonight&apos;s work.</p>
+</div></div></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle fa-lg"></i></div><div class="hints-container"><p>If you are using CodeSandbox, please skip to <a href="#cloud-ide">CloudSandbox instructions</a> below.</p>
 </div></div></p>
 <!-- trick markdown to give me a little space between these two sections of text -->
 <h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
@@ -605,6 +617,34 @@ Your code will look like this
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector" target="_blank">MDN Reference: Document API&apos;s querySelector</a></p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Glossary/Function" target="_blank">MDN Reference: Function</a></p>
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions" target="_blank">MDN Reference: Arrow functions</a></p>
+<!-- trick markdown to give me a little space between these two sections of text -->
+<h2 id=""><a name="" class="plugin-anchor" href="#"><i class="fa fa-link" aria-hidden="true"></i></a> </h2>
+<h2 id="cloud-ide"><a name="cloud-ide" class="plugin-anchor" href="#cloud-ide"><i class="fa fa-link" aria-hidden="true"></i></a>Cloud IDE instructions </h2>
+<sec data-title="CodeSandbox instructions" data-id="section0" data-show="true" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><h2 id="codesandbox-instructions">CodeSandbox instructions<a class="pull-right section atTitle btn btn-default" target="section0"><span class="fa fa-angle-up"></span></a></h2></div><div class="panel-collapse in" id="section0"><div class="panel-body">
+<p>You will use <strong>CodeSandbox</strong> tonight as your <strong>I</strong>ntegrated <strong>D</strong>evelopment <strong>E</strong>nvironment. Any time the worksheet references Atom, use CodeSandbox instead.
+Follow the instructions below to get your environment going.</p>
+<ol>
+<li><p>Navigate to <a href="https://codesandbox.io/" target="_blank">CodeSandbox</a>.</p>
+</li>
+<li><p>Click the <strong>Create Sandbox</strong> button at the top right of the screen.</p>
+</li>
+<li><p>In the <strong>New Sandbox</strong> page, click the <strong><span class="octicon octicon-mark-github"></span> Sign in with GitHub</strong> button at the top right of the screen.</p>
+</li>
+<li><p>Use your GitHub credentials to sign in.</p>
+</li>
+<li><p>In the <strong>New Sandbox</strong> page, select <strong>Import</strong> tab and paste the following URL into the input box labeled <strong>GitHub Repository URL...</strong>: 
+<code>https://github.com/KansasCityWomeninTechnology/javascript-102/tree/ad/code-sandbox</code></p>
+</li>
+<li><p>Click <strong>Open Sandbox</strong> to create your project.</p>
+</li>
+<li><p>Once the project loads, CodeSandbox displays 3 panes. On the far left you will see your project files. In the middle you&apos;ll see your code in the <em>index.html</em> tab. On the right you will see your application. CodeSandbox automatically displays your application and updates after you save your file, just like Atom&apos;s atom-live-server package.</p>
+</li>
+<li><p>Before you start following the worksheet, click the <strong><span class="octicon octicon-repo-forked"></span> Fork</strong> button in the toolbar. You&apos;ll see it at the top right of your screen. This makes your own copy of the project so you can save your changes.</p>
+</li>
+<li><p>You created your project and are ready to go! Follow along with the rest of the worksheet instructions using CodeSandbox in place of Atom.</p>
+</li></ol></div></div></div></sec>
+
+
 
                                 
                                 </section>
@@ -648,7 +688,7 @@ Your code will look like this
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"next":{"title":"Events","level":"2.2","depth":1,"path":"ws2-events/README.md","ref":"ws2-events/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-dom/README.md","mtime":"2019-04-20T20:04:54.253Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-06-06T23:01:14.256Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"next":{"title":"Events","level":"2.2","depth":1,"path":"ws2-events/README.md","ref":"ws2-events/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-dom/README.md","mtime":"2019-10-22T00:25:17.101Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-22T00:42:22.144Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -659,6 +699,14 @@ Your code will look like this
     
         
         <script src="../gitbook/gitbook-plugin-codetabs/codetabs.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sectionx/sectionx.js"></script>
         
     
         
