@@ -18,4 +18,4 @@ Follow the instructions below to get your environment going.
 
 1. Before you start following the worksheet, click the **<span class="octicon octicon-repo-forked"></span> Fork** button in the toolbar. You'll see it at the top right of your screen. This makes your own copy of the project so you can save your changes.
 
-1. You created your project and are ready to go! Follow along with the rest of the worksheet instructions using CodeSandbox in place of Atom.
+1. You created your project and are ready to go! Follow along with [Retrieve element from the DOM by id](#text) using CodeSandbox in place of Atom.
