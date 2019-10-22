@@ -13,6 +13,12 @@ Before starting the worksheet, please take a moment to review [Setup instruction
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
+{% hint style='danger' %}
+If you are using CodeSandbox, please skip to [CloudSandbox instructions](#cloud-ide) below.
+{% endhint %}
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
 This section will help guide you through the following steps:
 
 {% include "./instruction-steps.html" %}
@@ -60,7 +66,13 @@ Compare your _my-script.js_ against the answer key for your work so far. It migh
 
 [MDN Reference: Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
 
+## Cloud IDE instructions {#cloud-ide}
+<!-- sec data-title="CodeSandbox instructions" data-id="section0" data-show=true data-collapse=true ces -->
+{% include "./cloud-ide.md" %}
+<!--endsec-->
 
 
 
