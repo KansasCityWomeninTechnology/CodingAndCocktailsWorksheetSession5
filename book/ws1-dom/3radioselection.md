@@ -18,7 +18,7 @@ const drinkName
 1. Last time we retrieved an element by its id using `getElementById()`. This time we'll use `querySelector()` to retrieve an element by CSS selectors. Set your variable equal to `document.querySelector();`.
 
    {% hint style="info" %}
-There's different ways to access the DOM from JavaScript. Tonight we explore `getElementById()` and `querySelector()`. Sometimes it makes sense to define an id to an element so your code can access it easily. But as an application grows and the number of elements increases, having a way access elements without defining an id to each is powerful. 
+There's different ways to access the DOM from JavaScript. Tonight we explore `getElementById()` and `querySelector()`. Sometimes it makes sense to define an id to an element so your code can access it easily. But as an application grows and the number of elements increases, having a way to access elements without defining an id to each is powerful. 
    {% endhint %}
 
 1. Below your query selector, write your variable out to the console so that we can see how this works.
@@ -46,7 +46,7 @@ console.log(drinkName);
    ```
 
    {% hint style='tip' %}
-Need a CSS refresher? Grab a mentor or review the Coding & Cocktails [CSS Slides](http://bit.ly/cnccssslide) or [Worksheet](http://bit.ly/cnccsswork)!
+Need a CSS refresher? Grab a mentor or review the Coding & Cocktails [CSS Slides](http://bit.ly/cnccssslides) or [Worksheet](http://bit.ly/cnccsswork)!
   {% endhint %}
 
 1. Save your file. In Chrome, select a drink and press the **Order** button. Do you see your query selector write out to the console? Since we didn't specify that we only want the text, we see the entire `<h1>` HTML element.
@@ -63,7 +63,7 @@ Let's walk through this CSS selector string. The radio buttons are `<input>` ele
 You can also write a style in the CSS file using this selector too!
   {% endhint %}
 
-1. Save your file. In Chrome, select a drink and press the **Order** button. Hrm... We see the HTML element not the drink name.Do you see your drink name write out to the console?
+1. Save your file. In Chrome, select a drink and press the **Order** button. Hrm... We see the HTML element not the drink name. Do you see your drink name write out to the console?
 
    {% hint style='info' %}
 We can't get the selected drink name by id because we don't know which id is the **selected** drink. This is an example of the power of query selectors.

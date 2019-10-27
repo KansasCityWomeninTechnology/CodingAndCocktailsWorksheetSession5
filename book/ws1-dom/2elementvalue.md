@@ -14,7 +14,7 @@ Two functions are already defined in the file: one function associated with the 
    ```
 
    {% hint style='info' %}
-The opening and closing curly brace signify the starting and ending boundaries for groups of code statements. All the code inside the curly brace are part of the same group. Code outside of the curly braces are not part of the group. In this case, all code inside the curly braces are part of a function and all code outside of the curly brace is not part of the function. You will see instructions to add code inside and outside functions tonights.
+The opening and closing curly brace signify the starting and ending boundaries for groups of code statements. All the code inside the curly brace are part of the same group. Code outside of the curly braces are not part of the group. In this case, all code inside the curly braces are part of a function and all code outside of the curly brace is not part of the function. You will see instructions to add code inside and outside functions tonight.
    {% endhint %}      
 
    {% hint style='tip' %}
@@ -53,7 +53,7 @@ If you don't see the alert pop up when you click the button, double check that y
 
 1. First we need to select the HTML element that represents the form input. In the `onclick` function body (that area inside the curly braces!), type `document.getElementById('order-form-input')`.
 
-1. Open the _index.html_ file and take a look at line 67.  You should see an HTML element for input with an `id` attribute of `order-form-input`. This is the element we just targeted in the previous step.
+1. Open the _index.html_ file and take a look at line 68.  You should see an HTML element for input with an `id` attribute of `order-form-input`. This is the element we just targeted in the previous step.
 
   {% hint style='tip' %}
 Need an HTML refresher? Grab a mentor or review the Coding & Cocktails [HTML Slides](http://bit.ly/cnchtmlslide) or [Worksheet](http://bit.ly/cnchtmlwork)!
@@ -93,9 +93,7 @@ Notice we can leave the name blank. The value will be empty but the alert still 
 
 1. Next to the `submitOrder` variable, add an `=` sign to set your variable to some content.  Type `() => {};` to start your function definition.
 
-1. In the open and close parenthesis for the area where you enter the input parameters for the function and add a single parameter called `name` as input to this function. 
-
-1. Wrap up the function structure by adding the open and close curly braces `{}` and a semi-colon to end the line of code. Your function should look like this:
+1. In the open and close parenthesis for the area where you enter the input parameters for the function and add a single parameter called `name` as input to this function. Your function should look like this:
 
   ```javascript
   const submitOrder = (name) => {};
