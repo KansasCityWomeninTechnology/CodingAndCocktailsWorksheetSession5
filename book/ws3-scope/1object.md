@@ -73,7 +73,7 @@ You can use single quotes, double quotes, or use no quotes when declaring keys i
    ```
    
    {% hint style="info" %}
-Notice a comma replaces the semicolon after the array declaration and we're not using quotes for the `cocktailsArray` property but are using single quotes for `id` and `label` properties inside each object within the array.
+Notice we use a comma after declaring each object in the array. This allows us to create multiple elements in an array at the same time. We elected to use single quotes for the `id` and `label` properties within each object.
    {% endhint %}
 
 

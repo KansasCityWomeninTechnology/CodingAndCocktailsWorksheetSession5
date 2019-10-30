@@ -77,7 +77,7 @@ const drinkElement = document.querySelector('input[type="radio"]:checked');
    if (orderName && drinkElement)
    ```
 
-1. Update the call to `submitOrder` to send the `id` of the `drinkElement` so that the `submitOrder` function still works.
+1. Update the call to `submitOrder` to send the `value` of the `drinkElement` so that the `submitOrder` function still works.
 
    {% hint style="working" %}
 <details>

@@ -418,11 +418,37 @@ Change <code>name + &quot; would like a drink!&quot;</code> to
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We added the text as a child of the <code>&lt;h3&gt;</code> element to recreate HTML structure we want, but it&apos;s not attached to the DOM yet.</p>
 </div></div></p>
 </li>
-<li><p>Finally, we can append the node to the DOM element so that it shows up on the web page. We know what element to append because we queried and set the <code>innerHTML</code> earlier. Change the code from calling <code>innerHTML</code> to use <code>appendChild()</code>. You code should look like this</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.order-details&apos;</span>).appendChild(node);
-</code></pre>
+<li><p>We need to find the parent node to add the <code>&lt;h3&gt;&lt;/h3</code> we created. We want to add the order info to the parent element that has the class &quot;order-details&quot;. Using the Document API, query for the &quot;order-details&quot; class.</p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+You want to use the <code>document.querySelector()</code> method and pass in the class name <code>&apos;.order-details&apos;</code>.
+Your code will look like this
+<pre>
+<code class="lang-javascript">
+<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.order-details&apos;</span>);
+</code>
+</pre>
+</details>
+</div></div></p>
 </li>
-<li><p>Try ordering a few drinks on your web page using Chrome. Do you see each drink getting adding to the drink order list? </p>
+<li><p>Finally, we can append the node to the DOM element so that it shows up on the web page. Use the <code>appendChild()</code> method and pass in the text node as a parameter to the parent element. </p>
+<p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><details>
+<summary>
+Need a little help? Expand this section for guidance. 
+</summary> 
+You want to use the node you queried for in the last step and call <code>appendChild()</code> method and pass in the text node you created called <code>node</code>.
+Your code will look like this
+<pre>
+<code class="lang-javascript">
+<span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;.order-details&apos;</span>).appendChild(node);
+</code>
+</pre>
+</details>
+</div></div></p>
+</li>
+<li><p>Try ordering a few drinks on your web page using Chrome. Do you see each drink added to the drink order list? </p>
 <p><div class="alert alert-warning hints-alert"><div class="hints-icon"><i class="fa fa-question-circle fa-lg"></i></div><div class="hints-container"><p>We can also see the DOM getting updated in the <strong>Elements</strong> tab inside DevTools. You can inspect DOM elements by right clicking on the drink list and selecting <strong>Inspect</strong>. Ask a mentor to help you inspect DOM elements.</p>
 </div></div></p>
 </li>
@@ -502,7 +528,7 @@ Change <code>name + &quot; would like a drink!&quot;</code> to
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Events","level":"2.2","depth":1,"next":{"title":"Objects and Scope","level":"2.3","depth":1,"path":"ws3-scope/README.md","ref":"ws3-scope/README.md","articles":[]},"previous":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"path":"ws1-dom/README.md","ref":"ws1-dom/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws2-events/README.md","mtime":"2019-04-20T20:04:54.267Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-22T00:51:48.351Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Events","level":"2.2","depth":1,"next":{"title":"Objects and Scope","level":"2.3","depth":1,"path":"ws3-scope/README.md","ref":"ws3-scope/README.md","articles":[]},"previous":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"path":"ws1-dom/README.md","ref":"ws1-dom/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws2-events/README.md","mtime":"2019-04-20T20:04:54.267Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-27T16:53:50.713Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

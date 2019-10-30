@@ -398,7 +398,7 @@
 <pre><code class="lang-javascript"><span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;order-btn&apos;</span>).onclick = () =&gt; {
 };
 </code></pre>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>The opening and closing curly brace signify the starting and ending boundaries for groups of code statements. All the code inside the curly brace are part of the same group. Code outside of the curly braces are not part of the group. In this case, all code inside the curly braces are part of a function and all code outside of the curly brace is not part of the function. You will see instructions to add code inside and outside functions tonights.</p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>The opening and closing curly brace signify the starting and ending boundaries for groups of code statements. All the code inside the curly brace are part of the same group. Code outside of the curly braces are not part of the group. In this case, all code inside the curly braces are part of a function and all code outside of the curly brace is not part of the function. You will see instructions to add code inside and outside functions tonight.</p>
 </div></div>      </p>
 <p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>View the worksheet and the <strong>IDE</strong> (<strong>I</strong>ntegrated <strong>D</strong>evelopment <strong>E</strong>nvironment - a generic term for where you write your code, Atom is serving as the IDE in our case) in split screen mode to make it easier to work through tonight&apos;s session. Check out the <a href="../setup#tips">helpful tips in the Setup guide</a>. </p>
 </div></div></p>
@@ -425,7 +425,7 @@
 </li>
 <li><p>First we need to select the HTML element that represents the form input. In the <code>onclick</code> function body (that area inside the curly braces!), type <code>document.getElementById(&apos;order-form-input&apos;)</code>.</p>
 </li>
-<li><p>Open the <em>index.html</em> file and take a look at line 67.  You should see an HTML element for input with an <code>id</code> attribute of <code>order-form-input</code>. This is the element we just targeted in the previous step.</p>
+<li><p>Open the <em>index.html</em> file and take a look at line 68.  You should see an HTML element for input with an <code>id</code> attribute of <code>order-form-input</code>. This is the element we just targeted in the previous step.</p>
 <p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Need an HTML refresher? Grab a mentor or review the Coding &amp; Cocktails <a href="http://bit.ly/cnchtmlslide" target="_blank">HTML Slides</a> or <a href="http://bit.ly/cnchtmlwork" target="_blank">Worksheet</a>!</p>
 </div></div></p>
 </li>
@@ -453,9 +453,7 @@
 </li>
 <li><p>Next to the <code>submitOrder</code> variable, add an <code>=</code> sign to set your variable to some content.  Type <code>() =&gt; {};</code> to start your function definition.</p>
 </li>
-<li><p>In the open and close parenthesis for the area where you enter the input parameters for the function and add a single parameter called <code>name</code> as input to this function. </p>
-</li>
-<li><p>Wrap up the function structure by adding the open and close curly braces <code>{}</code> and a semi-colon to end the line of code. Your function should look like this:</p>
+<li><p>In the open and close parenthesis for the area where you enter the input parameters for the function and add a single parameter called <code>name</code> as input to this function. Your function should look like this:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">const</span> submitOrder = (name) =&gt; {};
 </code></pre>
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>You created a <strong>function</strong> named <code>submitOrder</code> that takes 1 parameter named <code>name</code>.</p>
@@ -523,7 +521,7 @@ Your code will look like this
 </div></div></p>
 </li>
 <li><p>Last time we retrieved an element by its id using <code>getElementById()</code>. This time we&apos;ll use <code>querySelector()</code> to retrieve an element by CSS selectors. Set your variable equal to <code>document.querySelector();</code>.</p>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>There&apos;s different ways to access the DOM from JavaScript. Tonight we explore <code>getElementById()</code> and <code>querySelector()</code>. Sometimes it makes sense to define an id to an element so your code can access it easily. But as an application grows and the number of elements increases, having a way access elements without defining an id to each is powerful. </p>
+<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>There&apos;s different ways to access the DOM from JavaScript. Tonight we explore <code>getElementById()</code> and <code>querySelector()</code>. Sometimes it makes sense to define an id to an element so your code can access it easily. But as an application grows and the number of elements increases, having a way to access elements without defining an id to each is powerful. </p>
 </div></div></p>
 </li>
 <li><p>Below your query selector, write your variable out to the console so that we can see how this works.</p>
@@ -545,7 +543,7 @@ Your code will look like this
 <li><p>Now we need to find the CSS selector string for the radio button but first, let&apos;s take this <code>querySelector</code> out for a test run. Let&apos;s try grabbing the text in <code>&lt;h1&gt;</code> tag first. The <code>querySelector</code> method takes a string without the open and close brace (just like we did in the CSS session). Change your <code>querySelector</code> code to</p>
 <pre><code class="lang-js"><span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&apos;h1&apos;</span>);
 </code></pre>
-<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Need a CSS refresher? Grab a mentor or review the Coding &amp; Cocktails <a href="http://bit.ly/cnccssslide" target="_blank">CSS Slides</a> or <a href="http://bit.ly/cnccsswork" target="_blank">Worksheet</a>!</p>
+<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-lightbulb-o fa-lg"></i></div><div class="hints-container"><p>Need a CSS refresher? Grab a mentor or review the Coding &amp; Cocktails <a href="http://bit.ly/cnccssslides" target="_blank">CSS Slides</a> or <a href="http://bit.ly/cnccsswork" target="_blank">Worksheet</a>!</p>
 </div></div></p>
 </li>
 <li><p>Save your file. In Chrome, select a drink and press the <strong>Order</strong> button. Do you see your query selector write out to the console? Since we didn&apos;t specify that we only want the text, we see the entire <code>&lt;h1&gt;</code> HTML element.</p>
@@ -557,7 +555,7 @@ Your code will look like this
 <p>You can also write a style in the CSS file using this selector too!</p>
 </div></div></p>
 </li>
-<li><p>Save your file. In Chrome, select a drink and press the <strong>Order</strong> button. Hrm... We see the HTML element not the drink name.Do you see your drink name write out to the console?</p>
+<li><p>Save your file. In Chrome, select a drink and press the <strong>Order</strong> button. Hrm... We see the HTML element not the drink name. Do you see your drink name write out to the console?</p>
 <p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle fa-lg"></i></div><div class="hints-container"><p>We can&apos;t get the selected drink name by id because we don&apos;t know which id is the <strong>selected</strong> drink. This is an example of the power of query selectors.</p>
 </div></div></p>
 </li>
@@ -688,7 +686,7 @@ Follow the instructions below to get your environment going.</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"next":{"title":"Events","level":"2.2","depth":1,"path":"ws2-events/README.md","ref":"ws2-events/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-dom/README.md","mtime":"2019-10-22T00:44:51.070Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-22T00:51:48.351Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Review and DOM Manipulation","level":"2.1","depth":1,"next":{"title":"Events","level":"2.2","depth":1,"path":"ws2-events/README.md","ref":"ws2-events/README.md","articles":[]},"previous":{"title":"Setup Instructions","level":"1.2","depth":1,"path":"setup/README.md","ref":"setup/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["custom-favicon","hints","anchors","codeblock-label","codetabs","sectionx"],"root":"./book","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"codeblock-label":{},"search":{},"codetabs":{},"hints":{"danger":"fa fa-exclamation-circle fa-lg","info":"fa fa-info-circle fa-lg","tip":"fa fa-lightbulb-o fa-lg","working":"fa fa-question-circle fa-lg"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{},"highlight":{},"favicon":"book/assets/images/favicon.ico","custom-favicon":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"ws1-dom/README.md","mtime":"2019-10-22T00:44:51.070Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-27T16:53:50.713Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
